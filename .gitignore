@@ -1,0 +1,9 @@
+.DS_Store
+.env
+venv/
+.venv/
+__pycache__/
+*.pyc
+data/queries/*.INTERNAL.csv
+data/queries/queries.csv
+leaderboard/.official_submissions/

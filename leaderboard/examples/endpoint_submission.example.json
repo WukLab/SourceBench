@@ -1,0 +1,18 @@
+{
+  "submission_mode": "endpoint",
+  "submitter_name": "Example Researcher",
+  "organization": "Example Lab",
+  "contact_email": "researcher@example.com",
+  "model_name": "example-model",
+  "model_version": "2026-03",
+  "api_base": "https://api.example.com/v1",
+  "api_key": "REPLACE_WITH_REAL_SECRET",
+  "api_format": "openai-compatible",
+  "web_search_mode": "built-in-search",
+  "generation_config": {
+    "temperature": 0
+  },
+  "system_prompt": null,
+  "notes": "Replace placeholder values before official submission.",
+  "agrees_to_reproducibility_policy": true
+}

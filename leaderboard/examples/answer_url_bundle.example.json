@@ -1,0 +1,23 @@
+{
+  "submission_mode": "answer_url_bundle",
+  "submitter_name": "Example Researcher",
+  "organization": "Example Lab",
+  "contact_email": "researcher@example.com",
+  "model_name": "example-model",
+  "model_version": "2026-03",
+  "web_search_mode": "built-in-search",
+  "agrees_to_reproducibility_policy": true,
+  "runs": [
+    {
+      "query_id": "public-demo-001",
+      "answer_text": "This is an example answer with cited sources.",
+      "cited_urls": [
+        "https://example.com/source-a",
+        "https://example.com/source-b"
+      ],
+      "raw_response": {
+        "citations_present": true
+      }
+    }
+  ]
+}
