@@ -1,28 +1,52 @@
-# SourceBench
+<div align="center">
 
-SourceBench is a benchmark for evaluating the quality of web sources cited by generative engines.
-Instead of measuring only final answer quality, SourceBench evaluates whether a system cites sources
-that are relevant, accurate, fresh, transparent, accountable, authoritative, and usable.
+# SourceBench: A Benchmark for Cited Source Quality in Generative Engines
 
-Resources:
+[![Code License](https://img.shields.io/badge/Code%20License-MIT-blue?style=flat-square)](#)
+[![GitHub](https://img.shields.io/badge/GitHub-SourceBench-181717?style=flat-square&logo=github)](https://github.com/WukLab/SourceBench)
+[![arXiv](https://img.shields.io/badge/arXiv-2602.16942-b31b1b?style=flat-square&logo=arxiv)](https://arxiv.org/abs/2602.16942)
+[![Blog](https://img.shields.io/badge/Blog-SourceBench-f59e0b?style=flat-square)](https://mlsys.wuklab.io/posts/sourcebench/)
+[![Leaderboard](https://img.shields.io/badge/Leaderboard-hosted%20separately-8b5cf6?style=flat-square)](#official-evaluation)
 
-- arXiv: `https://arxiv.org/abs/2602.16942`
-- blog: `https://mlsys.wuklab.io/posts/sourcebench/`
+SourceBench evaluates whether a generative engine cites **high-quality web sources**, not only whether it produces a fluent final answer.
 
-This repository is the benchmark codebase. It keeps the public query split, source collection pipeline,
-source scoring pipeline, metric computation code, and official submission contract. The public-facing
-leaderboard site should be hosted separately.
+</div>
 
-## What is included
+---
 
-- fixed public query split for open evaluation
+If you find this project useful, please consider starring the repository for updates.
+
+## News
+
+- `[Mar 2026]` SourceBench benchmark base was reorganized to separate the benchmark codebase from the public-facing leaderboard site.
+- `[Mar 2026]` Official evaluation scripts were consolidated under [`src/evaluation/`](src/evaluation/), including validation, intake, official runner, and metric computation.
+- `[Mar 2026]` The public benchmark release now keeps only the fixed public query split. Hidden holdout data and internal submission artifacts are excluded from this repository.
+
+## Overview
+
+SourceBench focuses on the quality of cited sources along dimensions such as:
+
+- semantic relevance
+- factual accuracy
+- freshness
+- objectivity / tone
+- layout / ad density
+- accountability
+- transparency
+- authority
+
+This repository is the **benchmark codebase**. It contains:
+
+- the fixed public query split for open evaluation
 - source collection scripts
 - source judging scripts
 - metric computation scripts
 - official submission validation and runner scripts
 - split policy and official submission contract
 
-## Repository layout
+The public leaderboard site should be hosted separately from this repository.
+
+## Repository Layout
 
 ```text
 data/queries/
@@ -30,6 +54,7 @@ data/queries/
 leaderboard/
   QUERY_SPLIT_POLICY.md
   OFFICIAL_SUBMISSION_CONTRACT.md
+  README.md
   examples/
 src/source-collection/
 src/content-scoring/scripts/
@@ -37,23 +62,63 @@ src/evaluation/
 requirements.txt
 ```
 
-## Public evaluation pipeline
+## Quick Start
 
-The public pipeline is:
+Install dependencies:
 
-1. Run source collection on the fixed public query set.
-2. Scrape and normalize cited sources.
-3. Score sources with the fixed judge configuration.
-4. Compute leaderboard-ready metrics.
+```bash
+pip install -r requirements.txt
+```
 
-Core scripts:
+Run the public evaluation pipeline:
 
-- `src/source-collection/get_urls.py`
-- `src/source-collection/collect_sources_from_urls.py`
-- `src/content-scoring/scripts/scoring.py`
-- `src/evaluation/compute_metrics.py`
+```bash
+python src/source-collection/get_urls.py \
+  --input path/to/public_queries.jsonl \
+  --output output/public_urls.json \
+  --model YOUR_MODEL_NAME \
+  --openai-base-url YOUR_OPENAI_COMPATIBLE_ENDPOINT \
+  --openai-api-key YOUR_GE_API_KEY \
+  --ai-model-name YOUR_MODEL_NAME
+```
 
-## Official evaluation
+```bash
+python src/source-collection/collect_sources_from_urls.py \
+  --input output/public_urls.json \
+  --output output/public_sources.json \
+  --rejected-output output/public_rejected.jsonl \
+  --ai-model-name YOUR_MODEL_NAME
+```
+
+```bash
+export QWEN_API_KEY=YOUR_QWEN_API_KEY
+python src/content-scoring/scripts/scoring.py \
+  --input-file output/public_sources.json \
+  --out-dir output/scored \
+  --run-name YOUR_MODEL_NAME
+```
+
+```bash
+python src/evaluation/compute_metrics.py \
+  --run YOUR_MODEL_NAME=output/scored/YOUR_MODEL_NAME.enriched.json \
+  --query-metadata data/queries/sourcebench_public_queries_v1.csv \
+  --out-dir output/metrics
+```
+
+## Evaluation Scripts
+
+The evaluation-side scripts are documented in:
+
+- [`src/evaluation/README.md`](src/evaluation/README.md)
+
+In short:
+
+- `validate_official_submission.py`: validate official submission schema
+- `official_submission_backend.py`: intake and queue a submission
+- `official_run.py`: run hidden official evaluation
+- `compute_metrics.py`: aggregate final metrics
+
+## Official Evaluation
 
 Open evaluation can be run locally on the public split.
 
@@ -66,18 +131,32 @@ Official leaderboard evaluation is intended to be run server-side by the SourceB
 
 Relevant files:
 
-- `leaderboard/QUERY_SPLIT_POLICY.md`
-- `leaderboard/OFFICIAL_SUBMISSION_CONTRACT.md`
-- `leaderboard/examples/`
-- `src/evaluation/README.md`
-- `src/evaluation/validate_official_submission.py`
-- `src/evaluation/official_submission_backend.py`
-- `src/evaluation/official_run.py`
+- [`leaderboard/QUERY_SPLIT_POLICY.md`](leaderboard/QUERY_SPLIT_POLICY.md)
+- [`leaderboard/OFFICIAL_SUBMISSION_CONTRACT.md`](leaderboard/OFFICIAL_SUBMISSION_CONTRACT.md)
+- [`leaderboard/README.md`](leaderboard/README.md)
+- [`leaderboard/examples/`](leaderboard/examples/)
 
-## Notes on public release
+## Public Release Notes
 
 This repository keeps only the public split.
 
-The hidden holdout queries should not be committed here. The benchmark master pool should also stay out of the
-public release if it can be used to reconstruct the holdout split. For that reason, `data/queries/queries.csv`
-is excluded from this benchmark base.
+The hidden holdout queries should not be committed here. The benchmark master query pool should also stay out of the public release if it can be used to reconstruct the holdout split. For that reason, `data/queries/queries.csv` is excluded from this benchmark base.
+
+Internal official submission artifacts are also excluded. The ignored directory:
+
+- `leaderboard/.official_submissions/`
+
+is only for server-side submission intake and official evaluation runs.
+
+## Citation
+
+If you use SourceBench in your research, please cite:
+
+```bibtex
+@article{sourcebench2026,
+  title={SourceBench: Can AI Answers Reference Quality Web Sources?},
+  author={Hexi Jin and Stephen Liu and Yuheng Li and Simran Malik and Yiying Zhang},
+  journal={arXiv preprint arXiv:2602.16942},
+  year={2026}
+}
+```
