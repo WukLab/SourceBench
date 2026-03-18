@@ -14,14 +14,6 @@ SourceBench evaluates whether a generative engine cites **high-quality web sourc
 
 ---
 
-If you find this project useful, please consider starring the repository for updates.
-
-## News
-
-- `[Mar 2026]` SourceBench benchmark base was reorganized to separate the benchmark codebase from the public-facing leaderboard site.
-- `[Mar 2026]` Official evaluation scripts were consolidated under [`src/evaluation/`](src/evaluation/), including validation, intake, official runner, and metric computation.
-- `[Mar 2026]` The public benchmark release now keeps only the fixed public query split. Hidden holdout data and internal submission artifacts are excluded from this repository.
-
 ## Overview
 
 SourceBench focuses on the quality of cited sources along dimensions such as:
