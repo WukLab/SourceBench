@@ -29,7 +29,7 @@ SourceBench focuses on the quality of cited sources along dimensions such as:
 
 This repository is the **benchmark codebase**. It contains:
 
-- the fixed public query split for open evaluation
+- the 100 benchmark queries, collected sources, and source scores used in the paper
 - source collection scripts
 - source judging scripts
 - metric computation scripts
@@ -42,7 +42,9 @@ The public leaderboard site should be hosted separately from this repository.
 
 ```text
 data/queries/
-  sourcebench_public_queries_v1.csv
+  sourcebench_queries.csv
+data/collected-sources/
+data/content-scores/
 leaderboard/
   QUERY_SPLIT_POLICY.md
   OFFICIAL_SUBMISSION_CONTRACT.md
@@ -93,7 +95,7 @@ python src/content-scoring/scripts/scoring.py \
 ```bash
 python src/evaluation/compute_metrics.py \
   --run YOUR_MODEL_NAME=output/scored/YOUR_MODEL_NAME.enriched.json \
-  --query-metadata data/queries/sourcebench_public_queries_v1.csv \
+  --query-metadata data/queries/sourcebench_queries.csv \
   --out-dir output/metrics
 ```
 
@@ -112,7 +114,7 @@ In short:
 
 ## Official Evaluation
 
-Open evaluation can be run locally on the public split.
+Open evaluation can be run locally.
 
 Official leaderboard evaluation is intended to be run server-side by the SourceBench team using:
 
@@ -130,9 +132,7 @@ Relevant files:
 
 ## Public Release Notes
 
-This repository keeps only the public split.
-
-The hidden holdout queries should not be committed here. The benchmark master query pool should also stay out of the public release if it can be used to reconstruct the holdout split. For that reason, `data/queries/queries.csv` is excluded from this benchmark base.
+The hidden holdout queries should not be committed here.
 
 Internal official submission artifacts are also excluded. The ignored directory:
 

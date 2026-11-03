@@ -1,0 +1,101 @@
+query_ID,query,source
+1,"I want a smaller laptop, nothing too unwieldy.  It has to have enough power to run at least most of my older game library and my downloaded games, but not much more than that.  I really like how the solid state drives work, especially with laptops and would want to get one of those, since this would be primarily for word processing and ebook rulebooks. Please provide some product recommendations for me",VACOS
+2,"The main feature would be a touch screen but would also have a keyboard.  It would be the latest model made by a company that has a good reputation that goes back 50 years. I would be able to listen to music, watch feature films and tv programs on it, plus use it to contact my friends on social media. Please provide some product recommendations for me",VACOS
+3,I would want a windows 10 laptop which has a big display with high definition colour. It should have a lot of memory and have a fast working processor. Please provide some product recommendations for me,VACOS
+4,It is a black padded jacket which is nice and warm which is also wind and waterproof. It has a lot of pockets both inside and out and a fur lined hood. Please provide some product recommendations for me,VACOS
+5,I would buy a jacket that is waterproof and has a certain amount of thermal insulation.  The colour would be dark. Please provide some product recommendations for me,VACOS
+6,"I would choose a laptop that is durable, yet not too heavy. I'd like it to have a good sized screen and a good cpu and graphics capabilities. Please provide some product recommendations for me",VACOS
+7,"I'm going to replace my broken Toshiba laptop with a laptop from Hewlett-Packard with at least 500 gb storage. The model will have a touchscreen as well as a CD/DVD tray, which are now difficult to get pre-installed in a laptop. Please provide some product recommendations for me",VACOS
+8,"I would choose a good quality laptop, which would be lightweight and stylish.  It would have a good operating system and enable me to do an array of activities. Please provide some product recommendations for me",VACOS
+9,"I want a laptop with a graphics card, 8 core CPU, 16gb ram, runs quietly while gaming Please provide some product recommendations for me",VACOS
+10,"I would choose a comfortable, waterproof jacket with enough pockets to hold my belongings. It would be casual but also smart in a neutral colour such as blue or black Please provide some product recommendations for me",VACOS
+11,I would choose a reasonably-priced (under $50) short trenchcoat as a replacement. Please provide some product recommendations for me,VACOS
+12,white and rose gold hp laptop with ssd card and core i7. Please provide some product recommendations for me,VACOS
+13,"The new laptop needs to have a disk drive, a relatively good memory and I need Microsoft office on it to complete my work. I would also like it to have good processing power so it can keep up to speed and work with any current apps. Please provide some product recommendations for me",VACOS
+14,I would probably look for a refurbished laptop. I currently have a MacBook Pro and I would like to get the same laptop. Please provide some product recommendations for me,VACOS
+15,I would go out and purchase a laptop capable of gaming. Something with a big processor and a fast graphics card that will not overheat. It would need to be windows ran so games are more available. I would buy it in silver or black and it would need to have a back light on the keyboard so I can see the letters in the dark. Please provide some product recommendations for me,VACOS
+16,I would like to choose an apple laptop as a replacement. I would want it to be fast with a large memory. Also I would like good aesthetics and picture quality to be very good on the screen. The laptop should also have a good battery life and come with a warranty in case anything goes wrong. Please provide some product recommendations for me,VACOS
+17,"I'm be looking for a laptop that is reasonably priced, but has a good amount of processing power so that I can be used for word processing as well as music production and gaming. I'd also prefer windows OS. Please provide some product recommendations for me",VACOS
+18,I would chose an jacket which was thick and thermal with a hood.  I like to know it will keep me warm in winter.  I would like a black jacket with a fur hood.  The jacket must also have pockets. Please provide some product recommendations for me,VACOS
+19,"I need a laptop with enough RAM to run Photoshop and video editing applications. It a,so needs a good graphics card. Please provide some product recommendations for me",VACOS
+20,I deally my jacket would be black and breathable. It would have 2xl so it would have room in it. Please provide some product recommendations for me,VACOS
+21,Can yoga really detoxify your body?,DebateQA
+22,Did the universe have a beginning?,DebateQA
+23,"Is it true that Donald Trump could be manipulated by foreign governments, simply by playing to his ego?",DebateQA
+24,Does taking high doses of vitamin C help alleviate common cold symptoms?,DebateQA
+25,"Can parents decide for their children to go through a surgery without their consent (when they are under 18, doesn't matter if it's to save them)?",DebateQA
+26,Why doesn't the US use the popular vote in their general election and presidential election systems?,DebateQA
+27,Should we stop allocating money to schools based on property taxes?,DebateQA
+28,Is the Church of the Flying Spaghetti Monster a legitimate religion?,DebateQA
+29,Should corporal punishment be used in K-12 schools?,DebateQA
+30,Can an AI pass the Turing test?,DebateQA
+31,Can psoriasis be cured with UV light therapy?,DebateQA
+32,Should the use of CRISPR technology for editing the human germline be strictly prohibited?,DebateQA
+33,Should the draft be reinstated if not enough American citizens voluntarily enlist?,DebateQA
+34,What are the benefits of a brexit?,DebateQA
+35,Should recreational marijuana be legal?,DebateQA
+36,Are some youth sports too intense?,DebateQA
+37,Should manufacturers be required to label foods containing GMOs?,DebateQA
+38,Can plants survive without soil?,DebateQA
+39,Is online teaching as effective as classroom teaching?,DebateQA
+40,Is there any proof that God doesn't exist?,DebateQA
+41,"Which band has more constant members, Lilys or Ratatat?",HotpotQA
+42,"Which documentary was release first, Baghdad ER or The Ten-Year Lunch?",HotpotQA
+43,"Who else besides The Golden Jet was born in Point Anne, Ontario?",HotpotQA
+44,Who played the role of Nettie Harris in the 1985 film directed by Steven Spielberg?,HotpotQA
+45,"Which American musician and songwriter was born earlier, Adam Duritz or Cherie Currie?",HotpotQA
+46,Both Olaf Eller and Lars Eller are involved in which sport?,HotpotQA
+47,"Which publication publishes more frequently, Utne Reader or The New York Enterprise Report?",HotpotQA
+48,Who was born in Ireland and has coached the captain of MLS club Colorado Rapids?,HotpotQA
+49,"What Pakistani actor and writer from Islamabad helped write for the 2012 Pakistani comedy drama sitcom, Coke Kahani?",HotpotQA
+50,Did someone win the Nobel Prize for using evolution to create new proteins in chemistry?,HotpotQA
+51,The German geographer and geopolitician Otto Maull was part of a team led by Haushofer whose close associate was a prominent politician in Nazi Germany born in 1894 who served under Hitler in 1933 as what capacity?,HotpotQA
+52,Sam Mendes and Ruby Yang share what profession?,HotpotQA
+53,"What type of place does Regency Road, Adelaide and Klemzig, South Australia have in common?",HotpotQA
+54,When was the company that owns Bonifacio High Street founded?,HotpotQA
+55,Which one between Milium and Eucommia lives more widely spread across the world?,HotpotQA
+56,"Who had a longer film career, Harry Sweet or John Biddle?",HotpotQA
+57,What town host an annual media finance conference that has featured an Australian-born American media mogul?,HotpotQA
+58,What is the hometown of Duck Down Music artist and complex rapper Pharaohe Monch?,HotpotQA
+59,The Bay Plaza Shopping Center contains a store that headquartered where?,HotpotQA
+60,"Which formed first, Fireflight or Dirty Three?",HotpotQA
+61,Did a North Carolina study prove that over a million people likely voted twice in the 2012 election?,Pinocchios
+62,Are kids less likely to get and spread COVID-19 based on good data available?,Pinocchios
+63,"Did Rep. Matt Gaetz and Sen. Ted Cruz take two weeks paid sick leave to self-quarantine? And did Gaetz vote in 2013 to make it illegal for any city in Florida to enact paid sick leave, while Cruz voted in 2015 in the U.S. Senate against paid sick leave?",Pinocchios
+64,Will Italy stop caring for elderly patients who are infected with novel coronavirus strain COVID-19?,Pinocchios
+65,"Does every county, including Chittenden, have fewer people available for work?",Pinocchios
+66,Is it true that firearms homicides have decreased by about 40 percent since Texas passed a concealed-gun permit law?,Pinocchios
+67,Does a Chilean girl with cystic fibrosis tell the president to let her die?,Pinocchios
+68,Have you slashed government by 10 percent in Florida resulting in $7 billion?,Pinocchios
+69,Did the homeliest nut just get better?,Pinocchios
+70,Was the U.S. federal income tax rate 0 percent until 1913?,Pinocchios
+71,Did Jim Renacci run against the Washington establishment in the election but is now embracing it with big money and special interest fundraisers?,Pinocchios
+72,"Will a pack-a-day smoker who quits because of the tax increase save about $1,650 a year?",Pinocchios
+73,"Did Islamic studies professor Tariq Ramadan say Muslims are here to colonize the U.S. and Canada, spread Sharia law, and won't hesitate to use violent Jihad if necessary?",Pinocchios
+74,"Did Hillary Clinton discuss the location of Ambassador Stevens, who was later murdered in Libya, in the released emails to the public?",Pinocchios
+75,Does the minor G allele of FOXO3 downregulate pro-inflammatory cytokines?,Pinocchios
+76,"Did the speaker create over 3 million jobs since they took office, more jobs than have ever been created in the first five months of any presidency in modern history?",Pinocchios
+77,Will the government be infiltrating personal text messages?,Pinocchios
+78,"Did Rick Scott take $200,000 from a family that leased land for drilling and is he now trying to hide from it?",Pinocchios
+79,Did U.S. Representatives Rashid Tlaib and Ilhan Omar co-sponsor legislation to recognize Muslim holidays as federal holidays?,Pinocchios
+80,Is the therapeutic use of the drug Dapsone to treat pyoderma gangrenosum based on anecdotal evidence?,Pinocchios
+81,How do I evaluate AUC in Apache Mahout?,QuoraQuestions
+82,Which I concentrate my fickle mind?,QuoraQuestions
+83,What teen C language?,QuoraQuestions
+84,Is a 56% gross margin reasonable for apparel production and printing?,QuoraQuestions
+85,How do I find a dependable IQ test?,QuoraQuestions
+86,What is the difference between a layer 3 switch and router?,QuoraQuestions
+87,What South Korean think about Italian?,QuoraQuestions
+88,How do Quora post best a question on it?,QuoraQuestions
+89,How do I transfer the contacts from my SIM (used in an Android) to an iPhone 7?,QuoraQuestions
+90,What careers can I embark as way lean six sigma black belt?,QuoraQuestions
+91,Who is the most beautiful actress Hollywood?,QuoraQuestions
+92,What would happen to nor a pescatarian if they started eating red meat?,QuoraQuestions
+93,Where do you think the soul is located in the human body?,QuoraQuestions
+94,How can I stop my bsc receding Hairline?,QuoraQuestions
+95,How do best country to study masters?,QuoraQuestions
+96,Is it safe to run 32 bit on 64 bit windows 10?,QuoraQuestions
+97,What to read about american history?,QuoraQuestions
+98,Can I recover emails deleted from Gmail?,QuoraQuestions
+99,Will time travel ever fuels possable?,QuoraQuestions
+100,I am 20 years old and I still a problem with pimples. What is the remedy?,QuoraQuestions

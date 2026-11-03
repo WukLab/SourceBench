@@ -51,7 +51,7 @@ Typical command:
 ```bash
 python src/evaluation/compute_metrics.py \
   --run MODEL_NAME=path/to/scored.enriched.json \
-  --query-metadata data/queries/sourcebench_public_queries_v1.csv \
+  --query-metadata data/queries/sourcebench_queries.csv \
   --out-dir output/metrics
 ```
 

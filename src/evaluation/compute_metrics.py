@@ -66,6 +66,14 @@ def parse_args() -> argparse.Namespace:
         ),
     )
     parser.add_argument(
+        "--exclude-incomplete",
+        action="store_true",
+        help=(
+            "Average weighted scores only over sources scored on all eight dimensions "
+            "(paper Table 3). By default, a missing dimension counts as 0 (paper Table 4)."
+        ),
+    )
+    parser.add_argument(
         "--out-dir",
         type=Path,
         required=True,
@@ -447,6 +455,11 @@ def main() -> None:
             rank_source_map, rank_query_map = load_rank_metrics(rank_specs[model_name])
             merge_rank_metrics(records, rank_source_map, rank_query_map)
         all_records.extend(records)
+
+    if args.exclude_incomplete:
+        for record in all_records:
+            if not record["score_complete"]:
+                record["weighted_total_content_score"] = None
 
     source_rows = []
     for record in all_records:
