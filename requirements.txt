@@ -1,4 +1,13 @@
-matplotlib>=3.5.0
-numpy>=1.21.0
-seaborn>=0.11.0
-scipy>=1.7.0
+# Dependencies for the published SourceBench scripts.
+#
+# Metric computation (src/evaluation/compute_metrics.py) requires NO third-party
+# packages and runs on the Python standard library alone.
+
+# HTTP & scraping — src/source-collection/
+requests>=2.31.0
+beautifulsoup4>=4.12.0
+
+# OpenAI-compatible API client & environment loading
+#   src/source-collection/get_urls.py, src/content-scoring/scripts/scoring.py
+openai>=1.12.0
+python-dotenv>=1.0.0

@@ -68,7 +68,7 @@ Run the public evaluation pipeline:
 
 ```bash
 python src/source-collection/get_urls.py \
-  --input path/to/public_queries.jsonl \
+  --input data/queries/sourcebench_queries.jsonl \
   --output output/public_urls.json \
   --model YOUR_MODEL_NAME \
   --openai-base-url YOUR_OPENAI_COMPATIBLE_ENDPOINT \

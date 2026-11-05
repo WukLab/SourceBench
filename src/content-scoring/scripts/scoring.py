@@ -49,7 +49,12 @@ except ImportError:
     load_dotenv = None
 
 
-MODEL_NAME = "qwen-plus"
+# Judge model. The paper's results were produced with the dated snapshot
+# qwen-plus-2025-07-28 on DashScope (see Appendix K.1). "qwen-plus" is a
+# rolling alias whose underlying weights change over time, so the dated
+# snapshot is pinned here for reproducibility. Override with
+# SOURCEBENCH_JUDGE_MODEL if DashScope has retired this snapshot.
+MODEL_NAME = os.getenv("SOURCEBENCH_JUDGE_MODEL", "qwen-plus-2025-07-28")
 TEMPERATURE = 0
 REQUEST_TIMEOUT_S = 90
 MAX_RETRIES = 1
