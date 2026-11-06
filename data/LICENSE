@@ -1,0 +1,102 @@
+SourceBench — Data Licensing and Terms of Use
+=============================================
+
+The code in this repository is MIT-licensed (see ../LICENSE). The data in this
+directory is NOT uniformly licensed, because it mixes three kinds of material:
+content we created, content derived from third-party research datasets, and
+third-party web page content whose copyright we do not hold. Terms are stated
+per component below.
+
+CONTACT FOR CORRECTIONS AND TAKEDOWN REQUESTS
+---------------------------------------------
+Stephen Liu <xul052@ucsd.edu>
+Requests for correction, attribution changes, or removal of stored page text
+will be acknowledged and acted on at this address.
+
+---------------------------------------------------------------------------
+1. data/content-scores/        LICENSE: CC BY 4.0
+---------------------------------------------------------------------------
+Our evaluator's outputs: the eight-dimension scores (`content_vector`), the
+written justifications (`content_vector_justification`), the intermediate
+analyses, and the per-record metadata (`query_id`, `agg_source_id`, `url`,
+`text_length`, `query_type`).
+
+These records contain no benchmark query text and no third-party page text.
+They are our own generated content and are released under the Creative Commons
+Attribution 4.0 International License.
+    https://creativecommons.org/licenses/by/4.0/
+
+This is the component required to reproduce the paper's main source-quality
+results, and it carries no third-party encumbrance.
+
+---------------------------------------------------------------------------
+2. data/queries/               LICENSE: CC BY-SA 4.0
+---------------------------------------------------------------------------
+The 100 benchmark queries (`sourcebench_queries.csv`, `sourcebench_queries.jsonl`).
+
+Twenty of these queries are derived from HotpotQA, which is distributed under
+CC BY-SA 4.0. ShareAlike propagates to adaptations, so the entire queries file
+is released under CC BY-SA 4.0 rather than mixing per-row terms.
+    https://creativecommons.org/licenses/by-sa/4.0/
+
+Provenance and upstream terms of the five source datasets:
+
+  Source dataset          Queries   Upstream license
+  ----------------------  -------   ---------------------------------------
+  HotpotQA                   20     CC BY-SA 4.0
+  DebateQA                   20     No license specified by the authors
+  Pinocchio                  20     No license specified by the authors
+  Quora Question Pairs       20     Subject to Quora's Terms of Service
+  VACOS NLQ                  20     Published via ACM (CHIIR '21);
+                                    doi:10.1145/3406522.3446043
+
+DebateQA and Pinocchio state no license. We therefore claim no license grant
+over the queries derived from them: they are redistributed for non-commercial
+research use with attribution to the original authors, and will be withdrawn
+on request from those authors. Pinocchio is itself derived from FEVER,
+FEVEROUS, and PolitiFact, whose terms also apply upstream.
+
+The license status of Quora Question Pairs and VACOS NLQ has not been
+independently confirmed by us; users who intend to redistribute should verify
+the upstream terms themselves.
+
+---------------------------------------------------------------------------
+3. data/collected-sources/     LICENSE: layered; see below
+---------------------------------------------------------------------------
+Frozen snapshots of the web pages cited by the evaluated systems, together
+with the systems' own answers and our source-selection metadata. Three layers:
+
+  (a) `aggregated_sources[].text_content`, `title`, and the other extracted
+      page fields: THIRD-PARTY CONTENT. Copyright is retained by the
+      respective publishers of those pages. We do not hold copyright in this
+      material and grant no license over it. It is redistributed here solely
+      to make the paper's evaluation reproducible without re-crawling a web
+      that changes over time, for NON-COMMERCIAL RESEARCH USE ONLY.
+      Any rights holder may request removal via the contact above; on such a
+      request we will replace that page's stored text with its URL and a
+      content hash.
+
+  (b) `query_text`: derived from the source datasets in section 2 and
+      governed by the same terms, i.e. CC BY-SA 4.0.
+
+  (c) Our added structure and metadata — `agg_source_id`, `frequency`,
+      `ge_rank_list`, `ge_score`, `selected_topk`, `avg_ge_freq`,
+      `domain_category`, `url_canonical`, the record layout itself, and the
+      evaluated systems' responses as collected by us: CC BY 4.0.
+
+  Note: `search_result_date` and `search_result_last_updated` are dates
+  reported by the page or the search provider. They are NOT crawl timestamps;
+  this release does not record retrieval timestamps.
+
+---------------------------------------------------------------------------
+4. NOT INCLUDED IN THIS RELEASE
+---------------------------------------------------------------------------
+  - Human annotations (the 141-page annotated set, the 22-page calibration
+    set, and per-annotator ratings). See the paper's reproducibility appendix.
+  - Stored page texts for one evaluated configuration; see data/README.md.
+
+---------------------------------------------------------------------------
+5. CITING
+---------------------------------------------------------------------------
+Attribution for the CC-licensed components is satisfied by citing the
+SourceBench paper; see the Citation section of ../README.md.

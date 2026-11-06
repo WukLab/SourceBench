@@ -2,7 +2,8 @@
 
 # SourceBench: A Benchmark for Cited Source Quality in Generative Engines
 
-[![Code License](https://img.shields.io/badge/Code%20License-MIT-blue?style=flat-square)](#)
+[![Code License](https://img.shields.io/badge/Code%20License-MIT-blue?style=flat-square)](LICENSE)
+[![Data License](https://img.shields.io/badge/Data-see%20data%2FLICENSE-green?style=flat-square)](data/LICENSE)
 [![GitHub](https://img.shields.io/badge/GitHub-SourceBench-181717?style=flat-square&logo=github)](https://github.com/WukLab/SourceBench)
 [![arXiv](https://img.shields.io/badge/arXiv-2602.16942-b31b1b?style=flat-square&logo=arxiv)](https://arxiv.org/abs/2602.16942)
 [![Blog](https://img.shields.io/badge/Blog-SourceBench-f59e0b?style=flat-square)](https://mlsys.wuklab.io/posts/sourcebench/)
@@ -139,6 +140,25 @@ Internal official submission artifacts are also excluded. The ignored directory:
 - `leaderboard/.official_submissions/`
 
 is only for server-side submission intake and official evaluation runs.
+
+## License
+
+The code in this repository (`src/`, `leaderboard/`) is released under the
+[MIT License](LICENSE).
+
+The data in `data/` is **not** uniformly licensed and is **not** covered by the MIT
+license. It mixes material we created, material derived from third-party research
+datasets, and third-party web page content whose copyright we do not hold. Terms are
+stated per component in [`data/LICENSE`](data/LICENSE). In summary:
+
+| Component | Terms |
+|---|---|
+| `data/content-scores/` — evaluator scores and justifications | CC BY 4.0 |
+| `data/queries/` — the 100 benchmark queries | CC BY-SA 4.0 (20 queries derive from HotpotQA, which is ShareAlike) |
+| `data/collected-sources/` — frozen page snapshots | Layered. Stored page text is third-party content, copyright retained by the original publishers, redistributed for non-commercial research use only |
+
+Rights holders may request removal of any stored page text; see the contact in
+[`data/LICENSE`](data/LICENSE).
 
 ## Citation
 
