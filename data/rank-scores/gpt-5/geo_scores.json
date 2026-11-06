@@ -1,0 +1,3187 @@
+{
+  "results": [
+    {
+      "query_id": 1,
+      "query": "I want a smaller laptop, nothing too unwieldy.  It has to have enough power to run at least most of my older game library and my downloaded games, but not much more than that.  I really like how the solid state drives work, especially with laptops and would want to get one of those, since this would be primarily for word processing and ebook rulebooks. Please provide some product recommendations for me",
+      "ge_sources": [
+        {
+          "agg_source_id": 1,
+          "url": "rtings.com/laptop/reviews/asus/zenbook-14-oled-2024",
+          "avg_ge_freq": 1.0,
+          "relative_se_rank": 2.2222222222222223,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 2,
+          "url": "notebookcheck.net/asus-zenbook-14-oled-review-the-1-2-kg-subnotebook-with-120-hz-oled-and-core-ultra-7.805236.0.html",
+          "avg_ge_freq": 0.6667,
+          "relative_se_rank": 2.2222222222222223,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 3,
+          "url": "pcworld.com/article/2699255/framework-laptop-13-2025-review.html",
+          "avg_ge_freq": 0.6667,
+          "relative_se_rank": 2.2222222222222223,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 4,
+          "url": "notebookcheck.net/framework-laptop-13-5-ryzen-7-7840u-review-so-much-better-than-the-intel-version.756613.0.html",
+          "avg_ge_freq": 0.6667,
+          "relative_se_rank": 2.2222222222222223,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 5,
+          "url": "pcworld.com/article/2330200/acer-swift-x-14-review-2.html",
+          "avg_ge_freq": 0.6667,
+          "relative_se_rank": 2.2222222222222223,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        }
+      ],
+      "percentage_ge_sources_not_in_se_sources": 100.0
+    },
+    {
+      "query_id": 2,
+      "query": "The main feature would be a touch screen but would also have a keyboard.  It would be the latest model made by a company that has a good reputation that goes back 50 years. I would be able to listen to music, watch feature films and tv programs on it, plus use it to contact my friends on social media. Please provide some product recommendations for me",
+      "ge_sources": [
+        {
+          "agg_source_id": 1,
+          "url": "apple.com/gw/newsroom/2024/05/apple-unveils-stunning-new-ipad-pro-with-m4-chip-and-apple-pencil-pro",
+          "avg_ge_freq": 1.3333,
+          "relative_se_rank": 2.2222222222222223,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 2,
+          "url": "wired.com/review/hp-spectre-x360-14-2024",
+          "avg_ge_freq": 1.0,
+          "relative_se_rank": 2.2222222222222223,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 4,
+          "url": "blogs.windows.com/devices/2025/05/06/introducing-all-new-surface-copilot-pcs-the-surface-pro-12-inch-and-surface-laptop-13-inch",
+          "avg_ge_freq": 0.6667,
+          "relative_se_rank": 2.2222222222222223,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 5,
+          "url": "apple.com/newsroom/2025/10/apple-introduces-the-powerful-new-ipad-pro-with-the-m5-chip",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.2222222222222223,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 6,
+          "url": "apple.com/newsroom/2025/10/apple-introduces-the-powerful-new-ipad-pro-with-the-m5-chip",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.2222222222222223,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        }
+      ],
+      "percentage_ge_sources_not_in_se_sources": 100.0
+    },
+    {
+      "query_id": 3,
+      "query": "I would want a windows 10 laptop which has a big display with high definition colour. It should have a lot of memory and have a fast working processor. Please provide some product recommendations for me",
+      "ge_sources": [
+        {
+          "agg_source_id": 1,
+          "url": "support.microsoft.com/en-us/windows/windows-10-supports-ends-on-october-14-2025-2ca8b313-1946-43d3-b55c-2b95b107f281",
+          "avg_ge_freq": 0.6667,
+          "relative_se_rank": 2.272727272727273,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 3,
+          "url": "psref.lenovo.com/syspool/sys/pdf/thinkpad/thinkpad_p17_gen_2/thinkpad_p17_gen_2_spec.html",
+          "avg_ge_freq": 0.6667,
+          "relative_se_rank": 2.272727272727273,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 4,
+          "url": "microsoft.com/en-us/windows/extended-security-updates",
+          "avg_ge_freq": 0.6667,
+          "relative_se_rank": 2.272727272727273,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 5,
+          "url": "support.microsoft.com/en-us/windows/windows-10-support-ends-on-october-14-2025-2ca8b313-1946-43d3-b55c-2b95b107f281",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.272727272727273,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        }
+      ],
+      "percentage_ge_sources_not_in_se_sources": 100.0
+    },
+    {
+      "query_id": 4,
+      "query": "It is a black padded jacket which is nice and warm which is also wind and waterproof. It has a lot of pockets both inside and out and a fur lined hood. Please provide some product recommendations for me",
+      "ge_sources": [
+        {
+          "agg_source_id": 5,
+          "url": "fjallraven.com/us/en-us/men/jackets/parkas/nuuk-lite-parka-m",
+          "avg_ge_freq": 0.6667,
+          "relative_se_rank": 2.4390243902439024,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        }
+      ],
+      "percentage_ge_sources_not_in_se_sources": 100.0
+    },
+    {
+      "query_id": 5,
+      "query": "I would buy a jacket that is waterproof and has a certain amount of thermal insulation.  The colour would be dark. Please provide some product recommendations for me",
+      "ge_sources": [
+        {
+          "agg_source_id": 1,
+          "url": "arcteryx.com/us/en/shop/mens/therme-down-parka-9914",
+          "avg_ge_freq": 1.3333,
+          "relative_se_rank": 2.3255813953488373,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 3,
+          "url": "rab.equipment/us/valiance-jacket-qdb-49",
+          "avg_ge_freq": 1.0,
+          "relative_se_rank": 2.3255813953488373,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 5,
+          "url": "outdoorresearch.com/products/womens-stormcraft-down-parka-283204",
+          "avg_ge_freq": 0.6667,
+          "relative_se_rank": 2.3255813953488373,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 6,
+          "url": "gearheadoutfitters.com/products/m-fordham-jacket",
+          "avg_ge_freq": 0.6667,
+          "relative_se_rank": 2.3255813953488373,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        }
+      ],
+      "percentage_ge_sources_not_in_se_sources": 100.0
+    },
+    {
+      "query_id": 6,
+      "query": "I would choose a laptop that is durable, yet not too heavy. I'd like it to have a good sized screen and a good cpu and graphics capabilities. Please provide some product recommendations for me",
+      "ge_sources": [
+        {
+          "agg_source_id": 1,
+          "url": "tomshardware.com/laptops/ultrabooks-ultraportables/lenovo-thinkpad-x1-carbon-gen-12-review",
+          "avg_ge_freq": 0.6667,
+          "relative_se_rank": 2.9411764705882355,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 2,
+          "url": "theverge.com/21250695/best-laptops",
+          "avg_ge_freq": 0.6667,
+          "relative_se_rank": 2.9411764705882355,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 3,
+          "url": "ultrabookreview.com/71435-asus-rog-zephyrus-g14-2025-review",
+          "avg_ge_freq": 0.6667,
+          "relative_se_rank": 2.9411764705882355,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 4,
+          "url": "ultrabookreview.com/71954-asus-rog-zephyrus-g16-cr-review",
+          "avg_ge_freq": 0.6667,
+          "relative_se_rank": 2.9411764705882355,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 6,
+          "url": "hp.com/in-en/products/workstations/product-details/product-specifications/2103193014",
+          "avg_ge_freq": 0.6667,
+          "relative_se_rank": 2.9411764705882355,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        }
+      ],
+      "percentage_ge_sources_not_in_se_sources": 100.0
+    },
+    {
+      "query_id": 7,
+      "query": "I'm going to replace my broken Toshiba laptop with a laptop from Hewlett-Packard with at least 500 gb storage. The model will have a touchscreen as well as a CD/DVD tray, which are now difficult to get pre-installed in a laptop. Please provide some product recommendations for me",
+      "ge_sources": [
+        {
+          "agg_source_id": 4,
+          "url": "vipoutlet.com/products/hp-15-da0053wm-15-6-hd-touchscreen-i5-8250u-1-6-ghz-4gb-ram-1tb-hdd-win-10-home-graphite-mist",
+          "avg_ge_freq": 0.6667,
+          "relative_se_rank": 2.857142857142857,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        }
+      ],
+      "percentage_ge_sources_not_in_se_sources": 100.0
+    },
+    {
+      "query_id": 8,
+      "query": "I would choose a good quality laptop, which would be lightweight and stylish.  It would have a good operating system and enable me to do an array of activities. Please provide some product recommendations for me",
+      "ge_sources": [
+        {
+          "agg_source_id": 1,
+          "url": "tomshardware.com/laptops/ultrabooks-ultraportables/hp-spectre-x360-14-2024-review",
+          "avg_ge_freq": 1.3333,
+          "relative_se_rank": 2.3255813953488373,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 2,
+          "url": "support.apple.com/en-us/122209",
+          "avg_ge_freq": 1.0,
+          "relative_se_rank": 2.3255813953488373,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 3,
+          "url": "tomshardware.com/laptops/ultrabooks-ultraportables/lenovo-thinkpad-x1-carbon-gen-12-review",
+          "avg_ge_freq": 0.6667,
+          "relative_se_rank": 2.3255813953488373,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 4,
+          "url": "digitaltrends.com/computing/dell-xps-13-2024-review",
+          "avg_ge_freq": 0.6667,
+          "relative_se_rank": 2.3255813953488373,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 5,
+          "url": "microsoft.com/en-us/surface/business/surface-laptop-7th-edition",
+          "avg_ge_freq": 0.6667,
+          "relative_se_rank": 2.3255813953488373,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        }
+      ],
+      "percentage_ge_sources_not_in_se_sources": 100.0
+    },
+    {
+      "query_id": 9,
+      "query": "I want a laptop with a graphics card, 8 core CPU, 16gb ram, runs quietly while gaming Please provide some product recommendations for me",
+      "ge_sources": [
+        {
+          "agg_source_id": 1,
+          "url": "notebookcheck.net/asus-tuf-gaming-a15-2024-review-rtx-4060-power-moderate-price-long-battery-life.864614.0.html",
+          "avg_ge_freq": 1.3333,
+          "relative_se_rank": 2.2222222222222223,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 2,
+          "url": "notebookcheck.net/asus-rog-zephyrus-g14-2024-review-the-gaming-multimedia-laptop-with-ryzen-8000-and-g-sync-oled.800772.0.html",
+          "avg_ge_freq": 1.0,
+          "relative_se_rank": 2.2222222222222223,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 3,
+          "url": "notebookcheck.net/razer-blade-14-2024-laptop-review-futureproofing-with-ryzen-ai.799687.0.html",
+          "avg_ge_freq": 1.0,
+          "relative_se_rank": 2.2222222222222223,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 4,
+          "url": "notebookcheck.net/hp-omen-transcend-14-laptop-review-razer-blade-alternative-worth-considering.807238.0.html",
+          "avg_ge_freq": 0.6667,
+          "relative_se_rank": 2.2222222222222223,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 5,
+          "url": "notebookcheck.net/acer-predator-helios-16-laptop-review-a-quiet-gaming-laptop-with-many-strengths.734586.0.html",
+          "avg_ge_freq": 0.6667,
+          "relative_se_rank": 2.2222222222222223,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        }
+      ],
+      "percentage_ge_sources_not_in_se_sources": 100.0
+    },
+    {
+      "query_id": 10,
+      "query": "I would choose a comfortable, waterproof jacket with enough pockets to hold my belongings. It would be casual but also smart in a neutral colour such as blue or black Please provide some product recommendations for me",
+      "ge_sources": [
+        {
+          "agg_source_id": 2,
+          "url": "arcteryx.com/shop/mens/field-jacket-9942",
+          "avg_ge_freq": 1.3333,
+          "relative_se_rank": 2.1739130434782608,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 3,
+          "url": "carhartt.com/product/104670-029mreg",
+          "avg_ge_freq": 1.0,
+          "relative_se_rank": 2.1739130434782608,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 5,
+          "url": "us.rains.com/products/suva-hardshell-long-jacket-male",
+          "avg_ge_freq": 0.6667,
+          "relative_se_rank": 2.1739130434782608,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 6,
+          "url": "us.herno.com/men/laminar-raincoat-in-gore-tex-paclite-blue-im00065ul111249201.html",
+          "avg_ge_freq": 0.6667,
+          "relative_se_rank": 2.1739130434782608,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 7,
+          "url": "arcteryx.com/us/en/shop/mens/therme-down-parka-9914",
+          "avg_ge_freq": 0.6667,
+          "relative_se_rank": 2.1739130434782608,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        }
+      ],
+      "percentage_ge_sources_not_in_se_sources": 100.0
+    },
+    {
+      "query_id": 11,
+      "query": "I would choose a reasonably-priced (under $50) short trenchcoat as a replacement. Please provide some product recommendations for me",
+      "ge_sources": [
+        {
+          "agg_source_id": 1,
+          "url": "forever21.com/products/01347530",
+          "avg_ge_freq": 1.0,
+          "relative_se_rank": 2.4390243902439024,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 4,
+          "url": "travelandleisure.com/best-amazon-trench-coats-under-50-november-2025-11845196",
+          "avg_ge_freq": 0.6667,
+          "relative_se_rank": 0.04878048780487805,
+          "reciprocal_se_rank": 0.2,
+          "normalized_reciprocal_se_rank": 0.791919191919192
+        },
+        {
+          "agg_source_id": 5,
+          "url": "forever21.com/products/01262246",
+          "avg_ge_freq": 0.6667,
+          "relative_se_rank": 2.4390243902439024,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        }
+      ],
+      "percentage_ge_sources_not_in_se_sources": 66.66666666666667
+    },
+    {
+      "query_id": 12,
+      "query": "white and rose gold hp laptop with ssd card and core i7. Please provide some product recommendations for me",
+      "ge_sources": [
+        {
+          "agg_source_id": 4,
+          "url": "hp.com/us-en/laptops/2-in-1s/pavilion/pavilion-plus-14-convertible-laptop.html",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.5,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 5,
+          "url": "pcworld.com/article/407456/hp-spectre-13-price-features-specs.html",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.5,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        }
+      ],
+      "percentage_ge_sources_not_in_se_sources": 100.0
+    },
+    {
+      "query_id": 13,
+      "query": "The new laptop needs to have a disk drive, a relatively good memory and I need Microsoft office on it to complete my work. I would also like it to have good processing power so it can keep up to speed and work with any current apps. Please provide some product recommendations for me",
+      "ge_sources": [
+        {
+          "agg_source_id": 1,
+          "url": "laptopmag.com/best-picks/best-external-dvd-drives",
+          "avg_ge_freq": 2.0,
+          "relative_se_rank": 2.380952380952381,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 2,
+          "url": "techradar.com/pro/its-almost-2026-and-fujitsu-is-doing-its-best-to-save-optical-disks-the-a77-k3-is-a-16-inch-13th-gen-core-i5-laptop-with-a-dvd-drive",
+          "avg_ge_freq": 0.6667,
+          "relative_se_rank": 2.380952380952381,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 3,
+          "url": "windowscentral.com/hardware/laptops/lenovo-legion-5i-rtx-5060-january-2026",
+          "avg_ge_freq": 0.6667,
+          "relative_se_rank": 2.380952380952381,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 4,
+          "url": "connect.na.panasonic.com/toughbook/rugged-computers/toughbook-55",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.380952380952381,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 5,
+          "url": "laptopmag.com/articles/laptop-with-cd-dvd-drives",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.380952380952381,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        }
+      ],
+      "percentage_ge_sources_not_in_se_sources": 100.0
+    },
+    {
+      "query_id": 14,
+      "query": "I would probably look for a refurbished laptop. I currently have a MacBook Pro and I would like to get the same laptop. Please provide some product recommendations for me",
+      "ge_sources": [
+        {
+          "agg_source_id": 1,
+          "url": "apple.com/shop/refurbished/about",
+          "avg_ge_freq": 1.3333,
+          "relative_se_rank": 2.2222222222222223,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 2,
+          "url": "aboutamazon.com/news/retail/amazon-renewed-like-new-products-with-a-guarantee",
+          "avg_ge_freq": 1.0,
+          "relative_se_rank": 2.2222222222222223,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 3,
+          "url": "apple.com/shop/refurbished/mac/mac-pro",
+          "avg_ge_freq": 0.6667,
+          "relative_se_rank": 2.2222222222222223,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 6,
+          "url": "apple.com/us/xc/refurbished/mac",
+          "avg_ge_freq": 0.6667,
+          "relative_se_rank": 2.2222222222222223,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 7,
+          "url": "apple.com/shop/refurbished/mac/macbook-pro",
+          "avg_ge_freq": 0.6667,
+          "relative_se_rank": 2.2222222222222223,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        }
+      ],
+      "percentage_ge_sources_not_in_se_sources": 100.0
+    },
+    {
+      "query_id": 15,
+      "query": "I would go out and purchase a laptop capable of gaming. Something with a big processor and a fast graphics card that will not overheat. It would need to be windows ran so games are more available. I would buy it in silver or black and it would need to have a back light on the keyboard so I can see the letters in the dark. Please provide some product recommendations for me",
+      "ge_sources": [
+        {
+          "agg_source_id": 1,
+          "url": "tomshardware.com/laptops/gaming-laptops/asus-rog-strix-scar-16-2025-rtx-5080-gaming-laptop-review",
+          "avg_ge_freq": 1.0,
+          "relative_se_rank": 2.6315789473684212,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 2,
+          "url": "tomshardware.com/laptops/gaming-laptops/lenovo-legion-pro-5i-gen-9-review",
+          "avg_ge_freq": 1.0,
+          "relative_se_rank": 2.6315789473684212,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 4,
+          "url": "windowscentral.com/hardware/laptops/lenovo-legion-5i-rtx-5060-january-2026",
+          "avg_ge_freq": 0.6667,
+          "relative_se_rank": 2.6315789473684212,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 5,
+          "url": "laptopmag.com/laptops/gaming-laptops-pcs/lenovo-legion-pro-7i-gen-9-review-its-a-large-and-in-charge-gaming-machine",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.6315789473684212,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 6,
+          "url": "notebookcheck.net/asus-rog-zephyrus-g16-2024-review-the-gaming-laptop-now-with-g-sync-oled-and-intel-meteor-lake.800175.0.html",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.6315789473684212,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        }
+      ],
+      "percentage_ge_sources_not_in_se_sources": 100.0
+    },
+    {
+      "query_id": 16,
+      "query": "I would like to choose an apple laptop as a replacement. I would want it to be fast with a large memory. Also I would like good aesthetics and picture quality to be very good on the screen. The laptop should also have a good battery life and come with a warranty in case anything goes wrong. Please provide some product recommendations for me",
+      "ge_sources": [
+        {
+          "agg_source_id": 1,
+          "url": "apple.com/macbook-pro/specs",
+          "avg_ge_freq": 3.0,
+          "relative_se_rank": 2.380952380952381,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 2,
+          "url": "apple.com/macbook-air/specs",
+          "avg_ge_freq": 2.0,
+          "relative_se_rank": 2.380952380952381,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 3,
+          "url": "support.apple.com/en-us/121554",
+          "avg_ge_freq": 1.3333,
+          "relative_se_rank": 2.380952380952381,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 4,
+          "url": "support.apple.com/en-us/122209",
+          "avg_ge_freq": 1.0,
+          "relative_se_rank": 2.380952380952381,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 5,
+          "url": "support.apple.com/en-gb/125405",
+          "avg_ge_freq": 1.0,
+          "relative_se_rank": 2.380952380952381,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        }
+      ],
+      "percentage_ge_sources_not_in_se_sources": 100.0
+    },
+    {
+      "query_id": 17,
+      "query": "I'm be looking for a laptop that is reasonably priced, but has a good amount of processing power so that I can be used for word processing as well as music production and gaming. I'd also prefer windows OS. Please provide some product recommendations for me",
+      "ge_sources": [
+        {
+          "agg_source_id": 1,
+          "url": "pcworld.com/article/2451566/acer-nitro-v16-review.html",
+          "avg_ge_freq": 1.3333,
+          "relative_se_rank": 2.3255813953488373,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 3,
+          "url": "tomshardware.com/laptops/gaming-laptops/get-an-rtx-4060-powered-gaming-laptop-for-just-usd649-the-amazingly-priced-asus-tuf-a15-is-usd250-off",
+          "avg_ge_freq": 0.6667,
+          "relative_se_rank": 2.3255813953488373,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 4,
+          "url": "pcworld.com/article/2934656/lenovo-loq-15-review-3.html",
+          "avg_ge_freq": 0.6667,
+          "relative_se_rank": 2.3255813953488373,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 5,
+          "url": "notebookcheck.net/rtx-4060-powered-acer-nitro-16-gaming-laptop-is-now-cheaper-than-ever.886875.0.html",
+          "avg_ge_freq": 0.6667,
+          "relative_se_rank": 2.3255813953488373,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 6,
+          "url": "pcworld.com/article/630093/best-gaming-laptops-under-1000-2.html",
+          "avg_ge_freq": 0.6667,
+          "relative_se_rank": 2.3255813953488373,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        }
+      ],
+      "percentage_ge_sources_not_in_se_sources": 100.0
+    },
+    {
+      "query_id": 18,
+      "query": "I would chose an jacket which was thick and thermal with a hood.  I like to know it will keep me warm in winter.  I would like a black jacket with a fur hood.  The jacket must also have pockets. Please provide some product recommendations for me",
+      "ge_sources": [
+        {
+          "agg_source_id": 3,
+          "url": "fjallraven.com/us/en-us/men/jackets/parkas/nuuk-lite-parka-m",
+          "avg_ge_freq": 1.3333,
+          "relative_se_rank": 2.127659574468085,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 4,
+          "url": "llbean.com/llb/shop/118914",
+          "avg_ge_freq": 0.6667,
+          "relative_se_rank": 2.127659574468085,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 5,
+          "url": "columbia.com/p/suttle-mountain-long-insulated-jacket-%7c-432-%7c-1x-194895692485.html",
+          "avg_ge_freq": 0.6667,
+          "relative_se_rank": 2.127659574468085,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 7,
+          "url": "orolay.com/products/zip-front-thickened-down-jacket-with-faux-fur-hood-yrf092d-fur",
+          "avg_ge_freq": 0.6667,
+          "relative_se_rank": 2.127659574468085,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        }
+      ],
+      "percentage_ge_sources_not_in_se_sources": 100.0
+    },
+    {
+      "query_id": 19,
+      "query": "I need a laptop with enough RAM to run Photoshop and video editing applications. It a,so needs a good graphics card. Please provide some product recommendations for me",
+      "ge_sources": [
+        {
+          "agg_source_id": 2,
+          "url": "apple.com/newsroom/2024/10/apple-introduces-m4-pro-and-m4-max",
+          "avg_ge_freq": 1.3333,
+          "relative_se_rank": 2.380952380952381,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 7,
+          "url": "trustedreviews.com/reviews/asus-proart-p16-2025",
+          "avg_ge_freq": 0.6667,
+          "relative_se_rank": 2.380952380952381,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        }
+      ],
+      "percentage_ge_sources_not_in_se_sources": 100.0
+    },
+    {
+      "query_id": 20,
+      "query": "I deally my jacket would be black and breathable. It would have 2xl so it would have room in it. Please provide some product recommendations for me",
+      "ge_sources": [
+        {
+          "agg_source_id": 3,
+          "url": "uniqlo.com/us/en/products/e464024-000/00",
+          "avg_ge_freq": 0.6667,
+          "relative_se_rank": 2.272727272727273,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 4,
+          "url": "outdoorresearch.com/products/mens-ferrosi-hoodie-322477",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.272727272727273,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 5,
+          "url": "columbia.com/p/mens-watertight-ii-jacket-%7c-026-%7c-xxl-195981071054.html",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.272727272727273,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 8,
+          "url": "mountainsports.com/products/patagonia-mens-torrentshell-3l-rain-jacket",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.272727272727273,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        }
+      ],
+      "percentage_ge_sources_not_in_se_sources": 100.0
+    },
+    {
+      "query_id": 21,
+      "query": "Can yoga really detoxify your body?",
+      "ge_sources": [
+        {
+          "agg_source_id": 1,
+          "url": "nccih.nih.gov/health/yoga-effectiveness-and-safety",
+          "avg_ge_freq": 1.3333,
+          "relative_se_rank": 2.0833333333333335,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 3,
+          "url": "discovermagazine.com/health/does-yoga-really-detoxify-the-body",
+          "avg_ge_freq": 1.0,
+          "relative_se_rank": 2.0833333333333335,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 4,
+          "url": "nccih.nih.gov/health/providers/digest/yoga-for-health-science",
+          "avg_ge_freq": 0.6667,
+          "relative_se_rank": 2.0833333333333335,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 5,
+          "url": "health.harvard.edu/staying-healthy/the-dubious-practice-of-detox",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.0833333333333335,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 6,
+          "url": "niddk.nih.gov/health-information/kidney-disease/kidneys-how-they-work",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.0833333333333335,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        }
+      ],
+      "percentage_ge_sources_not_in_se_sources": 100.0
+    },
+    {
+      "query_id": 22,
+      "query": "Did the universe have a beginning?",
+      "ge_sources": [
+        {
+          "agg_source_id": 1,
+          "url": "arxiv.org/abs/gr-qc/0110012",
+          "avg_ge_freq": 0.6667,
+          "relative_se_rank": 2.380952380952381,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 2,
+          "url": "aanda.org/articles/aa/full_html/2020/09/aa33910-18/aa33910-18.html",
+          "avg_ge_freq": 0.6667,
+          "relative_se_rank": 2.380952380952381,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 3,
+          "url": "science.nasa.gov/universe/overview",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 0.8333333333333334,
+          "reciprocal_se_rank": 0.02631578947368421,
+          "normalized_reciprocal_se_rank": 0.06911217437533226
+        },
+        {
+          "agg_source_id": 5,
+          "url": "arxiv.org/abs/hep-th/0111030",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.380952380952381,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 6,
+          "url": "arxiv.org/abs/1603.05834",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.380952380952381,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        }
+      ],
+      "percentage_ge_sources_not_in_se_sources": 80.0
+    },
+    {
+      "query_id": 23,
+      "query": "Is it true that Donald Trump could be manipulated by foreign governments, simply by playing to his ego?",
+      "ge_sources": [
+        {
+          "agg_source_id": 2,
+          "url": "pbs.org/newshour/show/fiona-hill-reflects-on-impeachment-testimony-trump-presidency-and-opportunity-in-america",
+          "avg_ge_freq": 0.6667,
+          "relative_se_rank": 2.5,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 7,
+          "url": "voanews.com/amp/asia-woos-trump-with-show-of-pageantry/4107953.html",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.5,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        }
+      ],
+      "percentage_ge_sources_not_in_se_sources": 100.0
+    },
+    {
+      "query_id": 24,
+      "query": "Does taking high doses of vitamin C help alleviate common cold symptoms?",
+      "ge_sources": [
+        {
+          "agg_source_id": 1,
+          "url": "cochrane.org/cd000980/ari_vitamin-c-for-preventing-and-treating-the-common-cold",
+          "avg_ge_freq": 2.0,
+          "relative_se_rank": 2.127659574468085,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 2,
+          "url": "ods.od.nih.gov/factsheets/vitaminc-healthprofessional",
+          "avg_ge_freq": 1.0,
+          "relative_se_rank": 2.127659574468085,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 3,
+          "url": "ods.od.nih.gov/factsheets/vitaminc%20-consumer",
+          "avg_ge_freq": 1.0,
+          "relative_se_rank": 2.127659574468085,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 4,
+          "url": "cam.cochrane.org/common-cold",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.127659574468085,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 5,
+          "url": "cdc.gov/yellow-book/hcp/preparing-international-travelers/complementary-and-integrative-health-approaches.html",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.127659574468085,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        }
+      ],
+      "percentage_ge_sources_not_in_se_sources": 100.0
+    },
+    {
+      "query_id": 25,
+      "query": "Can parents decide for their children to go through a surgery without their consent (when they are under 18, doesn't matter if it's to save them)?",
+      "ge_sources": [
+        {
+          "agg_source_id": 3,
+          "url": "code-medical-ethics.ama-assn.org/ethics-opinions/pediatric-decision-making",
+          "avg_ge_freq": 1.0,
+          "relative_se_rank": 2.4390243902439024,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 6,
+          "url": "ncbi.nlm.nih.gov/books/nbk554594",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.4390243902439024,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        }
+      ],
+      "percentage_ge_sources_not_in_se_sources": 100.0
+    },
+    {
+      "query_id": 26,
+      "query": "Why doesn't the US use the popular vote in their general election and presidential election systems?",
+      "ge_sources": [
+        {
+          "agg_source_id": 1,
+          "url": "archives.gov/milestone-documents/17th-amendment",
+          "avg_ge_freq": 0.6667,
+          "relative_se_rank": 2.3255813953488373,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 2,
+          "url": "archives.gov/electoral-college/provisions",
+          "avg_ge_freq": 0.6667,
+          "relative_se_rank": 2.3255813953488373,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 3,
+          "url": "law.cornell.edu/supremecourt/text/146/1",
+          "avg_ge_freq": 0.6667,
+          "relative_se_rank": 2.3255813953488373,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 4,
+          "url": "archives.gov/electoral-college/faq",
+          "avg_ge_freq": 0.6667,
+          "relative_se_rank": 0.20930232558139536,
+          "reciprocal_se_rank": 0.08333333333333333,
+          "normalized_reciprocal_se_rank": 0.3063973063973064
+        },
+        {
+          "agg_source_id": 6,
+          "url": "law.cornell.edu/constitution-conan/article-1/section-4/clause-1/role-of-the-states-in-regulating-federal-elections",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.3255813953488373,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        }
+      ],
+      "percentage_ge_sources_not_in_se_sources": 80.0
+    },
+    {
+      "query_id": 27,
+      "query": "Should we stop allocating money to schools based on property taxes?",
+      "ge_sources": [
+        {
+          "agg_source_id": 3,
+          "url": "edbuildna.org/content/23-billion",
+          "avg_ge_freq": 0.6667,
+          "relative_se_rank": 2.380952380952381,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 4,
+          "url": "nces.ed.gov/programs/coe/indicator/cma/public-school-revenue",
+          "avg_ge_freq": 0.6667,
+          "relative_se_rank": 2.380952380952381,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 5,
+          "url": "nces.ed.gov/programs/coe/indicator/cma/public-school-revenue",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.380952380952381,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 6,
+          "url": "apnews.com/article/8fdfb556d9a76be8e9d72ffeac1a0e2e",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.380952380952381,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 7,
+          "url": "ideas.repec.org/a/oup/qjecon/v131y2016i1p157-218..html",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.380952380952381,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        }
+      ],
+      "percentage_ge_sources_not_in_se_sources": 100.0
+    },
+    {
+      "query_id": 28,
+      "query": "Is the Church of the Flying Spaghetti Monster a legitimate religion?",
+      "ge_sources": [
+        {
+          "agg_source_id": 1,
+          "url": "abc.net.au/news/2016-03-01/weddings-legalised-for-church-of-the-flying-spaghetti-monster/7208662",
+          "avg_ge_freq": 1.0,
+          "relative_se_rank": 2.2222222222222223,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 3,
+          "url": "case-law.vlex.com/vid/cavanaugh-v-bartelt-4-890691234",
+          "avg_ge_freq": 0.6667,
+          "relative_se_rank": 2.2222222222222223,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 5,
+          "url": "dw.com/en/spaghetti-monster-goes-to-germanys-constitutional-court/a-40359916",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.2222222222222223,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 6,
+          "url": "time.com/4114369/pastafarian-colander-license-photo",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.2222222222222223,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        }
+      ],
+      "percentage_ge_sources_not_in_se_sources": 100.0
+    },
+    {
+      "query_id": 29,
+      "query": "Should corporal punishment be used in K-12 schools?",
+      "ge_sources": [
+        {
+          "agg_source_id": 2,
+          "url": "ovid.com/journals/jfapy/pdf/10.1037/fam0000191~spanking-and-child-outcomes-old-controversies-and-new",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.2222222222222223,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 3,
+          "url": "pmc.ncbi.nlm.nih.gov/articles/pmc7992110",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.2222222222222223,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 5,
+          "url": "pmc.ncbi.nlm.nih.gov/articles/pmc7405866",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.2222222222222223,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 7,
+          "url": "ed.gov/laws-and-policy/civil-rights-laws/civil-rights-data-collection-crdc-2021-22-school-year/civil-rights-data-collection-crdc-2017-18-school-year",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.2222222222222223,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 8,
+          "url": "pbis.org/resource/is-school-wide-positive-behavior-support-an-evidence-based-practice",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.2222222222222223,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        }
+      ],
+      "percentage_ge_sources_not_in_se_sources": 100.0
+    },
+    {
+      "query_id": 30,
+      "query": "Can an AI pass the Turing test?",
+      "ge_sources": [
+        {
+          "agg_source_id": 1,
+          "url": "arxiv.org/abs/2503.23674",
+          "avg_ge_freq": 1.3333,
+          "relative_se_rank": 0.5,
+          "reciprocal_se_rank": 0.038461538461538464,
+          "normalized_reciprocal_se_rank": 0.11965811965811966
+        },
+        {
+          "agg_source_id": 2,
+          "url": "arxiv.org/abs/2310.20216",
+          "avg_ge_freq": 1.3333,
+          "relative_se_rank": 2.1739130434782608,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 3,
+          "url": "arxiv.org/abs/2405.08007",
+          "avg_ge_freq": 1.0,
+          "relative_se_rank": 2.1739130434782608,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 4,
+          "url": "plato.stanford.edu/entries/turing-test",
+          "avg_ge_freq": 0.6667,
+          "relative_se_rank": 0.6739130434782609,
+          "reciprocal_se_rank": 0.029411764705882353,
+          "normalized_reciprocal_se_rank": 0.08199643493761141
+        },
+        {
+          "agg_source_id": 5,
+          "url": "en.wikipedia.org/wiki/eugene_goostman",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.1739130434782608,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        }
+      ],
+      "percentage_ge_sources_not_in_se_sources": 60.0
+    },
+    {
+      "query_id": 31,
+      "query": "Can psoriasis be cured with UV light therapy?",
+      "ge_sources": [
+        {
+          "agg_source_id": 1,
+          "url": "aad.org/member/clinical-quality/guidelines/psoriasis",
+          "avg_ge_freq": 1.3333,
+          "relative_se_rank": 2.2222222222222223,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 2,
+          "url": "nhs.uk/conditions/psoriasis/treatment",
+          "avg_ge_freq": 1.0,
+          "relative_se_rank": 0.1111111111111111,
+          "reciprocal_se_rank": 0.125,
+          "normalized_reciprocal_se_rank": 0.47979797979797983
+        },
+        {
+          "agg_source_id": 3,
+          "url": "niams.nih.gov/index.php/health-topics/psoriasis/diagnosis-treatment-and-steps-to-take",
+          "avg_ge_freq": 0.6667,
+          "relative_se_rank": 2.2222222222222223,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 4,
+          "url": "psoriasis.org/the-light-treatment-effectiveness-lite-study",
+          "avg_ge_freq": 0.6667,
+          "relative_se_rank": 2.2222222222222223,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 5,
+          "url": "mayoclinic.org/diseases-conditions/psoriasis/diagnosis-treatment/drc-20355845",
+          "avg_ge_freq": 0.6667,
+          "relative_se_rank": 0.3333333333333333,
+          "reciprocal_se_rank": 0.05555555555555555,
+          "normalized_reciprocal_se_rank": 0.19079685746352412
+        }
+      ],
+      "percentage_ge_sources_not_in_se_sources": 60.0
+    },
+    {
+      "query_id": 32,
+      "query": "Should the use of CRISPR technology for editing the human germline be strictly prohibited?",
+      "ge_sources": [
+        {
+          "agg_source_id": 2,
+          "url": "nationalacademies.org/news/with-stringent-oversight-heritable-human-genome-editing-could-be-allowed-for-serious-conditions",
+          "avg_ge_freq": 1.0,
+          "relative_se_rank": 0.4666666666666667,
+          "reciprocal_se_rank": 0.041666666666666664,
+          "normalized_reciprocal_se_rank": 0.13299663299663297
+        },
+        {
+          "agg_source_id": 3,
+          "url": "nuffieldbioethics.org/publication/genome-editing-and-human-reproduction-social-and-ethical-issues",
+          "avg_ge_freq": 0.6667,
+          "relative_se_rank": 2.2222222222222223,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 4,
+          "url": "isscr.org/policy/guidelines-for-stem-cell-research-and-clinical-translation",
+          "avg_ge_freq": 0.6667,
+          "relative_se_rank": 2.2222222222222223,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 5,
+          "url": "who.int/news/item/12-07-2021-who-issues-new-recommendations-on-human-genome-editing-for-the-advancement-of-public-health",
+          "avg_ge_freq": 0.6667,
+          "relative_se_rank": 0.8444444444444444,
+          "reciprocal_se_rank": 0.024390243902439025,
+          "normalized_reciprocal_se_rank": 0.061098792806109886
+        }
+      ],
+      "percentage_ge_sources_not_in_se_sources": 50.0
+    },
+    {
+      "query_id": 33,
+      "query": "Should the draft be reinstated if not enough American citizens voluntarily enlist?",
+      "ge_sources": [
+        {
+          "agg_source_id": 1,
+          "url": "brookings.edu/articles/conscription-is-the-wrong-prescription",
+          "avg_ge_freq": 1.0,
+          "relative_se_rank": 2.3255813953488373,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 2,
+          "url": "govinfo.gov/content/pkg/chrg-117shrg59453/html/chrg-117shrg59453.htm",
+          "avg_ge_freq": 1.0,
+          "relative_se_rank": 2.3255813953488373,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 3,
+          "url": "heritage.org/defense/report/cbo-weighs-the-all-volunteer-force",
+          "avg_ge_freq": 0.6667,
+          "relative_se_rank": 2.3255813953488373,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 5,
+          "url": "brookings.edu/articles/now-is-the-time-to-save-the-all-volunteer-force",
+          "avg_ge_freq": 0.6667,
+          "relative_se_rank": 2.3255813953488373,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 8,
+          "url": "sss.gov/about/return-to-draft",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 0.06976744186046512,
+          "reciprocal_se_rank": 0.16666666666666666,
+          "normalized_reciprocal_se_rank": 0.6531986531986531
+        }
+      ],
+      "percentage_ge_sources_not_in_se_sources": 80.0
+    },
+    {
+      "query_id": 34,
+      "query": "What are the benefits of a brexit?",
+      "ge_sources": [
+        {
+          "agg_source_id": 1,
+          "url": "gov.uk/government/news/new-public-procurement-rules-to-drive-growth-opportunities-for-small-businesses-and-exclude-suppliers-that-fail-to-deliver",
+          "avg_ge_freq": 1.0,
+          "relative_se_rank": 2.0,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 2,
+          "url": "gov.uk/government/news/tampon-tax-abolished-from-today",
+          "avg_ge_freq": 1.0,
+          "relative_se_rank": 2.0,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 3,
+          "url": "legislation.gov.uk/ukpga/2023/28/notes/division/2/index.htm",
+          "avg_ge_freq": 0.6667,
+          "relative_se_rank": 2.0,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 4,
+          "url": "gov.uk/government/news/australia-uk-free-trade-agreement-joint-committee-statement",
+          "avg_ge_freq": 0.6667,
+          "relative_se_rank": 2.0,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 5,
+          "url": "gov.uk/government/news/points-based-immigration-system-opens",
+          "avg_ge_freq": 0.6667,
+          "relative_se_rank": 2.0,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        }
+      ],
+      "percentage_ge_sources_not_in_se_sources": 100.0
+    },
+    {
+      "query_id": 35,
+      "query": "Should recreational marijuana be legal?",
+      "ge_sources": [
+        {
+          "agg_source_id": 1,
+          "url": "dcj.colorado.gov/news-article/colorado-division-of-criminal-justice-publishes-report-on-impacts-of-marijuana",
+          "avg_ge_freq": 1.3333,
+          "relative_se_rank": 2.1739130434782608,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 2,
+          "url": "cdc.gov/cannabis/health-effects/pregnancy.html",
+          "avg_ge_freq": 0.6667,
+          "relative_se_rank": 2.1739130434782608,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 3,
+          "url": "iihs.org/topics/alcohol-and-drugs",
+          "avg_ge_freq": 0.6667,
+          "relative_se_rank": 2.1739130434782608,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 4,
+          "url": "mpp.org/news/press/states-collected-nearly-%2425-billion-from-legal-adult-use-cannabis-sales",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.1739130434782608,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 6,
+          "url": "cdc.gov/cannabis/data-research/facts-stats/index.html",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.1739130434782608,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        }
+      ],
+      "percentage_ge_sources_not_in_se_sources": 100.0
+    },
+    {
+      "query_id": 36,
+      "query": "Are some youth sports too intense?",
+      "ge_sources": [
+        {
+          "agg_source_id": 5,
+          "url": "cdc.gov/heads-up/data/index.html",
+          "avg_ge_freq": 0.6667,
+          "relative_se_rank": 2.4390243902439024,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 6,
+          "url": "mlb.com/pitch-smart/pitching-guidelines",
+          "avg_ge_freq": 0.6667,
+          "relative_se_rank": 2.4390243902439024,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 7,
+          "url": "projectplay.org/news/kids-quit-most-sports-by-age-11",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.4390243902439024,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 8,
+          "url": "amssm.org/overuse-injuries-and-burn-p-138.html",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.4390243902439024,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        }
+      ],
+      "percentage_ge_sources_not_in_se_sources": 100.0
+    },
+    {
+      "query_id": 37,
+      "query": "Should manufacturers be required to label foods containing GMOs?",
+      "ge_sources": [
+        {
+          "agg_source_id": 4,
+          "url": "food.ec.europa.eu/plants/genetically-modified-organisms/traceability-and-labelling_en",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.0408163265306123,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 5,
+          "url": "nap.nationalacademies.org/catalog/23395/genetically-engineered-crops-experiences-and-prospects",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.0408163265306123,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 6,
+          "url": "pewresearch.org/short-reads/2015/08/11/amid-debate-over-labeling-gm-foods-most-americans-believe-theyre-unsafe",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.0408163265306123,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 8,
+          "url": "legislation.gov.uk/eur/2003/1829/data.html",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.0408163265306123,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        }
+      ],
+      "percentage_ge_sources_not_in_se_sources": 100.0
+    },
+    {
+      "query_id": 38,
+      "query": "Can plants survive without soil?",
+      "ge_sources": [
+        {
+          "agg_source_id": 1,
+          "url": "nal.usda.gov/farms-and-agricultural-production-systems/hydroponics",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.1739130434782608,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 2,
+          "url": "extension.psu.edu/homegrown-hydroponics",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.1739130434782608,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 3,
+          "url": "spinoff.nasa.gov/spinoff2008/ch_3.html",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.1739130434782608,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        }
+      ],
+      "percentage_ge_sources_not_in_se_sources": 100.0
+    },
+    {
+      "query_id": 39,
+      "query": "Is online teaching as effective as classroom teaching?",
+      "ge_sources": [
+        {
+          "agg_source_id": 1,
+          "url": "etcjournal.com/2008/10/01/u-s-doe-evaluation-of-evidence-based-practices-in-online-learning",
+          "avg_ge_freq": 1.0,
+          "relative_se_rank": 2.0833333333333335,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 2,
+          "url": "nature.com/articles/s41562-022-01506-4",
+          "avg_ge_freq": 0.6667,
+          "relative_se_rank": 2.0833333333333335,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 3,
+          "url": "sri.com/publication/education-learning-pubs/digital-learning-pubs/evaluation-of-evidence-based-practices-in-online-learning-a-meta-analysis-and-review-of-online-learning-studies",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.0833333333333335,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 5,
+          "url": "jmir.org/2020/8/e16504",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.0833333333333335,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 7,
+          "url": "frontiersin.org/journals/education/articles/10.3389/feduc.2019.00092/full",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.0833333333333335,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        }
+      ],
+      "percentage_ge_sources_not_in_se_sources": 100.0
+    },
+    {
+      "query_id": 40,
+      "query": "Is there any proof that God doesn't exist?",
+      "ge_sources": [
+        {
+          "agg_source_id": 1,
+          "url": "plato.stanford.edu/archives/fall2017/entries/atheism-agnosticism",
+          "avg_ge_freq": 0.6667,
+          "relative_se_rank": 2.5,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 2,
+          "url": "plato.stanford.edu/archives/win2002/entries/evil",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.5,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        }
+      ],
+      "percentage_ge_sources_not_in_se_sources": 100.0
+    },
+    {
+      "query_id": 41,
+      "query": "Which band has more constant members, Lilys or Ratatat?",
+      "ge_sources": [
+        {
+          "agg_source_id": 1,
+          "url": "en.wikipedia.org/wiki/ratatat",
+          "avg_ge_freq": 1.0,
+          "relative_se_rank": 4.545454545454546,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        }
+      ],
+      "percentage_ge_sources_not_in_se_sources": 100.0
+    },
+    {
+      "query_id": 42,
+      "query": "Which documentary was release first, Baghdad ER or The Ten-Year Lunch?",
+      "ge_sources": [
+        {
+          "agg_source_id": 1,
+          "url": "en.wikipedia.org/wiki/the_ten-year_lunch",
+          "avg_ge_freq": 0.6667,
+          "relative_se_rank": 0.02040816326530612,
+          "reciprocal_se_rank": 0.25,
+          "normalized_reciprocal_se_rank": 1.0
+        },
+        {
+          "agg_source_id": 2,
+          "url": "pbs.org/wnet/americanmasters/the-algonquin-round-table-about-the-algonquin/527",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.0408163265306123,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        }
+      ],
+      "percentage_ge_sources_not_in_se_sources": 50.0
+    },
+    {
+      "query_id": 43,
+      "query": "Who else besides The Golden Jet was born in Point Anne, Ontario?",
+      "ge_sources": [
+        {
+          "agg_source_id": 1,
+          "url": "en.wikipedia.org/wiki/dennis_hull",
+          "avg_ge_freq": 0.6667,
+          "relative_se_rank": 2.0833333333333335,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 2,
+          "url": "en.wikipedia.org/wiki/point_anne",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 0.16666666666666666,
+          "reciprocal_se_rank": 0.09090909090909091,
+          "normalized_reciprocal_se_rank": 0.33792470156106524
+        }
+      ],
+      "percentage_ge_sources_not_in_se_sources": 50.0
+    },
+    {
+      "query_id": 44,
+      "query": "Who played the role of Nettie Harris in the 1985 film directed by Steven Spielberg?",
+      "ge_sources": [
+        {
+          "agg_source_id": 1,
+          "url": "en.wikipedia.org/wiki/akosua_busia",
+          "avg_ge_freq": 0.6667,
+          "relative_se_rank": 0.023255813953488372,
+          "reciprocal_se_rank": 0.25,
+          "normalized_reciprocal_se_rank": 1.0
+        },
+        {
+          "agg_source_id": 2,
+          "url": "rottentomatoes.com/m/color_purple/cast-and-crew",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.3255813953488373,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        }
+      ],
+      "percentage_ge_sources_not_in_se_sources": 50.0
+    },
+    {
+      "query_id": 45,
+      "query": "Which American musician and songwriter was born earlier, Adam Duritz or Cherie Currie?",
+      "ge_sources": [
+        {
+          "agg_source_id": 1,
+          "url": "en.wikipedia.org/wiki/cherie_currie",
+          "avg_ge_freq": 0.6667,
+          "relative_se_rank": 2.0408163265306123,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        }
+      ],
+      "percentage_ge_sources_not_in_se_sources": 100.0
+    },
+    {
+      "query_id": 46,
+      "query": "Both Olaf Eller and Lars Eller are involved in which sport?",
+      "ge_sources": [
+        {
+          "agg_source_id": 1,
+          "url": "en.wikipedia.org/wiki/olaf_eller",
+          "avg_ge_freq": 0.6667,
+          "relative_se_rank": 0.044444444444444446,
+          "reciprocal_se_rank": 0.2,
+          "normalized_reciprocal_se_rank": 0.791919191919192
+        },
+        {
+          "agg_source_id": 2,
+          "url": "en.wikipedia.org/wiki/lars_eller",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 0.022222222222222223,
+          "reciprocal_se_rank": 0.25,
+          "normalized_reciprocal_se_rank": 1.0
+        }
+      ],
+      "percentage_ge_sources_not_in_se_sources": 0.0
+    },
+    {
+      "query_id": 47,
+      "query": "Which publication publishes more frequently, Utne Reader or The New York Enterprise Report?",
+      "ge_sources": [
+        {
+          "agg_source_id": 1,
+          "url": "gaebler.com/new%2byork%2benterprise%2breport-magazine-advertising-costs%2b%2b37141",
+          "avg_ge_freq": 1.0,
+          "relative_se_rank": 2.127659574468085,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        }
+      ],
+      "percentage_ge_sources_not_in_se_sources": 100.0
+    },
+    {
+      "query_id": 48,
+      "query": "Who was born in Ireland and has coached the captain of MLS club Colorado Rapids?",
+      "ge_sources": [
+        {
+          "agg_source_id": 1,
+          "url": "philadelphiaunion.com/news/bethlehem-steel-fc-technical-staff-28275",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.272727272727273,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 2,
+          "url": "en.wikipedia.org/wiki/steve_morrow",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.272727272727273,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 3,
+          "url": "coloradorapids.com/news/captain-keegan-rosenberry-taking-vote-of-confidence-from-team-to-lead-the-rapids",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.272727272727273,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 4,
+          "url": "coloradorapids.com/club/padraigsmith",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.272727272727273,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 5,
+          "url": "en.wikipedia.org/wiki/colin_falvey",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.272727272727273,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        }
+      ],
+      "percentage_ge_sources_not_in_se_sources": 100.0
+    },
+    {
+      "query_id": 49,
+      "query": "What Pakistani actor and writer from Islamabad helped write for the 2012 Pakistani comedy drama sitcom, Coke Kahani?",
+      "ge_sources": [
+        {
+          "agg_source_id": 1,
+          "url": "en.wikipedia.org/wiki/coke_kahani",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 0.021739130434782608,
+          "reciprocal_se_rank": 0.25,
+          "normalized_reciprocal_se_rank": 1.0
+        },
+        {
+          "agg_source_id": 3,
+          "url": "famousbirthdays.com/people/yasir-hussain.html",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.1739130434782608,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 4,
+          "url": "en.wikipedia.org/wiki/syed_mohammad_ahmed",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.1739130434782608,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        }
+      ],
+      "percentage_ge_sources_not_in_se_sources": 66.66666666666667
+    },
+    {
+      "query_id": 50,
+      "query": "Did someone win the Nobel Prize for using evolution to create new proteins in chemistry?",
+      "ge_sources": [
+        {
+          "agg_source_id": 1,
+          "url": "nobelprize.org/prizes/chemistry/2018/press-release",
+          "avg_ge_freq": 1.3333,
+          "relative_se_rank": 0.0425531914893617,
+          "reciprocal_se_rank": 0.2,
+          "normalized_reciprocal_se_rank": 0.791919191919192
+        },
+        {
+          "agg_source_id": 2,
+          "url": "nobelprize.org/prizes/chemistry/2018/arnold/facts",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 0.02127659574468085,
+          "reciprocal_se_rank": 0.25,
+          "normalized_reciprocal_se_rank": 1.0
+        }
+      ],
+      "percentage_ge_sources_not_in_se_sources": 0.0
+    },
+    {
+      "query_id": 51,
+      "query": "The German geographer and geopolitician Otto Maull was part of a team led by Haushofer whose close associate was a prominent politician in Nazi Germany born in 1894 who served under Hitler in 1933 as what capacity?",
+      "ge_sources": [
+        {
+          "agg_source_id": 1,
+          "url": "en.wikipedia.org/wiki/rudolf_hess",
+          "avg_ge_freq": 0.6667,
+          "relative_se_rank": 2.127659574468085,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 2,
+          "url": "britannica.com/biography/rudolf-hess",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.127659574468085,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        }
+      ],
+      "percentage_ge_sources_not_in_se_sources": 100.0
+    },
+    {
+      "query_id": 52,
+      "query": "Sam Mendes and Ruby Yang share what profession?",
+      "ge_sources": [
+        {
+          "agg_source_id": 1,
+          "url": "britannica.com/biography/sam-mendes",
+          "avg_ge_freq": 1.0,
+          "relative_se_rank": 2.0408163265306123,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        }
+      ],
+      "percentage_ge_sources_not_in_se_sources": 100.0
+    },
+    {
+      "query_id": 53,
+      "query": "What type of place does Regency Road, Adelaide and Klemzig, South Australia have in common?",
+      "ge_sources": [
+        {
+          "agg_source_id": 1,
+          "url": "en.wikipedia.org/wiki/klemzig_interchange",
+          "avg_ge_freq": 1.0,
+          "relative_se_rank": 2.127659574468085,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        }
+      ],
+      "percentage_ge_sources_not_in_se_sources": 100.0
+    },
+    {
+      "query_id": 55,
+      "query": "Which one between Milium and Eucommia lives more widely spread across the world?",
+      "ge_sources": [
+        {
+          "agg_source_id": 1,
+          "url": "powo.science.kew.org/taxon/urn%3alsid%3aipni.org%3anames%3a325296-2",
+          "avg_ge_freq": 1.0,
+          "relative_se_rank": 2.127659574468085,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        }
+      ],
+      "percentage_ge_sources_not_in_se_sources": 100.0
+    },
+    {
+      "query_id": 56,
+      "query": "Who had a longer film career, Harry Sweet or John Biddle?",
+      "ge_sources": [
+        {
+          "agg_source_id": 1,
+          "url": "en.wikipedia.org/wiki/john_biddle_%28yachting_cinematographer%29",
+          "avg_ge_freq": 1.0,
+          "relative_se_rank": 2.127659574468085,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 2,
+          "url": "en.wikipedia.org/wiki/harry_sweet",
+          "avg_ge_freq": 0.6667,
+          "relative_se_rank": 2.127659574468085,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        }
+      ],
+      "percentage_ge_sources_not_in_se_sources": 100.0
+    },
+    {
+      "query_id": 57,
+      "query": "What town host an annual media finance conference that has featured an Australian-born American media mogul?",
+      "ge_sources": [
+        {
+          "agg_source_id": 2,
+          "url": "en.wikipedia.org/wiki/allen_%26_company_sun_valley_conference",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 0.02127659574468085,
+          "reciprocal_se_rank": 0.25,
+          "normalized_reciprocal_se_rank": 1.0
+        },
+        {
+          "agg_source_id": 3,
+          "url": "thewrap.com/elon-musk-rupert-murdoch-and-sons-bob-iger-topline-allen-co-s-sun-valley-media-conference-guest-list",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.127659574468085,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        }
+      ],
+      "percentage_ge_sources_not_in_se_sources": 50.0
+    },
+    {
+      "query_id": 58,
+      "query": "What is the hometown of Duck Down Music artist and complex rapper Pharaohe Monch?",
+      "ge_sources": [
+        {
+          "agg_source_id": 1,
+          "url": "ambrosiaforheads.com/2019/11/nas-pharoahe-monch-dj-shadow-audio",
+          "avg_ge_freq": 0.6667,
+          "relative_se_rank": 0.125,
+          "reciprocal_se_rank": 0.1111111111111111,
+          "normalized_reciprocal_se_rank": 0.42199775533108863
+        },
+        {
+          "agg_source_id": 2,
+          "url": "villagevoice.com/pharoahe-monch-is-the-worlds-new-rap-therapist",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.0833333333333335,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        }
+      ],
+      "percentage_ge_sources_not_in_se_sources": 50.0
+    },
+    {
+      "query_id": 59,
+      "query": "The Bay Plaza Shopping Center contains a store that headquartered where?",
+      "ge_sources": [
+        {
+          "agg_source_id": 1,
+          "url": "en.wikipedia.org/wiki/staples_inc.",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.3255813953488373,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 2,
+          "url": "transformco.com/contact",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.3255813953488373,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 3,
+          "url": "en.wikipedia.org/wiki/old_navy",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.3255813953488373,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 4,
+          "url": "corporate.jcpenney.com/2023/07/20/jcpenney-corporate-headquarters-return-to-campus-at-legacy-west-in-plano",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.3255813953488373,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 5,
+          "url": "en.wikipedia.org/wiki/macy%27s%2c_inc.",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.3255813953488373,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        }
+      ],
+      "percentage_ge_sources_not_in_se_sources": 100.0
+    },
+    {
+      "query_id": 60,
+      "query": "Which formed first, Fireflight or Dirty Three?",
+      "ge_sources": [
+        {
+          "agg_source_id": 1,
+          "url": "en.wikipedia.org/wiki/dirty_three",
+          "avg_ge_freq": 1.0,
+          "relative_se_rank": 0.020833333333333332,
+          "reciprocal_se_rank": 0.25,
+          "normalized_reciprocal_se_rank": 1.0
+        }
+      ],
+      "percentage_ge_sources_not_in_se_sources": 0.0
+    },
+    {
+      "query_id": 61,
+      "query": "Did a North Carolina study prove that over a million people likely voted twice in the 2012 election?",
+      "ge_sources": [
+        {
+          "agg_source_id": 1,
+          "url": "politifact.com/factchecks/2014/apr/10/dick-morris/dick-morris-theres-proof-over-1-million-people-vot",
+          "avg_ge_freq": 2.0,
+          "relative_se_rank": 2.2222222222222223,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 2,
+          "url": "mvalaw.com/alert-north-carolina-legislative-report-april-11-2014",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.2222222222222223,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        }
+      ],
+      "percentage_ge_sources_not_in_se_sources": 100.0
+    },
+    {
+      "query_id": 62,
+      "query": "Are kids less likely to get and spread COVID-19 based on good data available?",
+      "ge_sources": [
+        {
+          "agg_source_id": 5,
+          "url": "bmcpediatr.biomedcentral.com/articles/10.1186/s12887-022-03175-8",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.4390243902439024,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 7,
+          "url": "researchportal.ukhsa.gov.uk/en/publications/comparative-transmission-of-sars-cov-2-omicron-b11529-and-delta-b",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.4390243902439024,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        }
+      ],
+      "percentage_ge_sources_not_in_se_sources": 100.0
+    },
+    {
+      "query_id": 63,
+      "query": "Did Rep. Matt Gaetz and Sen. Ted Cruz take two weeks paid sick leave to self-quarantine? And did Gaetz vote in 2013 to make it illegal for any city in Florida to enact paid sick leave, while Cruz voted in 2015 in the U.S. Senate against paid sick leave?",
+      "ge_sources": [
+        {
+          "agg_source_id": 1,
+          "url": "politifact.com/factchecks/2020/mar/17/occupy-democrats/did-matt-gaetz-and-ted-cruz-oppose-paid-sick-leave",
+          "avg_ge_freq": 2.0,
+          "relative_se_rank": 4.761904761904762,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 2,
+          "url": "senate.gov/legislative/lis/roll_call_votes/vote1141/vote_114_1_00098.htm",
+          "avg_ge_freq": 0.6667,
+          "relative_se_rank": 4.761904761904762,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 5,
+          "url": "senate.gov/legislative/lis/roll_call_lists/roll_call_vote_cfm.cfm",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 4.761904761904762,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        }
+      ],
+      "percentage_ge_sources_not_in_se_sources": 100.0
+    },
+    {
+      "query_id": 64,
+      "query": "Will Italy stop caring for elderly patients who are infected with novel coronavirus strain COVID-19?",
+      "ge_sources": [
+        {
+          "agg_source_id": 1,
+          "url": "politifact.com/factchecks/2020/mar/18/facebook-posts/italys-overwhelmed-hospitals-are-treating-elderly-",
+          "avg_ge_freq": 1.3333,
+          "relative_se_rank": 2.380952380952381,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 2,
+          "url": "ccforum.biomedcentral.com/articles/10.1186/s13054-020-02891-w",
+          "avg_ge_freq": 1.0,
+          "relative_se_rank": 2.380952380952381,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        }
+      ],
+      "percentage_ge_sources_not_in_se_sources": 100.0
+    },
+    {
+      "query_id": 65,
+      "query": "Does every county, including Chittenden, have fewer people available for work?",
+      "ge_sources": [
+        {
+          "agg_source_id": 1,
+          "url": "politifact.com/factchecks/2019/jan/26/phil-scott/vermonts-governor-says-entire-state-losing-workers",
+          "avg_ge_freq": 1.0,
+          "relative_se_rank": 2.4390243902439024,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        }
+      ],
+      "percentage_ge_sources_not_in_se_sources": 100.0
+    },
+    {
+      "query_id": 66,
+      "query": "Is it true that firearms homicides have decreased by about 40 percent since Texas passed a concealed-gun permit law?",
+      "ge_sources": [
+        {
+          "agg_source_id": 1,
+          "url": "politifact.com/factchecks/2013/nov/27/jerry-patterson/texas-firearm-homicide-rate-down-least-one-third-1",
+          "avg_ge_freq": 0.6667,
+          "relative_se_rank": 0.0975609756097561,
+          "reciprocal_se_rank": 0.14285714285714285,
+          "normalized_reciprocal_se_rank": 0.5541125541125541
+        },
+        {
+          "agg_source_id": 2,
+          "url": "capitol.texas.gov/tlodocs/74r/billtext/html/sb00060h.htm",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.4390243902439024,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 3,
+          "url": "politifact.com/factchecks/2013/nov/27/jerry-patterson/texas-firearm-homicide-rate-down-least-one-third-1",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 0.0975609756097561,
+          "reciprocal_se_rank": 0.14285714285714285,
+          "normalized_reciprocal_se_rank": 0.5541125541125541
+        },
+        {
+          "agg_source_id": 4,
+          "url": "vpc.org/press/new-study-gun-death-in-texas-released-by-texas-gun-sense-and-the-violence-policy-center",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.4390243902439024,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 5,
+          "url": "nationalacademies.org/read/10881/chapter/2",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.4390243902439024,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        }
+      ],
+      "percentage_ge_sources_not_in_se_sources": 60.0
+    },
+    {
+      "query_id": 67,
+      "query": "Does a Chilean girl with cystic fibrosis tell the president to let her die?",
+      "ge_sources": [
+        {
+          "agg_source_id": 1,
+          "url": "theguardian.com/world/2015/feb/27/chiles-president-overcome-by-emotion-after-ill-girl-14-makes-euthanasia-plea",
+          "avg_ge_freq": 1.0,
+          "relative_se_rank": 2.127659574468085,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 2,
+          "url": "dw.com/en/chile-president-meets-14-year-old-girl-asking-for-permission-to-die/a-18287209",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 0.10638297872340426,
+          "reciprocal_se_rank": 0.125,
+          "normalized_reciprocal_se_rank": 0.47979797979797983
+        },
+        {
+          "agg_source_id": 3,
+          "url": "cbsnews.com/news/chile-president-michelle-bachelet-visits-valentina-maureira-teen-who-asked-to-die",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.127659574468085,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 4,
+          "url": "en.wikipedia.org/wiki/valentina_maureira",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.127659574468085,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        }
+      ],
+      "percentage_ge_sources_not_in_se_sources": 75.0
+    },
+    {
+      "query_id": 68,
+      "query": "Have you slashed government by 10 percent in Florida resulting in $7 billion?",
+      "ge_sources": [
+        {
+          "agg_source_id": 1,
+          "url": "politifact.com/factchecks/2009/oct/26/charlie-crist/gov-charlie-crist-says-he-has-reduced-size-state-g",
+          "avg_ge_freq": 1.0,
+          "relative_se_rank": 2.272727272727273,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        }
+      ],
+      "percentage_ge_sources_not_in_se_sources": 100.0
+    },
+    {
+      "query_id": 69,
+      "query": "Did the homeliest nut just get better?",
+      "ge_sources": [
+        {
+          "agg_source_id": 1,
+          "url": "cbsnews.com/news/walnuts-are-heart-healthy-and-cholesterol-lowering-in-older-adults",
+          "avg_ge_freq": 1.0,
+          "relative_se_rank": 0.06666666666666667,
+          "reciprocal_se_rank": 0.25,
+          "normalized_reciprocal_se_rank": 1.0
+        }
+      ],
+      "percentage_ge_sources_not_in_se_sources": 0.0
+    },
+    {
+      "query_id": 70,
+      "query": "Was the U.S. federal income tax rate 0 percent until 1913?",
+      "ge_sources": [
+        {
+          "agg_source_id": 1,
+          "url": "archives.gov/milestone-documents/16th-amendment",
+          "avg_ge_freq": 1.6667,
+          "relative_se_rank": 0.1875,
+          "reciprocal_se_rank": 0.08333333333333333,
+          "normalized_reciprocal_se_rank": 0.3063973063973064
+        },
+        {
+          "agg_source_id": 2,
+          "url": "irs.gov/newsroom/historical-highlights-of-the-irs",
+          "avg_ge_freq": 1.3333,
+          "relative_se_rank": 0.08333333333333333,
+          "reciprocal_se_rank": 0.14285714285714285,
+          "normalized_reciprocal_se_rank": 0.5541125541125541
+        },
+        {
+          "agg_source_id": 3,
+          "url": "archives.gov/press/press-releases/2013/nr13-80",
+          "avg_ge_freq": 0.6667,
+          "relative_se_rank": 2.0833333333333335,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 4,
+          "url": "britannica.com/event/pollock-v-farmers-loan-and-trust-company",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.0833333333333335,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 5,
+          "url": "archives.gov/publications/prologue/1986/winter/civil-war-tax-records.html",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.0833333333333335,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        }
+      ],
+      "percentage_ge_sources_not_in_se_sources": 60.0
+    },
+    {
+      "query_id": 71,
+      "query": "Did Jim Renacci run against the Washington establishment in the election but is now embracing it with big money and special interest fundraisers?",
+      "ge_sources": [
+        {
+          "agg_source_id": 1,
+          "url": "cbsnews.com/news/gop-freshmen-big-bucks-donors-hobnob-at-resort",
+          "avg_ge_freq": 0.6667,
+          "relative_se_rank": 2.7027027027027026,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 2,
+          "url": "wosu.org/news/2018-10-22/brown-renacci-clash-over-tax-cuts-in-second-senate-debate",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.7027027027027026,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 3,
+          "url": "wcpo.com/news/state/state-ohio/ohio-gop-rep-renacci-joins-senate-race-against-dems-brown",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.7027027027027026,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 4,
+          "url": "politifact.com/factchecks/2010/dec/13/democratic-congressional-campaign-committee/democratic-congressional-campaign-committe-takes-l",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 0.02702702702702703,
+          "reciprocal_se_rank": 0.25,
+          "normalized_reciprocal_se_rank": 1.0
+        },
+        {
+          "agg_source_id": 5,
+          "url": "cbsnews.com/news/gop-freshmen-big-bucks-donors-hobnob-at-resort",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.7027027027027026,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        }
+      ],
+      "percentage_ge_sources_not_in_se_sources": 80.0
+    },
+    {
+      "query_id": 72,
+      "query": "Will a pack-a-day smoker who quits because of the tax increase save about $1,650 a year?",
+      "ge_sources": [
+        {
+          "agg_source_id": 1,
+          "url": "tobaccoinsider.com/usa-cigarette-prices",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.4390243902439024,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 2,
+          "url": "politifact.com/factchecks/2013/apr/15/nancy-nathanson/would-pack-day-smoker-save-1650-year-if-they-quit-",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 0.07317073170731707,
+          "reciprocal_se_rank": 0.16666666666666666,
+          "normalized_reciprocal_se_rank": 0.6531986531986531
+        },
+        {
+          "agg_source_id": 3,
+          "url": "apnews.com/article/26f59e603ee04d0e52747684d497ac45",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.4390243902439024,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 4,
+          "url": "smokefree.gov/quit-smoking/why-you-should-quit/how-much-will-you-save",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 0.0975609756097561,
+          "reciprocal_se_rank": 0.14285714285714285,
+          "normalized_reciprocal_se_rank": 0.5541125541125541
+        }
+      ],
+      "percentage_ge_sources_not_in_se_sources": 50.0
+    },
+    {
+      "query_id": 73,
+      "query": "Did Islamic studies professor Tariq Ramadan say Muslims are here to colonize the U.S. and Canada, spread Sharia law, and won't hesitate to use violent Jihad if necessary?",
+      "ge_sources": [
+        {
+          "agg_source_id": 1,
+          "url": "snopes.com/fact-check/muslim-scholar-tariq-ramadan-sharia-law-colonize",
+          "avg_ge_freq": 1.6667,
+          "relative_se_rank": 0.041666666666666664,
+          "reciprocal_se_rank": 0.2,
+          "normalized_reciprocal_se_rank": 0.791919191919192
+        },
+        {
+          "agg_source_id": 2,
+          "url": "politifact.com/factchecks/2019/mar/29/facebook-posts/no-famed-professor-islam-didnt-say-muslims-will-tu",
+          "avg_ge_freq": 1.3333,
+          "relative_se_rank": 0.020833333333333332,
+          "reciprocal_se_rank": 0.25,
+          "normalized_reciprocal_se_rank": 1.0
+        }
+      ],
+      "percentage_ge_sources_not_in_se_sources": 0.0
+    },
+    {
+      "query_id": 74,
+      "query": "Did Hillary Clinton discuss the location of Ambassador Stevens, who was later murdered in Libya, in the released emails to the public?",
+      "ge_sources": [
+        {
+          "agg_source_id": 2,
+          "url": "factcheck.org/2016/11/pac-attack-on-clintons-benghazi-record",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.127659574468085,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 3,
+          "url": "upi.com/top_news/us/2015/05/22/first-batch-of-hillary-clinton-emails-on-benghazi-released/7431432313084",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.127659574468085,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        }
+      ],
+      "percentage_ge_sources_not_in_se_sources": 100.0
+    },
+    {
+      "query_id": 75,
+      "query": "Does the minor G allele of FOXO3 downregulate pro-inflammatory cytokines?",
+      "ge_sources": [
+        {
+          "agg_source_id": 4,
+          "url": "pmc.ncbi.nlm.nih.gov/articles/pmc10923797",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.127659574468085,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 5,
+          "url": "pmc.ncbi.nlm.nih.gov/articles/pmc4933667",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.127659574468085,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        }
+      ],
+      "percentage_ge_sources_not_in_se_sources": 100.0
+    },
+    {
+      "query_id": 76,
+      "query": "Did the speaker create over 3 million jobs since they took office, more jobs than have ever been created in the first five months of any presidency in modern history?",
+      "ge_sources": [
+        {
+          "agg_source_id": 1,
+          "url": "politifact.com/factchecks/2021/jul/09/joe-biden/joe-biden-target-early-job-gains-figure-leaves-out",
+          "avg_ge_freq": 1.3333,
+          "relative_se_rank": 2.380952380952381,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 2,
+          "url": "bidenwhitehouse.archives.gov/briefing-room/speeches-remarks/2021/07/02/remarks-by-president-biden-on-the-june-jobs-report",
+          "avg_ge_freq": 0.6667,
+          "relative_se_rank": 2.380952380952381,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        }
+      ],
+      "percentage_ge_sources_not_in_se_sources": 100.0
+    },
+    {
+      "query_id": 77,
+      "query": "Will the government be infiltrating personal text messages?",
+      "ge_sources": [
+        {
+          "agg_source_id": 2,
+          "url": "law.cornell.edu/uscode/text/18/2703",
+          "avg_ge_freq": 0.6667,
+          "relative_se_rank": 2.2222222222222223,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 3,
+          "url": "politifact.com/factchecks/2021/jul/15/facebook-posts/biden-seeking-infiltrate-private-text-messages-s-f",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 0.1111111111111111,
+          "reciprocal_se_rank": 0.125,
+          "normalized_reciprocal_se_rank": 0.47979797979797983
+        },
+        {
+          "agg_source_id": 4,
+          "url": "law.cornell.edu/supct/cert/13-132",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.2222222222222223,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 6,
+          "url": "prnewswire.com/news-releases/ctia-updates-messaging-principles-and-best-practices-to-further-protect-messaging-from-spam-300887925.html",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.2222222222222223,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 7,
+          "url": "about.fb.com/news/2023/12/default-end-to-end-encryption-on-messenger",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.2222222222222223,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        }
+      ],
+      "percentage_ge_sources_not_in_se_sources": 80.0
+    },
+    {
+      "query_id": 78,
+      "query": "Did Rick Scott take $200,000 from a family that leased land for drilling and is he now trying to hide from it?",
+      "ge_sources": [
+        {
+          "agg_source_id": 1,
+          "url": "politifact.com/factchecks/2014/aug/28/next-generation-climate-action-committee/nextgen-ad-says-rick-scott-trying-hide-donation-re",
+          "avg_ge_freq": 2.0,
+          "relative_se_rank": 2.127659574468085,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 2,
+          "url": "politifact.com/factchecks/2014/aug/15/next-generation-climate-action-committee/nextgen-ad-rick-scott-takes-money-polluters",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.127659574468085,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 3,
+          "url": "politifact.com/article/2014/oct/30/fact-checking-claims-about-environment-floridas-ra",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.127659574468085,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 4,
+          "url": "factcheck.org/2014/08/florida-fracking-fracas",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.127659574468085,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        }
+      ],
+      "percentage_ge_sources_not_in_se_sources": 100.0
+    },
+    {
+      "query_id": 79,
+      "query": "Did U.S. Representatives Rashid Tlaib and Ilhan Omar co-sponsor legislation to recognize Muslim holidays as federal holidays?",
+      "ge_sources": [
+        {
+          "agg_source_id": 1,
+          "url": "snopes.com/fact-check/tlaib-omar-muslim-holidays",
+          "avg_ge_freq": 1.0,
+          "relative_se_rank": 0.044444444444444446,
+          "reciprocal_se_rank": 0.2,
+          "normalized_reciprocal_se_rank": 0.791919191919192
+        }
+      ],
+      "percentage_ge_sources_not_in_se_sources": 0.0
+    },
+    {
+      "query_id": 80,
+      "query": "Is the therapeutic use of the drug Dapsone to treat pyoderma gangrenosum based on anecdotal evidence?",
+      "ge_sources": [
+        {
+          "agg_source_id": 4,
+          "url": "link.springer.com/article/10.1007/s00281-025-01064-7",
+          "avg_ge_freq": 0.6667,
+          "relative_se_rank": 2.127659574468085,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 7,
+          "url": "mayoclinic.org/diseases-conditions/pyoderma-gangrenosum/diagnosis-treatment/drc-20350392",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 0.5319148936170213,
+          "reciprocal_se_rank": 0.03571428571428571,
+          "normalized_reciprocal_se_rank": 0.10822510822510822
+        }
+      ],
+      "percentage_ge_sources_not_in_se_sources": 50.0
+    },
+    {
+      "query_id": 81,
+      "query": "How do I evaluate AUC in Apache Mahout?",
+      "ge_sources": [
+        {
+          "agg_source_id": 1,
+          "url": "mahout.apache.org/docs/0.13.0/api/docs/mahout-mr/org/apache/mahout/classifier/evaluation/auc.html",
+          "avg_ge_freq": 1.0,
+          "relative_se_rank": 0.024390243902439025,
+          "reciprocal_se_rank": 0.25,
+          "normalized_reciprocal_se_rank": 1.0
+        },
+        {
+          "agg_source_id": 2,
+          "url": "mahout.apache.org/docs/0.13.0/api/docs/mahout-mr/org/apache/mahout/classifier/sgd/adaptivelogisticregression.html",
+          "avg_ge_freq": 0.6667,
+          "relative_se_rank": 0.3902439024390244,
+          "reciprocal_se_rank": 0.05263157894736842,
+          "normalized_reciprocal_se_rank": 0.17862838915470494
+        },
+        {
+          "agg_source_id": 3,
+          "url": "ashokharnal.wordpress.com/tag/logistic-regression-mahout-command-line",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.4390243902439024,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 4,
+          "url": "packtpub.com/en-us/learning/how-to-tutorials/basic-concepts-machine-learning-and-logistic-regression-example-mahout",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.4390243902439024,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 5,
+          "url": "mahout.apache.org/docs/0.13.0/api/docs/mahout-mr/org/apache/mahout/math/stats/globalonlineauc.html",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.4390243902439024,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        }
+      ],
+      "percentage_ge_sources_not_in_se_sources": 60.0
+    },
+    {
+      "query_id": 83,
+      "query": "What teen C language?",
+      "ge_sources": [
+        {
+          "agg_source_id": 1,
+          "url": "en.wikipedia.org/wiki/lorhon_language",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.2222222222222223,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        }
+      ],
+      "percentage_ge_sources_not_in_se_sources": 100.0
+    },
+    {
+      "query_id": 84,
+      "query": "Is a 56% gross margin reasonable for apparel production and printing?",
+      "ge_sources": [
+        {
+          "agg_source_id": 1,
+          "url": "pages.stern.nyu.edu/~adamodar/new_home_page/datafile/margin.html",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.272727272727273,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 2,
+          "url": "hmgroup.com/news/h-m-hennes-mauritz-ab-full-year-report-2024",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.272727272727273,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 3,
+          "url": "pages.stern.nyu.edu/~adamodar/new_home_page/datafile/mgnroc.html",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.272727272727273,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 4,
+          "url": "finance.yahoo.com/news/lululemon-exceeds-10bn-annual-revenue-100502936.html",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.272727272727273,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 5,
+          "url": "screenprinting.com/blogs/news/screen-printing-profit-calculator",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.272727272727273,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        }
+      ],
+      "percentage_ge_sources_not_in_se_sources": 100.0
+    },
+    {
+      "query_id": 85,
+      "query": "How do I find a dependable IQ test?",
+      "ge_sources": [
+        {
+          "agg_source_id": 1,
+          "url": "locator.apa.org",
+          "avg_ge_freq": 1.0,
+          "relative_se_rank": 2.127659574468085,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 2,
+          "url": "us.mensa.org/join/testscores/qualifying-test-scores",
+          "avg_ge_freq": 1.0,
+          "relative_se_rank": 2.127659574468085,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 7,
+          "url": "us.mensa.org/join/testing",
+          "avg_ge_freq": 0.6667,
+          "relative_se_rank": 2.127659574468085,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 8,
+          "url": "buros.org/test-reviews-information/mental-measurements-yearbook",
+          "avg_ge_freq": 0.6667,
+          "relative_se_rank": 2.127659574468085,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        }
+      ],
+      "percentage_ge_sources_not_in_se_sources": 100.0
+    },
+    {
+      "query_id": 87,
+      "query": "What South Korean think about Italian?",
+      "ge_sources": [
+        {
+          "agg_source_id": 1,
+          "url": "allkpop.com/buzz/2024/09/what-foreign-countries-are-the-favorite-of-koreans-which-cities-do-they-most-want-to-visit",
+          "avg_ge_freq": 0.6667,
+          "relative_se_rank": 2.4390243902439024,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 2,
+          "url": "tridge.com/ko/stories/exploring-south-koreas-dynamic-pasta-market-key-drivers-and-forecasts",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.4390243902439024,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 3,
+          "url": "unive.it/web/en/15205/article/6083",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.4390243902439024,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 4,
+          "url": "cnbc.com/2023/01/13/south-koreans-are-the-worlds-biggest-spenders-on-luxury-goods.html",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.4390243902439024,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 5,
+          "url": "mk.co.kr/en/culture/11455206",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.4390243902439024,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        }
+      ],
+      "percentage_ge_sources_not_in_se_sources": 100.0
+    },
+    {
+      "query_id": 89,
+      "query": "How do I transfer the contacts from my SIM (used in an Android) to an iPhone 7?",
+      "ge_sources": [
+        {
+          "agg_source_id": 1,
+          "url": "support.apple.com/en-us/ht202340",
+          "avg_ge_freq": 1.0,
+          "relative_se_rank": 2.4390243902439024,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 2,
+          "url": "support.apple.com/en-us/ht202340",
+          "avg_ge_freq": 0.6667,
+          "relative_se_rank": 2.4390243902439024,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 3,
+          "url": "support.apple.com/en-us/109325",
+          "avg_ge_freq": 0.6667,
+          "relative_se_rank": 0.21951219512195122,
+          "reciprocal_se_rank": 0.08333333333333333,
+          "normalized_reciprocal_se_rank": 0.3063973063973064
+        },
+        {
+          "agg_source_id": 4,
+          "url": "support.apple.com/en-us/ht202645",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.4390243902439024,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 5,
+          "url": "support.apple.com/en-mk/118670",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.4390243902439024,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        }
+      ],
+      "percentage_ge_sources_not_in_se_sources": 80.0
+    },
+    {
+      "query_id": 90,
+      "query": "What careers can I embark as way lean six sigma black belt?",
+      "ge_sources": [
+        {
+          "agg_source_id": 1,
+          "url": "6sigma.us/six-sigma-articles/career-path-six-sigma-black-belt",
+          "avg_ge_freq": 0.6667,
+          "relative_se_rank": 0.3333333333333333,
+          "reciprocal_se_rank": 0.05555555555555555,
+          "normalized_reciprocal_se_rank": 0.19079685746352412
+        },
+        {
+          "agg_source_id": 5,
+          "url": "investopedia.com/articles/investing/102014/guide-six-sigma-black-belt.asp",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.2222222222222223,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        }
+      ],
+      "percentage_ge_sources_not_in_se_sources": 50.0
+    },
+    {
+      "query_id": 92,
+      "query": "What would happen to nor a pescatarian if they started eating red meat?",
+      "ge_sources": [
+        {
+          "agg_source_id": 1,
+          "url": "nature.com/articles/nature12820",
+          "avg_ge_freq": 0.6667,
+          "relative_se_rank": 2.0408163265306123,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 2,
+          "url": "who.int/news-room/questions-and-answers/item/cancer-carcinogenicity-of-the-consumption-of-red-meat-and-processed-meat",
+          "avg_ge_freq": 0.6667,
+          "relative_se_rank": 2.0408163265306123,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 3,
+          "url": "ods.od.nih.gov/factsheets/iron-healthprofessional",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.0408163265306123,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 4,
+          "url": "ods.od.nih.gov/factsheets/iron-healthprofessional",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.0408163265306123,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 6,
+          "url": "arthritis.org/health-wellness/healthy-living/nutrition/healthy-eating/gout-diet-dos-and-donts",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.0408163265306123,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        }
+      ],
+      "percentage_ge_sources_not_in_se_sources": 100.0
+    },
+    {
+      "query_id": 94,
+      "query": "How can I stop my bsc receding Hairline?",
+      "ge_sources": [
+        {
+          "agg_source_id": 1,
+          "url": "aad.org/public/diseases/hair-loss/causes/hairstyles",
+          "avg_ge_freq": 2.0,
+          "relative_se_rank": 2.5,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 2,
+          "url": "aad.org/public/diseases/hair-loss/types/frontal-fibrosing-alopecia/treatment",
+          "avg_ge_freq": 1.0,
+          "relative_se_rank": 2.5,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 3,
+          "url": "aad.org/public/diseases/hair-loss/treatment/diagnosis-treat",
+          "avg_ge_freq": 0.6667,
+          "relative_se_rank": 2.5,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 7,
+          "url": "aad.org/public/diseases/hair-loss/treatment/transplant",
+          "avg_ge_freq": 0.6667,
+          "relative_se_rank": 2.5,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 8,
+          "url": "ccjm.org/content/88/3/173",
+          "avg_ge_freq": 0.6667,
+          "relative_se_rank": 2.5,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        }
+      ],
+      "percentage_ge_sources_not_in_se_sources": 100.0
+    },
+    {
+      "query_id": 95,
+      "query": "How do best country to study masters?",
+      "ge_sources": [
+        {
+          "agg_source_id": 1,
+          "url": "uscis.gov/working-in-the-united-states/students-and-exchange-visitors/optional-practical-training-extension-for-stem-students-stem-opt",
+          "avg_ge_freq": 1.6667,
+          "relative_se_rank": 2.4390243902439024,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 2,
+          "url": "irishimmigration.ie/my-situation-has-changed-since-i-arrived-in-ireland/third-level-graduate-programme",
+          "avg_ge_freq": 1.3333,
+          "relative_se_rank": 2.4390243902439024,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 3,
+          "url": "canada.ca/en/immigration-refugees-citizenship/services/study-canada/work/after-graduation/about.html",
+          "avg_ge_freq": 1.0,
+          "relative_se_rank": 2.4390243902439024,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 4,
+          "url": "gov.uk/government/publications/graduate-caseworker-guidance/graduate-caseworker-guidance-accessible-version",
+          "avg_ge_freq": 1.0,
+          "relative_se_rank": 2.4390243902439024,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 5,
+          "url": "ind.nl/en/residence-permits/work/residence-permit-for-orientation-year",
+          "avg_ge_freq": 1.0,
+          "relative_se_rank": 2.4390243902439024,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        }
+      ],
+      "percentage_ge_sources_not_in_se_sources": 100.0
+    },
+    {
+      "query_id": 96,
+      "query": "Is it safe to run 32 bit on 64 bit windows 10?",
+      "ge_sources": [
+        {
+          "agg_source_id": 1,
+          "url": "learn.microsoft.com/en-us/windows/win32/winprog64/running-32-bit-applications",
+          "avg_ge_freq": 0.6667,
+          "relative_se_rank": 2.272727272727273,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 2,
+          "url": "learn.microsoft.com/en-us/troubleshoot/windows-server/performance/compatibility-limitations-32-bit-programs-64-bit-system",
+          "avg_ge_freq": 0.6667,
+          "relative_se_rank": 0.045454545454545456,
+          "reciprocal_se_rank": 0.2,
+          "normalized_reciprocal_se_rank": 0.791919191919192
+        },
+        {
+          "agg_source_id": 3,
+          "url": "learn.microsoft.com/en-us/windows/win32/winprog64/file-system-redirector",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.272727272727273,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 4,
+          "url": "learn.microsoft.com/en-us/windows/win32/memory/memory-limits-for-windows-releases",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.272727272727273,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        }
+      ],
+      "percentage_ge_sources_not_in_se_sources": 75.0
+    },
+    {
+      "query_id": 97,
+      "query": "What to read about american history?",
+      "ge_sources": [
+        {
+          "agg_source_id": 1,
+          "url": "en.wikipedia.org/wiki/oxford_history_of_the_united_states",
+          "avg_ge_freq": 0.6667,
+          "relative_se_rank": 2.5,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 2,
+          "url": "en.wikipedia.org/wiki/the_rediscovery_of_america",
+          "avg_ge_freq": 0.6667,
+          "relative_se_rank": 2.5,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 3,
+          "url": "en.wikipedia.org/wiki/reconstruction%3a_america%27s_unfinished_revolution%2c_1863%e2%80%931877",
+          "avg_ge_freq": 0.6667,
+          "relative_se_rank": 2.5,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 5,
+          "url": "britannica.com/topic/pulitzer-prize",
+          "avg_ge_freq": 0.6667,
+          "relative_se_rank": 2.5,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 6,
+          "url": "americanyawp.com/text/introduction",
+          "avg_ge_freq": 0.6667,
+          "relative_se_rank": 2.5,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        }
+      ],
+      "percentage_ge_sources_not_in_se_sources": 100.0
+    },
+    {
+      "query_id": 98,
+      "query": "Can I recover emails deleted from Gmail?",
+      "ge_sources": [
+        {
+          "agg_source_id": 1,
+          "url": "support.google.com/a/answer/112445",
+          "avg_ge_freq": 2.0,
+          "relative_se_rank": 2.5,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 2,
+          "url": "support.google.com/mail/answer/7015314",
+          "avg_ge_freq": 0.6667,
+          "relative_se_rank": 2.5,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 3,
+          "url": "support.google.com/mail/answer/7401",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.5,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 6,
+          "url": "support.google.com/a/answer/112445",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.5,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 7,
+          "url": "workspace.google.com/learn-more/security/security-whitepaper/data-recovery",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.5,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        }
+      ],
+      "percentage_ge_sources_not_in_se_sources": 100.0
+    },
+    {
+      "query_id": 99,
+      "query": "Will time travel ever fuels possable?",
+      "ge_sources": [
+        {
+          "agg_source_id": 1,
+          "url": "nist.gov/news-events/news/2010/09/nist-clock-experiment-demonstrates-your-head-older-your-feet",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.4390243902439024,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 2,
+          "url": "plato.stanford.edu/archives/fall2022/entries/time-travel-phys",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.4390243902439024,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        }
+      ],
+      "percentage_ge_sources_not_in_se_sources": 100.0
+    }
+  ],
+  "metadata": {
+    "min_reciprocal_se_rank": 0.009708737864077669,
+    "max_reciprocal_se_rank": 0.25
+  }
+}

@@ -1,0 +1,820 @@
+{
+  "results": [
+    {
+      "query_id": 1,
+      "query": "I want a smaller laptop, nothing too unwieldy.  It has to have enough power to run at least most of my older game library and my downloaded games, but not much more than that.  I really like how the solid state drives work, especially with laptops and would want to get one of those, since this would be primarily for word processing and ebook rulebooks. Please provide some product recommendations for me",
+      "ge_sources": [
+        {
+          "agg_source_id": 1,
+          "url": "videogamer.com/tech/gaming-laptop/best-small",
+          "avg_ge_freq": 1.0,
+          "relative_se_rank": 2.2222222222222223,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 2,
+          "url": "rtings.com/laptop/reviews/best/by-size/13-14-inch",
+          "avg_ge_freq": 1.0,
+          "relative_se_rank": 2.2222222222222223,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 3,
+          "url": "rtings.com/laptop/reviews/best/by-usage/writers",
+          "avg_ge_freq": 1.0,
+          "relative_se_rank": 2.2222222222222223,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 4,
+          "url": "pcmag.com/picks/the-best-laptops",
+          "avg_ge_freq": 1.0,
+          "relative_se_rank": 2.2222222222222223,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 5,
+          "url": "cnet.com/tech/computing/best-cheap-gaming-laptop",
+          "avg_ge_freq": 1.0,
+          "relative_se_rank": 2.2222222222222223,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        }
+      ],
+      "percentage_ge_sources_not_in_se_sources": 100.0
+    },
+    {
+      "query_id": 11,
+      "query": "I would choose a reasonably-priced (under $50) short trenchcoat as a replacement. Please provide some product recommendations for me",
+      "ge_sources": [
+        {
+          "agg_source_id": 1,
+          "url": "travelandleisure.com/best-amazon-trench-coats-under-50-november-2025-11845196",
+          "avg_ge_freq": 1.0,
+          "relative_se_rank": 0.04878048780487805,
+          "reciprocal_se_rank": 0.2,
+          "normalized_reciprocal_se_rank": 0.791919191919192
+        },
+        {
+          "agg_source_id": 2,
+          "url": "amazon.com/womens-coats-jackets-under-50/s",
+          "avg_ge_freq": 1.0,
+          "relative_se_rank": 2.4390243902439024,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 3,
+          "url": "whowhatwear.com/fashion/outerwear/best-amazon-prime-big-deal-days-2025-coat-deals",
+          "avg_ge_freq": 1.0,
+          "relative_se_rank": 2.4390243902439024,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 4,
+          "url": "poshmark.com/trend/trench-coats-under-50-1ce65f40f44bb8d702846750",
+          "avg_ge_freq": 1.0,
+          "relative_se_rank": 2.4390243902439024,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 5,
+          "url": "glamour.com/gallery/best-trench-coat-for-women",
+          "avg_ge_freq": 1.0,
+          "relative_se_rank": 2.4390243902439024,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        }
+      ],
+      "percentage_ge_sources_not_in_se_sources": 80.0
+    },
+    {
+      "query_id": 21,
+      "query": "Can yoga really detoxify your body?",
+      "ge_sources": [
+        {
+          "agg_source_id": 1,
+          "url": "nccih.nih.gov/health/providers/digest/yoga-for-health-science",
+          "avg_ge_freq": 1.0,
+          "relative_se_rank": 2.0833333333333335,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 2,
+          "url": "discovermagazine.com/does-yoga-really-detoxify-the-body-44026",
+          "avg_ge_freq": 1.0,
+          "relative_se_rank": 0.3125,
+          "reciprocal_se_rank": 0.05555555555555555,
+          "normalized_reciprocal_se_rank": 0.19079685746352412
+        },
+        {
+          "agg_source_id": 3,
+          "url": "cbsnews.com/news/reality-check-yoga-does-not-release-toxins-from-the-body",
+          "avg_ge_freq": 1.0,
+          "relative_se_rank": 0.041666666666666664,
+          "reciprocal_se_rank": 0.2,
+          "normalized_reciprocal_se_rank": 0.791919191919192
+        },
+        {
+          "agg_source_id": 4,
+          "url": "pmc.ncbi.nlm.nih.gov/articles/pmc11068214",
+          "avg_ge_freq": 1.0,
+          "relative_se_rank": 2.0833333333333335,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 5,
+          "url": "pmc.ncbi.nlm.nih.gov/articles/pmc5225742",
+          "avg_ge_freq": 1.0,
+          "relative_se_rank": 2.0833333333333335,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        }
+      ],
+      "percentage_ge_sources_not_in_se_sources": 60.0
+    },
+    {
+      "query_id": 31,
+      "query": "Can psoriasis be cured with UV light therapy?",
+      "ge_sources": [
+        {
+          "agg_source_id": 1,
+          "url": "psoriasis.org/the-light-treatment-effectiveness-lite-study",
+          "avg_ge_freq": 1.0,
+          "relative_se_rank": 2.2222222222222223,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 2,
+          "url": "pmc.ncbi.nlm.nih.gov/articles/pmc5756569",
+          "avg_ge_freq": 1.0,
+          "relative_se_rank": 2.2222222222222223,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 3,
+          "url": "verywellhealth.com/phototherapy-for-psoriasis-4154025",
+          "avg_ge_freq": 1.0,
+          "relative_se_rank": 0.5777777777777777,
+          "reciprocal_se_rank": 0.034482758620689655,
+          "normalized_reciprocal_se_rank": 0.10309996516893069
+        },
+        {
+          "agg_source_id": 4,
+          "url": "medicalnewstoday.com/articles/323593",
+          "avg_ge_freq": 1.0,
+          "relative_se_rank": 0.3111111111111111,
+          "reciprocal_se_rank": 0.058823529411764705,
+          "normalized_reciprocal_se_rank": 0.20439691027926324
+        },
+        {
+          "agg_source_id": 5,
+          "url": "mayoclinic.org/diseases-conditions/psoriasis/diagnosis-treatment/drc-20355845",
+          "avg_ge_freq": 1.0,
+          "relative_se_rank": 0.3333333333333333,
+          "reciprocal_se_rank": 0.05555555555555555,
+          "normalized_reciprocal_se_rank": 0.19079685746352412
+        }
+      ],
+      "percentage_ge_sources_not_in_se_sources": 40.0
+    },
+    {
+      "query_id": 41,
+      "query": "Which band has more constant members, Lilys or Ratatat?",
+      "ge_sources": [
+        {
+          "agg_source_id": 1,
+          "url": "en.wikipedia.org/wiki/lilys",
+          "avg_ge_freq": 1.0,
+          "relative_se_rank": 4.545454545454546,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 2,
+          "url": "grokipedia.com/page/lilys",
+          "avg_ge_freq": 1.0,
+          "relative_se_rank": 4.545454545454546,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 3,
+          "url": "en.wikipedia.org/wiki/ratatat",
+          "avg_ge_freq": 1.0,
+          "relative_se_rank": 4.545454545454546,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 4,
+          "url": "equipboard.com/band/ratatat",
+          "avg_ge_freq": 1.0,
+          "relative_se_rank": 4.545454545454546,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        }
+      ],
+      "percentage_ge_sources_not_in_se_sources": 100.0
+    },
+    {
+      "query_id": 51,
+      "query": "The German geographer and geopolitician Otto Maull was part of a team led by Haushofer whose close associate was a prominent politician in Nazi Germany born in 1894 who served under Hitler in 1933 as what capacity?",
+      "ge_sources": [
+        {
+          "agg_source_id": 1,
+          "url": "en.wikipedia.org/wiki/rudolf_hess",
+          "avg_ge_freq": 1.0,
+          "relative_se_rank": 2.127659574468085,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 2,
+          "url": "worldhistory.org/rudolf_hess",
+          "avg_ge_freq": 1.0,
+          "relative_se_rank": 2.127659574468085,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 3,
+          "url": "historyplace.com/worldwar2/biographies/hess-biography.htm",
+          "avg_ge_freq": 1.0,
+          "relative_se_rank": 2.127659574468085,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 4,
+          "url": "encyclopedia.com/history/encyclopedias-almanacs-transcripts-and-maps/hess-rudolf-1894-1987",
+          "avg_ge_freq": 1.0,
+          "relative_se_rank": 2.127659574468085,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 5,
+          "url": "ebsco.com/research-starters/history/rudolf-hess",
+          "avg_ge_freq": 1.0,
+          "relative_se_rank": 2.127659574468085,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        }
+      ],
+      "percentage_ge_sources_not_in_se_sources": 100.0
+    },
+    {
+      "query_id": 61,
+      "query": "Did a North Carolina study prove that over a million people likely voted twice in the 2012 election?",
+      "ge_sources": [
+        {
+          "agg_source_id": 1,
+          "url": "api.politifact.com/factchecks/2014/apr/10/dick-morris/dick-morris-theres-proof-over-1-million-people-vot",
+          "avg_ge_freq": 1.0,
+          "relative_se_rank": 2.2222222222222223,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 2,
+          "url": "academia.edu/105921970/one_person_one_vote_estimating_the_prevalence_of_double_voting_in_u_s_presidential_elections",
+          "avg_ge_freq": 1.0,
+          "relative_se_rank": 2.2222222222222223,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 3,
+          "url": "policylab.hks.harvard.edu/projects/one-person-one-vote.html",
+          "avg_ge_freq": 1.0,
+          "relative_se_rank": 2.2222222222222223,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 4,
+          "url": "electionacademy.lib.umn.edu/2014/04/03/north-carolina-analysis-of-mul",
+          "avg_ge_freq": 1.0,
+          "relative_se_rank": 2.2222222222222223,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 5,
+          "url": "politico.com/story/2014/04/nc-probes-possible-double-voting-105335",
+          "avg_ge_freq": 1.0,
+          "relative_se_rank": 0.06666666666666667,
+          "reciprocal_se_rank": 0.16666666666666666,
+          "normalized_reciprocal_se_rank": 0.6531986531986531
+        }
+      ],
+      "percentage_ge_sources_not_in_se_sources": 80.0
+    },
+    {
+      "query_id": 71,
+      "query": "Did Jim Renacci run against the Washington establishment in the election but is now embracing it with big money and special interest fundraisers?",
+      "ge_sources": [
+        {
+          "agg_source_id": 1,
+          "url": "politifact.com/factchecks/2010/dec/13/democratic-congressional-campaign-committee/democratic-congressional-campaign-committe-takes-l",
+          "avg_ge_freq": 1.0,
+          "relative_se_rank": 0.02702702702702703,
+          "reciprocal_se_rank": 0.25,
+          "normalized_reciprocal_se_rank": 1.0
+        },
+        {
+          "agg_source_id": 2,
+          "url": "en.wikipedia.org/wiki/jim_renacci",
+          "avg_ge_freq": 1.0,
+          "relative_se_rank": 2.7027027027027026,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 3,
+          "url": "opensecrets.org/members-of-congress/jim-renacci/summary",
+          "avg_ge_freq": 1.0,
+          "relative_se_rank": 2.7027027027027026,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        }
+      ],
+      "percentage_ge_sources_not_in_se_sources": 66.66666666666667
+    },
+    {
+      "query_id": 81,
+      "query": "How do I evaluate AUC in Apache Mahout?",
+      "ge_sources": [
+        {
+          "agg_source_id": 1,
+          "url": "mahout.apache.org/docs/0.13.0/api/docs/mahout-mr/org/apache/mahout/classifier/evaluation/auc.html",
+          "avg_ge_freq": 1.0,
+          "relative_se_rank": 0.024390243902439025,
+          "reciprocal_se_rank": 0.25,
+          "normalized_reciprocal_se_rank": 1.0
+        },
+        {
+          "agg_source_id": 2,
+          "url": "livebook.manning.com/book/mahout-in-action/chapter-15",
+          "avg_ge_freq": 1.0,
+          "relative_se_rank": 2.4390243902439024,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 3,
+          "url": "listendata.com/2014/08/learn-area-under-curve-auc.html",
+          "avg_ge_freq": 1.0,
+          "relative_se_rank": 2.4390243902439024,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        }
+      ],
+      "percentage_ge_sources_not_in_se_sources": 66.66666666666667
+    },
+    {
+      "query_id": 91,
+      "query": "Who is the most beautiful actress Hollywood?",
+      "ge_sources": [
+        {
+          "agg_source_id": 1,
+          "url": "coveredgeekly.com/top-18-beauty-female-stars-of-2024-yearly-poll-results",
+          "avg_ge_freq": 1.0,
+          "relative_se_rank": 2.7777777777777777,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 2,
+          "url": "people.com/beauties-of-the-year-2024-8633971",
+          "avg_ge_freq": 1.0,
+          "relative_se_rank": 2.7777777777777777,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 3,
+          "url": "pickytop.com/top-hollywood-actress",
+          "avg_ge_freq": 1.0,
+          "relative_se_rank": 2.7777777777777777,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 4,
+          "url": "fameandfrills.com/most-beautiful-hollywood-actresses",
+          "avg_ge_freq": 1.0,
+          "relative_se_rank": 2.7777777777777777,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 5,
+          "url": "maxim.com/news/meet-the-2024-maxim-hot-100",
+          "avg_ge_freq": 1.0,
+          "relative_se_rank": 2.7777777777777777,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        }
+      ],
+      "percentage_ge_sources_not_in_se_sources": 100.0
+    },
+    {
+      "query_id": 2,
+      "query": "The main feature would be a touch screen but would also have a keyboard.  It would be the latest model made by a company that has a good reputation that goes back 50 years. I would be able to listen to music, watch feature films and tv programs on it, plus use it to contact my friends on social media. Please provide some product recommendations for me",
+      "ge_sources": [
+        {
+          "agg_source_id": 1,
+          "url": "ign.com/articles/best-detachable-laptops",
+          "avg_ge_freq": 1.0,
+          "relative_se_rank": 2.2222222222222223,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 2,
+          "url": "microsoft.com/en-us/surface/business/surface-pro-10",
+          "avg_ge_freq": 1.0,
+          "relative_se_rank": 2.2222222222222223,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 3,
+          "url": "microsoft.com/en-us/surface/devices/surface-pro",
+          "avg_ge_freq": 1.0,
+          "relative_se_rank": 2.2222222222222223,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 4,
+          "url": "nanoreview.net/en/laptop/microsoft-surface-pro-10",
+          "avg_ge_freq": 1.0,
+          "relative_se_rank": 2.2222222222222223,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        }
+      ],
+      "percentage_ge_sources_not_in_se_sources": 100.0
+    },
+    {
+      "query_id": 12,
+      "query": "white and rose gold hp laptop with ssd card and core i7. Please provide some product recommendations for me",
+      "ge_sources": [
+        {
+          "agg_source_id": 1,
+          "url": "hp.com/us-en/shop/custom/hp-laptop-17t-cn300-17-inch-intel-core-i7-1355u-12gb-ram-512gb-ssd-pale-rose-gold-7p3q0av_49038",
+          "avg_ge_freq": 1.0,
+          "relative_se_rank": 2.5,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 2,
+          "url": "bestbuy.com/product/spectre-x360-2-in-1-13-3-touch-screen-laptop-intel-core-i7-16gb-memory-360gb-solid-state-drive-hp-finish-in-pale-rose-gold/jj8s9h5g4z",
+          "avg_ge_freq": 1.0,
+          "relative_se_rank": 2.5,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 3,
+          "url": "flipkart.com/hp-pavilion-14-x360-intel-core-i7-13th-gen-1355u-16-gb-512-gb-ssd-windows-11-home-14-ek1152tu-2-1-laptop/p/itm379c22b7307cb",
+          "avg_ge_freq": 1.0,
+          "relative_se_rank": 2.5,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 4,
+          "url": "moglix.com/hp-pavilion-x360-14-ek1020tu-pale-rose-gold-laptop-with-core-i7-16gb-512gb-ssd-intel-iris-xe-graphics-windows-11-home-14-inch-fhd-display-7z1p8pa/mp/msn153vdpz3jk3",
+          "avg_ge_freq": 1.0,
+          "relative_se_rank": 2.5,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        }
+      ],
+      "percentage_ge_sources_not_in_se_sources": 100.0
+    },
+    {
+      "query_id": 22,
+      "query": "Did the universe have a beginning?",
+      "ge_sources": [
+        {
+          "agg_source_id": 1,
+          "url": "bigthink.com/starts-with-a-bang/cosmic-microwave-background-proves-big-bang",
+          "avg_ge_freq": 1.0,
+          "relative_se_rank": 2.380952380952381,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 2,
+          "url": "lambda.gsfc.nasa.gov/product/suborbit/polar/cmb.physics.wisc.edu/polar/ezexp.html",
+          "avg_ge_freq": 1.0,
+          "relative_se_rank": 2.380952380952381,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 3,
+          "url": "science.nasa.gov/mission/hubble/science/science-behind-the-discoveries/hubble-big-bang",
+          "avg_ge_freq": 1.0,
+          "relative_se_rank": 2.380952380952381,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 4,
+          "url": "scientificamerican.com/article/the-universe-began-with-a-bang-not-a-bounce-new-studies-find",
+          "avg_ge_freq": 1.0,
+          "relative_se_rank": 2.380952380952381,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 5,
+          "url": "nationalgeographic.com/science/article/origins-of-the-universe",
+          "avg_ge_freq": 1.0,
+          "relative_se_rank": 1.0,
+          "reciprocal_se_rank": 0.022222222222222223,
+          "normalized_reciprocal_se_rank": 0.05207631874298541
+        }
+      ],
+      "percentage_ge_sources_not_in_se_sources": 80.0
+    },
+    {
+      "query_id": 32,
+      "query": "Should the use of CRISPR technology for editing the human germline be strictly prohibited?",
+      "ge_sources": [
+        {
+          "agg_source_id": 1,
+          "url": "pmc.ncbi.nlm.nih.gov/articles/pmc6286228",
+          "avg_ge_freq": 1.0,
+          "relative_se_rank": 1.0666666666666667,
+          "reciprocal_se_rank": 0.0196078431372549,
+          "normalized_reciprocal_se_rank": 0.04119627649039414
+        },
+        {
+          "agg_source_id": 2,
+          "url": "genome.gov/about-genomics/policy-issues/genome-editing/ethical-concerns",
+          "avg_ge_freq": 1.0,
+          "relative_se_rank": 0.022222222222222223,
+          "reciprocal_se_rank": 0.25,
+          "normalized_reciprocal_se_rank": 1.0
+        },
+        {
+          "agg_source_id": 3,
+          "url": "who.int/publications/i/item/9789240030381",
+          "avg_ge_freq": 1.0,
+          "relative_se_rank": 2.2222222222222223,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 4,
+          "url": "theregreview.org/2024/06/01/editing-the-human-genome",
+          "avg_ge_freq": 1.0,
+          "relative_se_rank": 2.2222222222222223,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 5,
+          "url": "pmc.ncbi.nlm.nih.gov/articles/pmc7747319",
+          "avg_ge_freq": 1.0,
+          "relative_se_rank": 0.6222222222222222,
+          "reciprocal_se_rank": 0.03225806451612903,
+          "normalized_reciprocal_se_rank": 0.093841642228739
+        }
+      ],
+      "percentage_ge_sources_not_in_se_sources": 40.0
+    },
+    {
+      "query_id": 42,
+      "query": "Which documentary was release first, Baghdad ER or The Ten-Year Lunch?",
+      "ge_sources": [
+        {
+          "agg_source_id": 1,
+          "url": "en.wikipedia.org/wiki/baghdad_er",
+          "avg_ge_freq": 1.0,
+          "relative_se_rank": 0.08163265306122448,
+          "reciprocal_se_rank": 0.14285714285714285,
+          "normalized_reciprocal_se_rank": 0.5541125541125541
+        },
+        {
+          "agg_source_id": 2,
+          "url": "en.wikipedia.org/wiki/the_ten-year_lunch",
+          "avg_ge_freq": 1.0,
+          "relative_se_rank": 0.02040816326530612,
+          "reciprocal_se_rank": 0.25,
+          "normalized_reciprocal_se_rank": 1.0
+        }
+      ],
+      "percentage_ge_sources_not_in_se_sources": 0.0
+    },
+    {
+      "query_id": 52,
+      "query": "Sam Mendes and Ruby Yang share what profession?",
+      "ge_sources": [
+        {
+          "agg_source_id": 1,
+          "url": "en.wikipedia.org/wiki/sam_mendes",
+          "avg_ge_freq": 1.0,
+          "relative_se_rank": 2.0408163265306123,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 2,
+          "url": "en.wikipedia.org/wiki/ruby_yang",
+          "avg_ge_freq": 1.0,
+          "relative_se_rank": 2.0408163265306123,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        }
+      ],
+      "percentage_ge_sources_not_in_se_sources": 100.0
+    },
+    {
+      "query_id": 62,
+      "query": "Are kids less likely to get and spread COVID-19 based on good data available?",
+      "ge_sources": [
+        {
+          "agg_source_id": 1,
+          "url": "pmc.ncbi.nlm.nih.gov/articles/pmc11379298",
+          "avg_ge_freq": 1.0,
+          "relative_se_rank": 2.4390243902439024,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 2,
+          "url": "nature.com/articles/s41598-024-82646-7",
+          "avg_ge_freq": 1.0,
+          "relative_se_rank": 2.4390243902439024,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 3,
+          "url": "sph.umich.edu/news/2024posts/how-school-eligibility-influences-the-spread-of-infectious-diseases-insights-for-future-outbreaks.html",
+          "avg_ge_freq": 1.0,
+          "relative_se_rank": 2.4390243902439024,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 4,
+          "url": "pubmed.ncbi.nlm.nih.gov/35365104",
+          "avg_ge_freq": 1.0,
+          "relative_se_rank": 2.4390243902439024,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 5,
+          "url": "bmjpaedsopen.bmj.com/content/7/1/e001718",
+          "avg_ge_freq": 1.0,
+          "relative_se_rank": 2.4390243902439024,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        }
+      ],
+      "percentage_ge_sources_not_in_se_sources": 100.0
+    },
+    {
+      "query_id": 72,
+      "query": "Will a pack-a-day smoker who quits because of the tax increase save about $1,650 a year?",
+      "ge_sources": [
+        {
+          "agg_source_id": 1,
+          "url": "politifact.com/factchecks/2013/apr/15/nancy-nathanson/would-pack-day-smoker-save-1650-year-if-they-quit-",
+          "avg_ge_freq": 1.0,
+          "relative_se_rank": 0.07317073170731707,
+          "reciprocal_se_rank": 0.16666666666666666,
+          "normalized_reciprocal_se_rank": 0.6531986531986531
+        },
+        {
+          "agg_source_id": 2,
+          "url": "smokefree.gov/quit-smoking/why-you-should-quit/how-much-will-you-save",
+          "avg_ge_freq": 1.0,
+          "relative_se_rank": 0.0975609756097561,
+          "reciprocal_se_rank": 0.14285714285714285,
+          "normalized_reciprocal_se_rank": 0.5541125541125541
+        },
+        {
+          "agg_source_id": 3,
+          "url": "puffpiggy.com/blog/how-much-money-can-you-save.html",
+          "avg_ge_freq": 1.0,
+          "relative_se_rank": 2.4390243902439024,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        }
+      ],
+      "percentage_ge_sources_not_in_se_sources": 33.333333333333336
+    },
+    {
+      "query_id": 82,
+      "query": "Which I concentrate my fickle mind?",
+      "ge_sources": [
+        {
+          "agg_source_id": 1,
+          "url": "verywellmind.com/things-you-can-do-to-improve-your-mental-focus-4115389",
+          "avg_ge_freq": 1.0,
+          "relative_se_rank": 0.3181818181818182,
+          "reciprocal_se_rank": 0.058823529411764705,
+          "normalized_reciprocal_se_rank": 0.20439691027926324
+        },
+        {
+          "agg_source_id": 2,
+          "url": "healthline.com/health/mental-health/how-to-stay-focused",
+          "avg_ge_freq": 1.0,
+          "relative_se_rank": 2.272727272727273,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 3,
+          "url": "pmc.ncbi.nlm.nih.gov/articles/pmc7769998",
+          "avg_ge_freq": 1.0,
+          "relative_se_rank": 2.272727272727273,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 4,
+          "url": "blog.calm.com/blog/wandering-mind",
+          "avg_ge_freq": 1.0,
+          "relative_se_rank": 2.272727272727273,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 5,
+          "url": "thoughtsandreality.com/how-to-focus-when-your-mind-keeps-wandering",
+          "avg_ge_freq": 1.0,
+          "relative_se_rank": 2.272727272727273,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        }
+      ],
+      "percentage_ge_sources_not_in_se_sources": 80.0
+    },
+    {
+      "query_id": 92,
+      "query": "What would happen to nor a pescatarian if they started eating red meat?",
+      "ge_sources": [
+        {
+          "agg_source_id": 1,
+          "url": "health.harvard.edu/nutrition/thinking-about-becoming-a-pescatarian-what-you-should-know-about-the-pescatarian-diet",
+          "avg_ge_freq": 1.0,
+          "relative_se_rank": 0.20408163265306123,
+          "reciprocal_se_rank": 0.07692307692307693,
+          "normalized_reciprocal_se_rank": 0.27972027972027974
+        },
+        {
+          "agg_source_id": 2,
+          "url": "health.clevelandclinic.org/pescatarian-diet",
+          "avg_ge_freq": 1.0,
+          "relative_se_rank": 0.2653061224489796,
+          "reciprocal_se_rank": 0.0625,
+          "normalized_reciprocal_se_rank": 0.21969696969696972
+        },
+        {
+          "agg_source_id": 3,
+          "url": "eatingwell.com/what-happens-to-your-body-when-you-start-eating-meat-again-8769051",
+          "avg_ge_freq": 1.0,
+          "relative_se_rank": 0.061224489795918366,
+          "reciprocal_se_rank": 0.16666666666666666,
+          "normalized_reciprocal_se_rank": 0.6531986531986531
+        },
+        {
+          "agg_source_id": 4,
+          "url": "frontiersin.org/journals/cardiovascular-medicine/articles/10.3389/fcvm.2022.996467/full",
+          "avg_ge_freq": 1.0,
+          "relative_se_rank": 2.0408163265306123,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        }
+      ],
+      "percentage_ge_sources_not_in_se_sources": 25.0
+    }
+  ],
+  "metadata": {
+    "min_reciprocal_se_rank": 0.009708737864077669,
+    "max_reciprocal_se_rank": 0.25
+  }
+}

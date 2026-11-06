@@ -1,0 +1,18 @@
+{
+  "unpopulated_query_count": 0,
+  "unpopulated_query_id_count": 0,
+  "unpopulated_sources_count": 2,
+  "unpopulated_agg_source_id_count": 0,
+  "unpopulated_url_count": 0,
+  "per_query_debug_data": {
+    "Entry #44": {
+      "query": "Which American musician and songwriter was born earlier, Adam Duritz or Cherie Currie?",
+      "debug_message": "Sources not populated"
+    },
+    "Entry #54": {
+      "query": "Which one between Milium and Eucommia lives more widely spread across the world?",
+      "debug_message": "Sources not populated"
+    }
+  },
+  "unpopulated_avg_ge_freq_count": 0
+}

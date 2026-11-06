@@ -1,0 +1,50 @@
+{
+  "unpopulated_query_count": 0,
+  "unpopulated_query_id_count": 0,
+  "unpopulated_sources_count": 10,
+  "unpopulated_agg_source_id_count": 0,
+  "unpopulated_url_count": 0,
+  "per_query_debug_data": {
+    "Entry #23": {
+      "query": "Does taking high doses of vitamin C help alleviate common cold symptoms?",
+      "debug_message": "Sources not populated"
+    },
+    "Entry #32": {
+      "query": "Should the draft be reinstated if not enough American citizens voluntarily enlist?",
+      "debug_message": "Sources not populated"
+    },
+    "Entry #41": {
+      "query": "Which documentary was release first, Baghdad ER or The Ten-Year Lunch?",
+      "debug_message": "Sources not populated"
+    },
+    "Entry #43": {
+      "query": "Who played the role of Nettie Harris in the 1985 film directed by Steven Spielberg?",
+      "debug_message": "Sources not populated"
+    },
+    "Entry #44": {
+      "query": "Which American musician and songwriter was born earlier, Adam Duritz or Cherie Currie?",
+      "debug_message": "Sources not populated"
+    },
+    "Entry #55": {
+      "query": "Who had a longer film career, Harry Sweet or John Biddle?",
+      "debug_message": "Sources not populated"
+    },
+    "Entry #58": {
+      "query": "The Bay Plaza Shopping Center contains a store that headquartered where?",
+      "debug_message": "Sources not populated"
+    },
+    "Entry #59": {
+      "query": "Which formed first, Fireflight or Dirty Three?",
+      "debug_message": "Sources not populated"
+    },
+    "Entry #72": {
+      "query": "Did Islamic studies professor Tariq Ramadan say Muslims are here to colonize the U.S. and Canada, spread Sharia law, and won't hesitate to use violent Jihad if necessary?",
+      "debug_message": "Sources not populated"
+    },
+    "Entry #73": {
+      "query": "Did Hillary Clinton discuss the location of Ambassador Stevens, who was later murdered in Libya, in the released emails to the public?",
+      "debug_message": "Sources not populated"
+    }
+  },
+  "unpopulated_avg_ge_freq_count": 0
+}

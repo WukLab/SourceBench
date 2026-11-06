@@ -1,0 +1,14 @@
+{
+  "unpopulated_query_count": 0,
+  "unpopulated_query_id_count": 0,
+  "unpopulated_sources_count": 1,
+  "unpopulated_agg_source_id_count": 0,
+  "unpopulated_url_count": 0,
+  "per_query_debug_data": {
+    "Entry #15": {
+      "query": "Sam Mendes and Ruby Yang share what profession?",
+      "debug_message": "Sources not populated"
+    }
+  },
+  "unpopulated_avg_ge_freq_count": 0
+}

@@ -20,6 +20,8 @@ data/
     sourcebench_queries.jsonl    the same queries as JSONL (id, query, source)
   content-scores/                evaluator outputs, 16 files, one per configuration
   collected-sources/             frozen page snapshots, 15 files, gzipped JSON
+  evaluation-results/            stored pipeline outputs (SE/GE overlap, per-query-type metrics)
+  rank-scores/                   stored GEO rank scores and collection debug reports
   LICENSE                        per-component data terms
   README.md                      this file
 ```
@@ -137,6 +139,44 @@ Two cautions:
   retrieval timestamps or content hashes.
 - `scoring.py` reads uncompressed JSON. Decompress before scoring:
   `gunzip -k data/collected-sources/<slug>.json.gz`
+
+## `evaluation-results/` and `rank-scores/`
+
+Stored outputs of the analysis pipeline, included so that recomputed numbers can be
+diffed against the ones used in the paper rather than only re-derived.
+
+| Path | Contents |
+|---|---|
+| `evaluation-results/<system>/merged_se_ge_scores.json` | Per-query overlap between a system's cited sources and Google Search results, including the `percentage_ge_sources_not_in_se_sources` figure behind the SE/GE analysis |
+| `evaluation-results/se-ge/` | `analyzed_data.json` and `correlations.csv` for the cross-system SE/GE comparison |
+| `evaluation-results/query-type-metrics/<system>/<system>_scores.csv` | Per-source scores tagged with query type, plus `total_content_score` and `weighted_total_content_score` |
+| `evaluation-results/query-type-metrics/*.csv` | Aggregates: `avg_content_score_per_query_type.csv`, `overall_score_per_llm_query_type.csv`, `query_type_audit.csv` |
+| `evaluation-results/content-metrics/content_stats_audit.json` | Content-statistics audit |
+| `rank-scores/<system>/geo_scores.json` | GEO rank scores |
+| `rank-scores/<system>/*_report.json` | Collection debug reports, including sources not found in the Google Search result set |
+
+**Provenance and caveats.** These files were recovered from the pre-release archive
+prepared before the public repository existed, so three things differ from the rest of
+`data/`:
+
+1. **Folder names have been normalised** to the slugs used elsewhere in this directory.
+   In the archive they appeared as `claude`, `grok`, `grok-4.1-fast-non-reasoning`,
+   `perplexity`, `gemini-2.5-flash-preview`, `gemini-3-flash-preview` and
+   `gemini-3-pro-preview`.
+2. **Superseded duplicates were removed.** The archive held a second, earlier copy of
+   five `query-type-metrics` folders (`perplexity-pro`, and underscore-named DeepSeek
+   variants such as `deepseek_chat_gensee`). Those copies predate the
+   `weighted_total_content_score` column, and `perplexity-pro` reports every
+   `query_type` as `Unknown`. Only the current versions are included; their row counts
+   match `content-scores/` exactly.
+3. **Coverage is narrower than `content-scores/`.** Neither tree includes
+   `google-search`, and `rank-scores/` additionally has no `gemini-2.5-flash`. Google
+   Search is the baseline the SE/GE comparison is measured against rather than a system
+   measured by it.
+
+These outputs are not required to reproduce Tables 3 and 4 — `compute_metrics.py`
+regenerates the equivalent aggregates from `content-scores/`. They are included so the
+specific artifacts behind the SE/GE and per-query-type analyses are inspectable.
 
 ## Not included
 

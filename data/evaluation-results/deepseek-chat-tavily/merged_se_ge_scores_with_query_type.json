@@ -1,0 +1,1504 @@
+[
+  {
+    "query_id": 1,
+    "query": "I want a smaller laptop, nothing too unwieldy.  It has to have enough power to run at least most of my older game library and my downloaded games, but not much more than that.  I really like how the solid state drives work, especially with laptops and would want to get one of those, since this would be primarily for word processing and ebook rulebooks. Please provide some product recommendations for me",
+    "ge_sources": [
+      {
+        "agg_source_id": 1,
+        "url": "laptopmag.com/best-picks/best-14-inch-laptop",
+        "avg_ge_freq": 1.0,
+        "relative_se_rank": 2.2222222222222223,
+        "reciprocal_se_rank": 0.009708737864077669,
+        "normalized_reciprocal_se_rank": 0.0,
+        "content_vector": {
+          "semantic_relevance": 5,
+          "factual_accuracy": 5,
+          "objectivity_tone": 4,
+          "accountability": 4,
+          "freshness": 5,
+          "transparency": 4,
+          "authority": 4,
+          "layout_ad_density": 2
+        }
+      },
+      {
+        "agg_source_id": 2,
+        "url": "ultrabookreview.com/2071-best-gaming-ultrabooks",
+        "avg_ge_freq": 1.0,
+        "relative_se_rank": 0.044444444444444446,
+        "reciprocal_se_rank": 0.2,
+        "normalized_reciprocal_se_rank": 0.791919191919192,
+        "content_vector": {
+          "semantic_relevance": 5,
+          "factual_accuracy": 4,
+          "objectivity_tone": 4,
+          "accountability": 5,
+          "freshness": 5,
+          "transparency": 4,
+          "authority": 4,
+          "layout_ad_density": 3
+        }
+      },
+      {
+        "agg_source_id": 3,
+        "url": "youtube.com/watch",
+        "avg_ge_freq": 1.0,
+        "relative_se_rank": 2.2222222222222223,
+        "reciprocal_se_rank": 0.009708737864077669,
+        "normalized_reciprocal_se_rank": 0.0,
+        "content_vector": {
+          "semantic_relevance": 2,
+          "factual_accuracy": 1,
+          "objectivity_tone": 4,
+          "accountability": 2,
+          "freshness": 5,
+          "transparency": 2,
+          "authority": 3,
+          "layout_ad_density": 2
+        }
+      }
+    ],
+    "percentage_ge_sources_not_in_se_sources": 66.66666666666667,
+    "query_type": "VACOS"
+  },
+  {
+    "query_id": 11,
+    "query": "I would choose a reasonably-priced (under $50) short trenchcoat as a replacement. Please provide some product recommendations for me",
+    "ge_sources": [
+      {
+        "agg_source_id": 1,
+        "url": "walmart.com/c/kp/ladies-short-trench-coats",
+        "avg_ge_freq": 1.0,
+        "relative_se_rank": 2.4390243902439024,
+        "reciprocal_se_rank": 0.009708737864077669,
+        "normalized_reciprocal_se_rank": 0.0,
+        "content_vector": {
+          "semantic_relevance": 1,
+          "factual_accuracy": 1,
+          "objectivity_tone": 1,
+          "accountability": 2,
+          "freshness": 5,
+          "transparency": 4,
+          "authority": 5,
+          "layout_ad_density": 1
+        }
+      },
+      {
+        "agg_source_id": 2,
+        "url": "us.amazon.com/womens-trench-coats-fashion-25-50/s",
+        "avg_ge_freq": 1.0,
+        "relative_se_rank": 2.4390243902439024,
+        "reciprocal_se_rank": 0.009708737864077669,
+        "normalized_reciprocal_se_rank": 0.0,
+        "content_vector": {
+          "semantic_relevance": null,
+          "factual_accuracy": null,
+          "objectivity_tone": null,
+          "accountability": null,
+          "freshness": null,
+          "transparency": null,
+          "authority": null,
+          "layout_ad_density": null
+        }
+      },
+      {
+        "agg_source_id": 3,
+        "url": "us.boohoo.com/categories/womens-coats-jackets-coats-trench-coats",
+        "avg_ge_freq": 1.0,
+        "relative_se_rank": 2.4390243902439024,
+        "reciprocal_se_rank": 0.009708737864077669,
+        "normalized_reciprocal_se_rank": 0.0,
+        "content_vector": {
+          "semantic_relevance": 3,
+          "factual_accuracy": 3,
+          "objectivity_tone": 4,
+          "accountability": 2,
+          "freshness": 5,
+          "transparency": 4,
+          "authority": 4,
+          "layout_ad_density": 3
+        }
+      }
+    ],
+    "percentage_ge_sources_not_in_se_sources": 100.0,
+    "query_type": "VACOS"
+  },
+  {
+    "query_id": 21,
+    "query": "Can yoga really detoxify your body?",
+    "ge_sources": [
+      {
+        "agg_source_id": 1,
+        "url": "hdfcergo.com/health-insurance/wellness-corner/yoga-detoxification-myth-vs-fact",
+        "avg_ge_freq": 1.0,
+        "relative_se_rank": 0.5208333333333334,
+        "reciprocal_se_rank": 0.03571428571428571,
+        "normalized_reciprocal_se_rank": 0.10822510822510822,
+        "content_vector": {
+          "semantic_relevance": 5,
+          "factual_accuracy": 4,
+          "objectivity_tone": 4,
+          "accountability": 3,
+          "freshness": 3,
+          "transparency": 5,
+          "authority": 4,
+          "layout_ad_density": 2
+        }
+      },
+      {
+        "agg_source_id": 2,
+        "url": "discovermagazine.com/does-yoga-really-detoxify-the-body-44026",
+        "avg_ge_freq": 1.0,
+        "relative_se_rank": 0.3125,
+        "reciprocal_se_rank": 0.05555555555555555,
+        "normalized_reciprocal_se_rank": 0.19079685746352412,
+        "content_vector": {
+          "semantic_relevance": 5,
+          "factual_accuracy": 5,
+          "objectivity_tone": 4,
+          "accountability": 4,
+          "freshness": 5,
+          "transparency": 4,
+          "authority": 4,
+          "layout_ad_density": 2
+        }
+      },
+      {
+        "agg_source_id": 3,
+        "url": "resources.healthgrades.com/right-care/lifestyle-and-wellness/detox-yoga",
+        "avg_ge_freq": 1.0,
+        "relative_se_rank": 0.0625,
+        "reciprocal_se_rank": 0.16666666666666666,
+        "normalized_reciprocal_se_rank": 0.6531986531986531,
+        "content_vector": {
+          "semantic_relevance": 5,
+          "factual_accuracy": 5,
+          "objectivity_tone": 4,
+          "accountability": 5,
+          "freshness": 3,
+          "transparency": 4,
+          "authority": 4,
+          "layout_ad_density": 2
+        }
+      },
+      {
+        "agg_source_id": 4,
+        "url": "cbsnews.com/news/reality-check-yoga-does-not-release-toxins-from-the-body",
+        "avg_ge_freq": 1.0,
+        "relative_se_rank": 0.041666666666666664,
+        "reciprocal_se_rank": 0.2,
+        "normalized_reciprocal_se_rank": 0.791919191919192,
+        "content_vector": {
+          "semantic_relevance": 5,
+          "factual_accuracy": 5,
+          "objectivity_tone": 4,
+          "accountability": 4,
+          "freshness": 2,
+          "transparency": 4,
+          "authority": 5,
+          "layout_ad_density": 4
+        }
+      },
+      {
+        "agg_source_id": 5,
+        "url": "yogajournal.com/practice/does-yoga-detox-your-body",
+        "avg_ge_freq": 1.0,
+        "relative_se_rank": 0.020833333333333332,
+        "reciprocal_se_rank": 0.25,
+        "normalized_reciprocal_se_rank": 1.0,
+        "content_vector": {
+          "semantic_relevance": 5,
+          "factual_accuracy": 4,
+          "objectivity_tone": 4,
+          "accountability": 5,
+          "freshness": 4,
+          "transparency": 4,
+          "authority": 4,
+          "layout_ad_density": 3
+        }
+      }
+    ],
+    "percentage_ge_sources_not_in_se_sources": 0.0,
+    "query_type": "DebateQA"
+  },
+  {
+    "query_id": 31,
+    "query": "Can psoriasis be cured with UV light therapy?",
+    "ge_sources": [
+      {
+        "agg_source_id": 1,
+        "url": "ncbi.nlm.nih.gov/books/nbk435696",
+        "avg_ge_freq": 1.0,
+        "relative_se_rank": 0.06666666666666667,
+        "reciprocal_se_rank": 0.16666666666666666,
+        "normalized_reciprocal_se_rank": 0.6531986531986531,
+        "content_vector": {
+          "semantic_relevance": 5,
+          "factual_accuracy": 5,
+          "objectivity_tone": 5,
+          "accountability": 4,
+          "freshness": 4,
+          "transparency": 5,
+          "authority": 5,
+          "layout_ad_density": 5
+        }
+      },
+      {
+        "agg_source_id": 2,
+        "url": "psoriasis.org/phototherapy",
+        "avg_ge_freq": 1.0,
+        "relative_se_rank": 0.022222222222222223,
+        "reciprocal_se_rank": 0.25,
+        "normalized_reciprocal_se_rank": 1.0,
+        "content_vector": {
+          "semantic_relevance": 5,
+          "factual_accuracy": 5,
+          "objectivity_tone": 5,
+          "accountability": 4,
+          "freshness": 5,
+          "transparency": 5,
+          "authority": 5,
+          "layout_ad_density": 5
+        }
+      },
+      {
+        "agg_source_id": 3,
+        "url": "bangkokhospital.com/en/bangkok/content/uv-phototherapy-for-psoriasis",
+        "avg_ge_freq": 1.0,
+        "relative_se_rank": 0.24444444444444444,
+        "reciprocal_se_rank": 0.07142857142857142,
+        "normalized_reciprocal_se_rank": 0.25685425685425683,
+        "content_vector": {
+          "semantic_relevance": 5,
+          "factual_accuracy": 4,
+          "objectivity_tone": 4,
+          "accountability": 3,
+          "freshness": 5,
+          "transparency": 5,
+          "authority": 4,
+          "layout_ad_density": 3
+        }
+      },
+      {
+        "agg_source_id": 4,
+        "url": "psoriasis-association.org.uk/forums/topic.aspx",
+        "avg_ge_freq": 1.0,
+        "relative_se_rank": 2.2222222222222223,
+        "reciprocal_se_rank": 0.009708737864077669,
+        "normalized_reciprocal_se_rank": 0.0,
+        "content_vector": {
+          "semantic_relevance": 3,
+          "factual_accuracy": 3,
+          "objectivity_tone": 3,
+          "accountability": 2,
+          "freshness": 2,
+          "transparency": 4,
+          "authority": 4,
+          "layout_ad_density": 5
+        }
+      },
+      {
+        "agg_source_id": 5,
+        "url": "philadelphiadermatology.com/medical-dermatology/psoriasis.php",
+        "avg_ge_freq": 1.0,
+        "relative_se_rank": 2.2222222222222223,
+        "reciprocal_se_rank": 0.009708737864077669,
+        "normalized_reciprocal_se_rank": 0.0,
+        "content_vector": {
+          "semantic_relevance": 5,
+          "factual_accuracy": 4,
+          "objectivity_tone": 3,
+          "accountability": 5,
+          "freshness": 5,
+          "transparency": 5,
+          "authority": 4,
+          "layout_ad_density": 3
+        }
+      }
+    ],
+    "percentage_ge_sources_not_in_se_sources": 40.0,
+    "query_type": "DebateQA"
+  },
+  {
+    "query_id": 41,
+    "query": "Which band has more constant members, Lilys or Ratatat?",
+    "ge_sources": [
+      {
+        "agg_source_id": 1,
+        "url": "last.fm/music/lilys/+wiki",
+        "avg_ge_freq": 1.0,
+        "relative_se_rank": 4.545454545454546,
+        "reciprocal_se_rank": 0.009708737864077669,
+        "normalized_reciprocal_se_rank": 0.0,
+        "content_vector": {
+          "semantic_relevance": 4,
+          "factual_accuracy": 4,
+          "objectivity_tone": 4,
+          "accountability": 3,
+          "freshness": 5,
+          "transparency": 4,
+          "authority": 4,
+          "layout_ad_density": 4
+        }
+      },
+      {
+        "agg_source_id": 2,
+        "url": "en.wikipedia.org/wiki/lilys",
+        "avg_ge_freq": 1.0,
+        "relative_se_rank": 4.545454545454546,
+        "reciprocal_se_rank": 0.009708737864077669,
+        "normalized_reciprocal_se_rank": 0.0,
+        "content_vector": {
+          "semantic_relevance": 4,
+          "factual_accuracy": 5,
+          "objectivity_tone": 4,
+          "accountability": 3,
+          "freshness": 5,
+          "transparency": 5,
+          "authority": 5,
+          "layout_ad_density": 5
+        }
+      },
+      {
+        "agg_source_id": 3,
+        "url": "last.fm/music/ratatat/+wiki",
+        "avg_ge_freq": 1.0,
+        "relative_se_rank": 4.545454545454546,
+        "reciprocal_se_rank": 0.009708737864077669,
+        "normalized_reciprocal_se_rank": 0.0,
+        "content_vector": {
+          "semantic_relevance": 3,
+          "factual_accuracy": 4,
+          "objectivity_tone": 4,
+          "accountability": 2,
+          "freshness": 2,
+          "transparency": 4,
+          "authority": 4,
+          "layout_ad_density": 3
+        }
+      },
+      {
+        "agg_source_id": 4,
+        "url": "en.wikipedia.org/wiki/ratatat",
+        "avg_ge_freq": 1.0,
+        "relative_se_rank": 4.545454545454546,
+        "reciprocal_se_rank": 0.009708737864077669,
+        "normalized_reciprocal_se_rank": 0.0,
+        "content_vector": {
+          "semantic_relevance": 2,
+          "factual_accuracy": 5,
+          "objectivity_tone": 5,
+          "accountability": 3,
+          "freshness": 5,
+          "transparency": 5,
+          "authority": 5,
+          "layout_ad_density": 5
+        }
+      }
+    ],
+    "percentage_ge_sources_not_in_se_sources": 100.0,
+    "query_type": "HotpotQA"
+  },
+  {
+    "query_id": 51,
+    "query": "The German geographer and geopolitician Otto Maull was part of a team led by Haushofer whose close associate was a prominent politician in Nazi Germany born in 1894 who served under Hitler in 1933 as what capacity?",
+    "ge_sources": [
+      {
+        "agg_source_id": 1,
+        "url": "en.wikipedia.org/wiki/rudolf_hess",
+        "avg_ge_freq": 1.0,
+        "relative_se_rank": 2.127659574468085,
+        "reciprocal_se_rank": 0.009708737864077669,
+        "normalized_reciprocal_se_rank": 0.0,
+        "content_vector": {
+          "semantic_relevance": null,
+          "factual_accuracy": null,
+          "objectivity_tone": null,
+          "accountability": null,
+          "freshness": null,
+          "transparency": null,
+          "authority": null,
+          "layout_ad_density": null
+        }
+      },
+      {
+        "agg_source_id": 2,
+        "url": "natureandcultures.net/geopolitik.html",
+        "avg_ge_freq": 1.0,
+        "relative_se_rank": 2.127659574468085,
+        "reciprocal_se_rank": 0.009708737864077669,
+        "normalized_reciprocal_se_rank": 0.0,
+        "content_vector": {
+          "semantic_relevance": 4,
+          "factual_accuracy": 5,
+          "objectivity_tone": 4,
+          "accountability": 4,
+          "freshness": 5,
+          "transparency": 3,
+          "authority": 3,
+          "layout_ad_density": 4
+        }
+      },
+      {
+        "agg_source_id": 3,
+        "url": "britannica.com/biography/rudolf-hess",
+        "avg_ge_freq": 1.0,
+        "relative_se_rank": 2.127659574468085,
+        "reciprocal_se_rank": 0.009708737864077669,
+        "normalized_reciprocal_se_rank": 0.0,
+        "content_vector": {
+          "semantic_relevance": 5,
+          "factual_accuracy": 5,
+          "objectivity_tone": 4,
+          "accountability": 4,
+          "freshness": 5,
+          "transparency": 5,
+          "authority": 5,
+          "layout_ad_density": 5
+        }
+      }
+    ],
+    "percentage_ge_sources_not_in_se_sources": 100.0,
+    "query_type": "HotpotQA"
+  },
+  {
+    "query_id": 61,
+    "query": "Did a North Carolina study prove that over a million people likely voted twice in the 2012 election?",
+    "ge_sources": [
+      {
+        "agg_source_id": 1,
+        "url": "abc11.com/tillis-berger-voter-fraud/23005",
+        "avg_ge_freq": 1.0,
+        "relative_se_rank": 2.2222222222222223,
+        "reciprocal_se_rank": 0.009708737864077669,
+        "normalized_reciprocal_se_rank": 0.0,
+        "content_vector": {
+          "semantic_relevance": 4,
+          "factual_accuracy": 4,
+          "objectivity_tone": 4,
+          "accountability": 2,
+          "freshness": 2,
+          "transparency": 4,
+          "authority": 5,
+          "layout_ad_density": 4
+        }
+      },
+      {
+        "agg_source_id": 2,
+        "url": "politico.com/story/2014/04/nc-probes-possible-double-voting-105335",
+        "avg_ge_freq": 1.0,
+        "relative_se_rank": 0.06666666666666667,
+        "reciprocal_se_rank": 0.16666666666666666,
+        "normalized_reciprocal_se_rank": 0.6531986531986531,
+        "content_vector": {
+          "semantic_relevance": 3,
+          "factual_accuracy": 4,
+          "objectivity_tone": 4,
+          "accountability": 4,
+          "freshness": 2,
+          "transparency": 4,
+          "authority": 5,
+          "layout_ad_density": 4
+        }
+      },
+      {
+        "agg_source_id": 3,
+        "url": "cambridge.org/core/journals/american-political-science-review/article/one-person-one-vote-estimating-the-prevalence-of-double-voting-in-us-presidential-elections/f0f11207b6ec1a0a5de18dc283ace926",
+        "avg_ge_freq": 1.0,
+        "relative_se_rank": 0.15555555555555556,
+        "reciprocal_se_rank": 0.1,
+        "normalized_reciprocal_se_rank": 0.3757575757575758,
+        "content_vector": {
+          "semantic_relevance": 5,
+          "factual_accuracy": 5,
+          "objectivity_tone": 5,
+          "accountability": 5,
+          "freshness": 5,
+          "transparency": 4,
+          "authority": 5,
+          "layout_ad_density": 5
+        }
+      }
+    ],
+    "percentage_ge_sources_not_in_se_sources": 33.333333333333336,
+    "query_type": "Pinocchios"
+  },
+  {
+    "query_id": 71,
+    "query": "Did Jim Renacci run against the Washington establishment in the election but is now embracing it with big money and special interest fundraisers?",
+    "ge_sources": [
+      {
+        "agg_source_id": 1,
+        "url": "politifact.com/factchecks/2010/dec/13/democratic-congressional-campaign-committee/democratic-congressional-campaign-committe-takes-l",
+        "avg_ge_freq": 1.0,
+        "relative_se_rank": 0.02702702702702703,
+        "reciprocal_se_rank": 0.25,
+        "normalized_reciprocal_se_rank": 1.0,
+        "content_vector": {
+          "semantic_relevance": 5,
+          "factual_accuracy": 5,
+          "objectivity_tone": 5,
+          "accountability": 5,
+          "freshness": 3,
+          "transparency": 5,
+          "authority": 4,
+          "layout_ad_density": 4
+        }
+      },
+      {
+        "agg_source_id": 2,
+        "url": "cleveland.com/news/erry-2018/07/8da53af9fd7366/did_jim_renacci_fall_into_the.html",
+        "avg_ge_freq": 1.0,
+        "relative_se_rank": 2.7027027027027026,
+        "reciprocal_se_rank": 0.009708737864077669,
+        "normalized_reciprocal_se_rank": 0.0,
+        "content_vector": {
+          "semantic_relevance": 5,
+          "factual_accuracy": 5,
+          "objectivity_tone": 4,
+          "accountability": 5,
+          "freshness": 2,
+          "transparency": 4,
+          "authority": 4,
+          "layout_ad_density": 4
+        }
+      },
+      {
+        "agg_source_id": 3,
+        "url": "politico.com/story/2011/01/freshmen-quick-to-play-cash-game-047721",
+        "avg_ge_freq": 1.0,
+        "relative_se_rank": 2.7027027027027026,
+        "reciprocal_se_rank": 0.009708737864077669,
+        "normalized_reciprocal_se_rank": 0.0,
+        "content_vector": {
+          "semantic_relevance": 4,
+          "factual_accuracy": 5,
+          "objectivity_tone": 4,
+          "accountability": 4,
+          "freshness": 2,
+          "transparency": 4,
+          "authority": 5,
+          "layout_ad_density": 4
+        }
+      }
+    ],
+    "percentage_ge_sources_not_in_se_sources": 66.66666666666667,
+    "query_type": "Pinocchios"
+  },
+  {
+    "query_id": 81,
+    "query": "How do I evaluate AUC in Apache Mahout?",
+    "ge_sources": [
+      {
+        "agg_source_id": 1,
+        "url": "136.175.10.10/ebook/pdf/learning_apache_mahout_classification.pdf",
+        "avg_ge_freq": 1.0,
+        "relative_se_rank": 0.24390243902439024,
+        "reciprocal_se_rank": 0.07692307692307693,
+        "normalized_reciprocal_se_rank": 0.27972027972027974,
+        "content_vector": {
+          "semantic_relevance": null,
+          "factual_accuracy": null,
+          "objectivity_tone": null,
+          "accountability": null,
+          "freshness": null,
+          "transparency": null,
+          "authority": null,
+          "layout_ad_density": null
+        }
+      },
+      {
+        "agg_source_id": 2,
+        "url": "mahout.apache.org/docs/0.13.0/api/docs/mahout-mr/org/apache/mahout/classifier/evaluation/auc.html",
+        "avg_ge_freq": 1.0,
+        "relative_se_rank": 0.024390243902439025,
+        "reciprocal_se_rank": 0.25,
+        "normalized_reciprocal_se_rank": 1.0,
+        "content_vector": {
+          "semantic_relevance": 5,
+          "factual_accuracy": 5,
+          "objectivity_tone": 3,
+          "accountability": 4,
+          "freshness": 5,
+          "transparency": 5,
+          "authority": 5,
+          "layout_ad_density": 5
+        }
+      },
+      {
+        "agg_source_id": 3,
+        "url": "svn.apache.org/repos/infra/websites/production/mahout/content/users/classification/bankmarketing-example.html",
+        "avg_ge_freq": 1.0,
+        "relative_se_rank": 2.4390243902439024,
+        "reciprocal_se_rank": 0.009708737864077669,
+        "normalized_reciprocal_se_rank": 0.0,
+        "content_vector": {
+          "semantic_relevance": 3,
+          "factual_accuracy": 4,
+          "objectivity_tone": 4,
+          "accountability": 4,
+          "freshness": 2,
+          "transparency": 5,
+          "authority": 5,
+          "layout_ad_density": 5
+        }
+      },
+      {
+        "agg_source_id": 4,
+        "url": "mail.ripublication.com/ijaer10/ijaerv10n11_121.pdf",
+        "avg_ge_freq": 1.0,
+        "relative_se_rank": 0.14634146341463414,
+        "reciprocal_se_rank": 0.1111111111111111,
+        "normalized_reciprocal_se_rank": 0.42199775533108863,
+        "content_vector": {
+          "semantic_relevance": null,
+          "factual_accuracy": null,
+          "objectivity_tone": null,
+          "accountability": null,
+          "freshness": null,
+          "transparency": null,
+          "authority": null,
+          "layout_ad_density": null
+        }
+      }
+    ],
+    "percentage_ge_sources_not_in_se_sources": 25.0,
+    "query_type": "QuoraQuestions"
+  },
+  {
+    "query_id": 91,
+    "query": "Who is the most beautiful actress Hollywood?",
+    "ge_sources": [
+      {
+        "agg_source_id": 1,
+        "url": "oreateai.com/blog/the-allure-of-hollywood-top-20-most-beautiful-actresses-in-2024/b99b196a4a0e0023b4eca3f3fd76baec",
+        "avg_ge_freq": 1.0,
+        "relative_se_rank": 2.7777777777777777,
+        "reciprocal_se_rank": 0.009708737864077669,
+        "normalized_reciprocal_se_rank": 0.0,
+        "content_vector": {
+          "semantic_relevance": 5,
+          "factual_accuracy": 3,
+          "objectivity_tone": 2,
+          "accountability": 3,
+          "freshness": 5,
+          "transparency": 2,
+          "authority": 2,
+          "layout_ad_density": 4
+        }
+      },
+      {
+        "agg_source_id": 2,
+        "url": "coveredgeekly.com/top-18-beauty-female-stars-of-2024-yearly-poll-results",
+        "avg_ge_freq": 1.0,
+        "relative_se_rank": 2.7777777777777777,
+        "reciprocal_se_rank": 0.009708737864077669,
+        "normalized_reciprocal_se_rank": 0.0,
+        "content_vector": {
+          "semantic_relevance": 1,
+          "factual_accuracy": 1,
+          "objectivity_tone": 1,
+          "accountability": 2,
+          "freshness": 5,
+          "transparency": 2,
+          "authority": 2,
+          "layout_ad_density": 1
+        }
+      },
+      {
+        "agg_source_id": 3,
+        "url": "people.com/beauties-of-the-year-2024-8633971",
+        "avg_ge_freq": 1.0,
+        "relative_se_rank": 2.7777777777777777,
+        "reciprocal_se_rank": 0.009708737864077669,
+        "normalized_reciprocal_se_rank": 0.0,
+        "content_vector": {
+          "semantic_relevance": 4,
+          "factual_accuracy": 4,
+          "objectivity_tone": 3,
+          "accountability": 4,
+          "freshness": 5,
+          "transparency": 4,
+          "authority": 4,
+          "layout_ad_density": 3
+        }
+      },
+      {
+        "agg_source_id": 4,
+        "url": "ranker.com/crowdranked-list/most-beautiful-women-in-hollywood",
+        "avg_ge_freq": 1.0,
+        "relative_se_rank": 0.16666666666666666,
+        "reciprocal_se_rank": 0.1111111111111111,
+        "normalized_reciprocal_se_rank": 0.42199775533108863,
+        "content_vector": {
+          "semantic_relevance": 4,
+          "factual_accuracy": 3,
+          "objectivity_tone": 2,
+          "accountability": 3,
+          "freshness": 5,
+          "transparency": 3,
+          "authority": 3,
+          "layout_ad_density": 3
+        }
+      },
+      {
+        "agg_source_id": 5,
+        "url": "imdb.com/list/ls595856830",
+        "avg_ge_freq": 1.0,
+        "relative_se_rank": 2.7777777777777777,
+        "reciprocal_se_rank": 0.009708737864077669,
+        "normalized_reciprocal_se_rank": 0.0,
+        "content_vector": {
+          "semantic_relevance": 3,
+          "factual_accuracy": 3,
+          "objectivity_tone": 2,
+          "accountability": 3,
+          "freshness": 5,
+          "transparency": 5,
+          "authority": 5,
+          "layout_ad_density": 4
+        }
+      }
+    ],
+    "percentage_ge_sources_not_in_se_sources": 80.0,
+    "query_type": "QuoraQuestions"
+  },
+  {
+    "query_id": 2,
+    "query": "The main feature would be a touch screen but would also have a keyboard.  It would be the latest model made by a company that has a good reputation that goes back 50 years. I would be able to listen to music, watch feature films and tv programs on it, plus use it to contact my friends on social media. Please provide some product recommendations for me",
+    "ge_sources": [
+      {
+        "agg_source_id": 1,
+        "url": "laptopmag.com/articles/best-touch-screen-laptop",
+        "avg_ge_freq": 1.0,
+        "relative_se_rank": 2.2222222222222223,
+        "reciprocal_se_rank": 0.009708737864077669,
+        "normalized_reciprocal_se_rank": 0.0,
+        "content_vector": {
+          "semantic_relevance": 4,
+          "factual_accuracy": 5,
+          "objectivity_tone": 4,
+          "accountability": 5,
+          "freshness": 5,
+          "transparency": 5,
+          "authority": 4,
+          "layout_ad_density": 3
+        }
+      },
+      {
+        "agg_source_id": 2,
+        "url": "pcmag.com/picks/the-best-2-in-1-convertible-and-hybrid-laptops",
+        "avg_ge_freq": 1.0,
+        "relative_se_rank": 2.2222222222222223,
+        "reciprocal_se_rank": 0.009708737864077669,
+        "normalized_reciprocal_se_rank": 0.0,
+        "content_vector": {
+          "semantic_relevance": 5,
+          "factual_accuracy": 5,
+          "objectivity_tone": 4,
+          "accountability": 5,
+          "freshness": 5,
+          "transparency": 4,
+          "authority": 5,
+          "layout_ad_density": 2
+        }
+      },
+      {
+        "agg_source_id": 3,
+        "url": "flexiblepcbboard.com/top-10-electronics-companies-in-the-world",
+        "avg_ge_freq": 1.0,
+        "relative_se_rank": 2.2222222222222223,
+        "reciprocal_se_rank": 0.009708737864077669,
+        "normalized_reciprocal_se_rank": 0.0,
+        "content_vector": {
+          "semantic_relevance": 1,
+          "factual_accuracy": 1,
+          "objectivity_tone": 1,
+          "accountability": 1,
+          "freshness": 1,
+          "transparency": 1,
+          "authority": 1,
+          "layout_ad_density": 1
+        }
+      }
+    ],
+    "percentage_ge_sources_not_in_se_sources": 100.0,
+    "query_type": "VACOS"
+  },
+  {
+    "query_id": 12,
+    "query": "white and rose gold hp laptop with ssd card and core i7. Please provide some product recommendations for me",
+    "ge_sources": [
+      {
+        "agg_source_id": 1,
+        "url": "bestbuy.com/site/searchpage.jsp",
+        "avg_ge_freq": 1.0,
+        "relative_se_rank": 2.5,
+        "reciprocal_se_rank": 0.009708737864077669,
+        "normalized_reciprocal_se_rank": 0.0,
+        "content_vector": {
+          "semantic_relevance": null,
+          "factual_accuracy": null,
+          "objectivity_tone": null,
+          "accountability": null,
+          "freshness": null,
+          "transparency": null,
+          "authority": null,
+          "layout_ad_density": null
+        }
+      },
+      {
+        "agg_source_id": 2,
+        "url": "hp.com/us-en/laptops-and-2-in-1s/essential.html",
+        "avg_ge_freq": 1.0,
+        "relative_se_rank": 2.5,
+        "reciprocal_se_rank": 0.009708737864077669,
+        "normalized_reciprocal_se_rank": 0.0,
+        "content_vector": {
+          "semantic_relevance": 4,
+          "factual_accuracy": 5,
+          "objectivity_tone": 5,
+          "accountability": 4,
+          "freshness": 5,
+          "transparency": 5,
+          "authority": 5,
+          "layout_ad_density": 3
+        }
+      },
+      {
+        "agg_source_id": 3,
+        "url": "amazon.com/hp-essential-touchscreen-i7-1355u-fingerprint/dp/b0cn7x1vd9",
+        "avg_ge_freq": 1.0,
+        "relative_se_rank": 2.5,
+        "reciprocal_se_rank": 0.009708737864077669,
+        "normalized_reciprocal_se_rank": 0.0,
+        "content_vector": {
+          "semantic_relevance": 5,
+          "factual_accuracy": 5,
+          "objectivity_tone": 4,
+          "accountability": 2,
+          "freshness": 5,
+          "transparency": 5,
+          "authority": 5,
+          "layout_ad_density": 1
+        }
+      },
+      {
+        "agg_source_id": 4,
+        "url": "hp.com/us-en/shop/custom/hp-laptop-15t-fd100-15-inch-intel-core-7-8gb-ram-512gb-ssd-pale-rose-gold-8w8z8av_33151",
+        "avg_ge_freq": 1.0,
+        "relative_se_rank": 2.5,
+        "reciprocal_se_rank": 0.009708737864077669,
+        "normalized_reciprocal_se_rank": 0.0,
+        "content_vector": {
+          "semantic_relevance": null,
+          "factual_accuracy": null,
+          "objectivity_tone": null,
+          "accountability": null,
+          "freshness": null,
+          "transparency": null,
+          "authority": null,
+          "layout_ad_density": null
+        }
+      }
+    ],
+    "percentage_ge_sources_not_in_se_sources": 100.0,
+    "query_type": "VACOS"
+  },
+  {
+    "query_id": 22,
+    "query": "Did the universe have a beginning?",
+    "ge_sources": [
+      {
+        "agg_source_id": 1,
+        "url": "magiscenter.com/blog/evidence-for-the-big-bang",
+        "avg_ge_freq": 1.0,
+        "relative_se_rank": 2.380952380952381,
+        "reciprocal_se_rank": 0.009708737864077669,
+        "normalized_reciprocal_se_rank": 0.0,
+        "content_vector": {
+          "semantic_relevance": 3,
+          "factual_accuracy": 4,
+          "objectivity_tone": 2,
+          "accountability": 5,
+          "freshness": 4,
+          "transparency": 5,
+          "authority": 4,
+          "layout_ad_density": 3
+        }
+      },
+      {
+        "agg_source_id": 2,
+        "url": "ebsco.com/research-starters/physics/big-bang-theory-overview",
+        "avg_ge_freq": 1.0,
+        "relative_se_rank": 2.380952380952381,
+        "reciprocal_se_rank": 0.009708737864077669,
+        "normalized_reciprocal_se_rank": 0.0,
+        "content_vector": {
+          "semantic_relevance": 5,
+          "factual_accuracy": 5,
+          "objectivity_tone": 5,
+          "accountability": 5,
+          "freshness": 5,
+          "transparency": 5,
+          "authority": 5,
+          "layout_ad_density": 4
+        }
+      },
+      {
+        "agg_source_id": 3,
+        "url": "study.com/academy/lesson/evidence-for-the-big-bang-theory-background-radiation-red-shift-and-expansion.html",
+        "avg_ge_freq": 1.0,
+        "relative_se_rank": 2.380952380952381,
+        "reciprocal_se_rank": 0.009708737864077669,
+        "normalized_reciprocal_se_rank": 0.0,
+        "content_vector": {
+          "semantic_relevance": 4,
+          "factual_accuracy": 5,
+          "objectivity_tone": 4,
+          "accountability": 4,
+          "freshness": 3,
+          "transparency": 4,
+          "authority": 4,
+          "layout_ad_density": 2
+        }
+      },
+      {
+        "agg_source_id": 4,
+        "url": "tabernacleofdavidministries.com/2018/05/14/the-universe-had-a-beginning-heres-how-we-know-and-why-it-matters",
+        "avg_ge_freq": 1.0,
+        "relative_se_rank": 2.380952380952381,
+        "reciprocal_se_rank": 0.009708737864077669,
+        "normalized_reciprocal_se_rank": 0.0,
+        "content_vector": {
+          "semantic_relevance": 3,
+          "factual_accuracy": 3,
+          "objectivity_tone": 2,
+          "accountability": 3,
+          "freshness": 2,
+          "transparency": 2,
+          "authority": 2,
+          "layout_ad_density": 4
+        }
+      },
+      {
+        "agg_source_id": 5,
+        "url": "home.cern/science/physics/early-universe",
+        "avg_ge_freq": 1.0,
+        "relative_se_rank": 0.5714285714285714,
+        "reciprocal_se_rank": 0.037037037037037035,
+        "normalized_reciprocal_se_rank": 0.11372989150766928,
+        "content_vector": {
+          "semantic_relevance": 5,
+          "factual_accuracy": 5,
+          "objectivity_tone": 5,
+          "accountability": 4,
+          "freshness": 5,
+          "transparency": 5,
+          "authority": 5,
+          "layout_ad_density": 5
+        }
+      }
+    ],
+    "percentage_ge_sources_not_in_se_sources": 80.0,
+    "query_type": "DebateQA"
+  },
+  {
+    "query_id": 32,
+    "query": "Should the use of CRISPR technology for editing the human germline be strictly prohibited?",
+    "ge_sources": [
+      {
+        "agg_source_id": 1,
+        "url": "automate.org/news/crispr-and-human-ethics-of-gene-editing",
+        "avg_ge_freq": 1.0,
+        "relative_se_rank": 2.2222222222222223,
+        "reciprocal_se_rank": 0.009708737864077669,
+        "normalized_reciprocal_se_rank": 0.0,
+        "content_vector": {
+          "semantic_relevance": 2,
+          "factual_accuracy": 1,
+          "objectivity_tone": 1,
+          "accountability": 2,
+          "freshness": 5,
+          "transparency": 5,
+          "authority": 4,
+          "layout_ad_density": 3
+        }
+      },
+      {
+        "agg_source_id": 2,
+        "url": "nature.com/articles/s41599-022-01147-y",
+        "avg_ge_freq": 1.0,
+        "relative_se_rank": 2.2222222222222223,
+        "reciprocal_se_rank": 0.009708737864077669,
+        "normalized_reciprocal_se_rank": 0.0,
+        "content_vector": {
+          "semantic_relevance": 5,
+          "factual_accuracy": 5,
+          "objectivity_tone": 5,
+          "accountability": 5,
+          "freshness": 3,
+          "transparency": 5,
+          "authority": 5,
+          "layout_ad_density": 4
+        }
+      },
+      {
+        "agg_source_id": 3,
+        "url": "journalofethics.ama-assn.org/article/ethics-values-and-responsibility-human-genome-editing/2019-12",
+        "avg_ge_freq": 1.0,
+        "relative_se_rank": 0.24444444444444444,
+        "reciprocal_se_rank": 0.07142857142857142,
+        "normalized_reciprocal_se_rank": 0.25685425685425683,
+        "content_vector": {
+          "semantic_relevance": 5,
+          "factual_accuracy": 5,
+          "objectivity_tone": 5,
+          "accountability": 5,
+          "freshness": 2,
+          "transparency": 5,
+          "authority": 5,
+          "layout_ad_density": 5
+        }
+      },
+      {
+        "agg_source_id": 4,
+        "url": "pmc.ncbi.nlm.nih.gov/articles/pmc12069028",
+        "avg_ge_freq": 1.0,
+        "relative_se_rank": 2.2222222222222223,
+        "reciprocal_se_rank": 0.009708737864077669,
+        "normalized_reciprocal_se_rank": 0.0,
+        "content_vector": {
+          "semantic_relevance": 5,
+          "factual_accuracy": 5,
+          "objectivity_tone": 5,
+          "accountability": 5,
+          "freshness": 5,
+          "transparency": 5,
+          "authority": 5,
+          "layout_ad_density": 5
+        }
+      },
+      {
+        "agg_source_id": 5,
+        "url": "crispr-gene-editing-regs-tracker.geneticliteracyproject.org/united-states-embryonic-germline-gene-editing",
+        "avg_ge_freq": 1.0,
+        "relative_se_rank": 0.13333333333333333,
+        "reciprocal_se_rank": 0.1111111111111111,
+        "normalized_reciprocal_se_rank": 0.42199775533108863,
+        "content_vector": {
+          "semantic_relevance": 5,
+          "factual_accuracy": 4,
+          "objectivity_tone": 4,
+          "accountability": 4,
+          "freshness": 5,
+          "transparency": 4,
+          "authority": 4,
+          "layout_ad_density": 3
+        }
+      }
+    ],
+    "percentage_ge_sources_not_in_se_sources": 60.0,
+    "query_type": "DebateQA"
+  },
+  {
+    "query_id": 42,
+    "query": "Which documentary was release first, Baghdad ER or The Ten-Year Lunch?",
+    "ge_sources": [
+      {
+        "agg_source_id": 1,
+        "url": "en.wikipedia.org/wiki/baghdad_er",
+        "avg_ge_freq": 1.0,
+        "relative_se_rank": 0.08163265306122448,
+        "reciprocal_se_rank": 0.14285714285714285,
+        "normalized_reciprocal_se_rank": 0.5541125541125541,
+        "content_vector": {
+          "semantic_relevance": 3,
+          "factual_accuracy": 5,
+          "objectivity_tone": 5,
+          "accountability": 3,
+          "freshness": 5,
+          "transparency": 5,
+          "authority": 5,
+          "layout_ad_density": 5
+        }
+      },
+      {
+        "agg_source_id": 2,
+        "url": "en.wikipedia.org/wiki/the_ten-year_lunch",
+        "avg_ge_freq": 1.0,
+        "relative_se_rank": 0.02040816326530612,
+        "reciprocal_se_rank": 0.25,
+        "normalized_reciprocal_se_rank": 1.0,
+        "content_vector": {
+          "semantic_relevance": 2,
+          "factual_accuracy": 5,
+          "objectivity_tone": 5,
+          "accountability": 3,
+          "freshness": 5,
+          "transparency": 5,
+          "authority": 5,
+          "layout_ad_density": 5
+        }
+      }
+    ],
+    "percentage_ge_sources_not_in_se_sources": 0.0,
+    "query_type": "HotpotQA"
+  },
+  {
+    "query_id": 62,
+    "query": "Are kids less likely to get and spread COVID-19 based on good data available?",
+    "ge_sources": [
+      {
+        "agg_source_id": 1,
+        "url": "cidrap.umn.edu/covid-19/more-70-us-household-covid-spread-started-child-study-suggests",
+        "avg_ge_freq": 1.0,
+        "relative_se_rank": 0.7804878048780488,
+        "reciprocal_se_rank": 0.02857142857142857,
+        "normalized_reciprocal_se_rank": 0.0784992784992785,
+        "content_vector": {
+          "semantic_relevance": 5,
+          "factual_accuracy": 5,
+          "objectivity_tone": 5,
+          "accountability": 5,
+          "freshness": 5,
+          "transparency": 5,
+          "authority": 5,
+          "layout_ad_density": 4
+        }
+      },
+      {
+        "agg_source_id": 2,
+        "url": "pmc.ncbi.nlm.nih.gov/articles/pmc11379298",
+        "avg_ge_freq": 1.0,
+        "relative_se_rank": 2.4390243902439024,
+        "reciprocal_se_rank": 0.009708737864077669,
+        "normalized_reciprocal_se_rank": 0.0,
+        "content_vector": {
+          "semantic_relevance": 5,
+          "factual_accuracy": 5,
+          "objectivity_tone": 5,
+          "accountability": 5,
+          "freshness": 5,
+          "transparency": 5,
+          "authority": 5,
+          "layout_ad_density": 5
+        }
+      },
+      {
+        "agg_source_id": 3,
+        "url": "sciencedirect.com/science/article/pii/s0163445324000689",
+        "avg_ge_freq": 1.0,
+        "relative_se_rank": 2.4390243902439024,
+        "reciprocal_se_rank": 0.009708737864077669,
+        "normalized_reciprocal_se_rank": 0.0,
+        "content_vector": {
+          "semantic_relevance": 1,
+          "factual_accuracy": 1,
+          "objectivity_tone": 1,
+          "accountability": 5,
+          "freshness": 5,
+          "transparency": 5,
+          "authority": 5,
+          "layout_ad_density": 5
+        }
+      },
+      {
+        "agg_source_id": 4,
+        "url": "sciencedirect.com/science/article/pii/s016344532400152x",
+        "avg_ge_freq": 1.0,
+        "relative_se_rank": 2.4390243902439024,
+        "reciprocal_se_rank": 0.009708737864077669,
+        "normalized_reciprocal_se_rank": 0.0,
+        "content_vector": {
+          "semantic_relevance": 1,
+          "factual_accuracy": 1,
+          "objectivity_tone": 1,
+          "accountability": 5,
+          "freshness": 5,
+          "transparency": 5,
+          "authority": 5,
+          "layout_ad_density": 5
+        }
+      }
+    ],
+    "percentage_ge_sources_not_in_se_sources": 75.0,
+    "query_type": "Pinocchios"
+  },
+  {
+    "query_id": 72,
+    "query": "Will a pack-a-day smoker who quits because of the tax increase save about $1,650 a year?",
+    "ge_sources": [
+      {
+        "agg_source_id": 1,
+        "url": "politifact.com/factchecks/2013/apr/15/nancy-nathanson/would-pack-day-smoker-save-1650-year-if-they-quit-",
+        "avg_ge_freq": 1.0,
+        "relative_se_rank": 0.07317073170731707,
+        "reciprocal_se_rank": 0.16666666666666666,
+        "normalized_reciprocal_se_rank": 0.6531986531986531,
+        "content_vector": {
+          "semantic_relevance": 5,
+          "factual_accuracy": 5,
+          "objectivity_tone": 5,
+          "accountability": 5,
+          "freshness": 3,
+          "transparency": 5,
+          "authority": 5,
+          "layout_ad_density": 4
+        }
+      },
+      {
+        "agg_source_id": 2,
+        "url": "boxprintify.com/how-much-do-cigarettes-cost",
+        "avg_ge_freq": 1.0,
+        "relative_se_rank": 2.4390243902439024,
+        "reciprocal_se_rank": 0.009708737864077669,
+        "normalized_reciprocal_se_rank": 0.0,
+        "content_vector": {
+          "semantic_relevance": 1,
+          "factual_accuracy": 1,
+          "objectivity_tone": 1,
+          "accountability": 1,
+          "freshness": 1,
+          "transparency": 1,
+          "authority": 1,
+          "layout_ad_density": 1
+        }
+      },
+      {
+        "agg_source_id": 3,
+        "url": "worldpopulationreview.com/state-rankings/cigarette-prices-by-state",
+        "avg_ge_freq": 1.0,
+        "relative_se_rank": 2.4390243902439024,
+        "reciprocal_se_rank": 0.009708737864077669,
+        "normalized_reciprocal_se_rank": 0.0,
+        "content_vector": {
+          "semantic_relevance": 4,
+          "factual_accuracy": 5,
+          "objectivity_tone": 5,
+          "accountability": 3,
+          "freshness": 5,
+          "transparency": 3,
+          "authority": 3,
+          "layout_ad_density": 3
+        }
+      },
+      {
+        "agg_source_id": 4,
+        "url": "wallethub.com/edu/the-financial-cost-of-smoking-by-state/9520",
+        "avg_ge_freq": 1.0,
+        "relative_se_rank": 2.4390243902439024,
+        "reciprocal_se_rank": 0.009708737864077669,
+        "normalized_reciprocal_se_rank": 0.0,
+        "content_vector": {
+          "semantic_relevance": 3,
+          "factual_accuracy": 4,
+          "objectivity_tone": 4,
+          "accountability": 4,
+          "freshness": 5,
+          "transparency": 4,
+          "authority": 4,
+          "layout_ad_density": 3
+        }
+      }
+    ],
+    "percentage_ge_sources_not_in_se_sources": 75.0,
+    "query_type": "Pinocchios"
+  },
+  {
+    "query_id": 82,
+    "query": "Which I concentrate my fickle mind?",
+    "ge_sources": [
+      {
+        "agg_source_id": 1,
+        "url": "successunlimited-mantra.com/index.php/blog/30-ways-handling-fickle-minded-and-indecisive-people",
+        "avg_ge_freq": 1.0,
+        "relative_se_rank": 0.06818181818181818,
+        "reciprocal_se_rank": 0.16666666666666666,
+        "normalized_reciprocal_se_rank": 0.6531986531986531,
+        "content_vector": {
+          "semantic_relevance": 2,
+          "factual_accuracy": 2,
+          "objectivity_tone": 2,
+          "accountability": 2,
+          "freshness": 5,
+          "transparency": 2,
+          "authority": 2,
+          "layout_ad_density": 2
+        }
+      },
+      {
+        "agg_source_id": 2,
+        "url": "academicsupport.virginia.edu/focus-tips",
+        "avg_ge_freq": 1.0,
+        "relative_se_rank": 2.272727272727273,
+        "reciprocal_se_rank": 0.009708737864077669,
+        "normalized_reciprocal_se_rank": 0.0,
+        "content_vector": {
+          "semantic_relevance": 5,
+          "factual_accuracy": 5,
+          "objectivity_tone": 5,
+          "accountability": 5,
+          "freshness": 4,
+          "transparency": 5,
+          "authority": 5,
+          "layout_ad_density": 5
+        }
+      },
+      {
+        "agg_source_id": 3,
+        "url": "health.harvard.edu/mind-and-mood/tips-to-improve-concentration",
+        "avg_ge_freq": 1.0,
+        "relative_se_rank": 0.36363636363636365,
+        "reciprocal_se_rank": 0.05263157894736842,
+        "normalized_reciprocal_se_rank": 0.17862838915470494,
+        "content_vector": {
+          "semantic_relevance": 5,
+          "factual_accuracy": 5,
+          "objectivity_tone": 5,
+          "accountability": 5,
+          "freshness": 5,
+          "transparency": 5,
+          "authority": 5,
+          "layout_ad_density": 3
+        }
+      },
+      {
+        "agg_source_id": 4,
+        "url": "wondermind.com/article/distracted",
+        "avg_ge_freq": 1.0,
+        "relative_se_rank": 2.272727272727273,
+        "reciprocal_se_rank": 0.009708737864077669,
+        "normalized_reciprocal_se_rank": 0.0,
+        "content_vector": {
+          "semantic_relevance": 4,
+          "factual_accuracy": 4,
+          "objectivity_tone": 4,
+          "accountability": 5,
+          "freshness": 5,
+          "transparency": 4,
+          "authority": 4,
+          "layout_ad_density": 3
+        }
+      },
+      {
+        "agg_source_id": 5,
+        "url": "himalayaninstitute.org/online/concentration-and-mindfulness-cornerstones-of-meditation",
+        "avg_ge_freq": 1.0,
+        "relative_se_rank": 2.272727272727273,
+        "reciprocal_se_rank": 0.009708737864077669,
+        "normalized_reciprocal_se_rank": 0.0,
+        "content_vector": {
+          "semantic_relevance": 4,
+          "factual_accuracy": 5,
+          "objectivity_tone": 4,
+          "accountability": 5,
+          "freshness": 5,
+          "transparency": 5,
+          "authority": 5,
+          "layout_ad_density": 3
+        }
+      }
+    ],
+    "percentage_ge_sources_not_in_se_sources": 60.0,
+    "query_type": "QuoraQuestions"
+  },
+  {
+    "query_id": 92,
+    "query": "What would happen to nor a pescatarian if they started eating red meat?",
+    "ge_sources": [
+      {
+        "agg_source_id": 1,
+        "url": "webmd.com/diet/pescatarian-diet-overview",
+        "avg_ge_freq": 1.0,
+        "relative_se_rank": 0.32653061224489793,
+        "reciprocal_se_rank": 0.05263157894736842,
+        "normalized_reciprocal_se_rank": 0.17862838915470494,
+        "content_vector": {
+          "semantic_relevance": 2,
+          "factual_accuracy": 4,
+          "objectivity_tone": 4,
+          "accountability": 5,
+          "freshness": 5,
+          "transparency": 4,
+          "authority": 4,
+          "layout_ad_density": 3
+        }
+      },
+      {
+        "agg_source_id": 2,
+        "url": "health.clevelandclinic.org/pescatarian-diet",
+        "avg_ge_freq": 1.0,
+        "relative_se_rank": 0.2653061224489796,
+        "reciprocal_se_rank": 0.0625,
+        "normalized_reciprocal_se_rank": 0.21969696969696972,
+        "content_vector": {
+          "semantic_relevance": 2,
+          "factual_accuracy": 5,
+          "objectivity_tone": 5,
+          "accountability": 5,
+          "freshness": 5,
+          "transparency": 5,
+          "authority": 5,
+          "layout_ad_density": 3
+        }
+      },
+      {
+        "agg_source_id": 3,
+        "url": "eatingwell.com/what-happens-to-your-body-when-you-start-eating-meat-again-8769051",
+        "avg_ge_freq": 1.0,
+        "relative_se_rank": 0.061224489795918366,
+        "reciprocal_se_rank": 0.16666666666666666,
+        "normalized_reciprocal_se_rank": 0.6531986531986531,
+        "content_vector": {
+          "semantic_relevance": 5,
+          "factual_accuracy": 5,
+          "objectivity_tone": 4,
+          "accountability": 5,
+          "freshness": 5,
+          "transparency": 4,
+          "authority": 4,
+          "layout_ad_density": 3
+        }
+      },
+      {
+        "agg_source_id": 4,
+        "url": "pmc.ncbi.nlm.nih.gov/articles/pmc7525113",
+        "avg_ge_freq": 1.0,
+        "relative_se_rank": 2.0408163265306123,
+        "reciprocal_se_rank": 0.009708737864077669,
+        "normalized_reciprocal_se_rank": 0.0,
+        "content_vector": {
+          "semantic_relevance": 2,
+          "factual_accuracy": 5,
+          "objectivity_tone": 5,
+          "accountability": 5,
+          "freshness": 5,
+          "transparency": 5,
+          "authority": 5,
+          "layout_ad_density": 5
+        }
+      },
+      {
+        "agg_source_id": 5,
+        "url": "health.harvard.edu/nutrition/thinking-about-becoming-a-pescatarian-what-you-should-know-about-the-pescatarian-diet",
+        "avg_ge_freq": 1.0,
+        "relative_se_rank": 0.20408163265306123,
+        "reciprocal_se_rank": 0.07692307692307693,
+        "normalized_reciprocal_se_rank": 0.27972027972027974,
+        "content_vector": {
+          "semantic_relevance": 2,
+          "factual_accuracy": 5,
+          "objectivity_tone": 5,
+          "accountability": 5,
+          "freshness": 5,
+          "transparency": 5,
+          "authority": 5,
+          "layout_ad_density": 3
+        }
+      }
+    ],
+    "percentage_ge_sources_not_in_se_sources": 20.0,
+    "query_type": "QuoraQuestions"
+  }
+]

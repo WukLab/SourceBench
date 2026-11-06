@@ -1,0 +1,18 @@
+{
+  "unpopulated_query_count": 0,
+  "unpopulated_query_id_count": 0,
+  "unpopulated_sources_count": 2,
+  "unpopulated_agg_source_id_count": 0,
+  "unpopulated_url_count": 0,
+  "per_query_debug_data": {
+    "Entry #47": {
+      "query": "Who was born in Ireland and has coached the captain of MLS club Colorado Rapids?",
+      "debug_message": "Sources not populated"
+    },
+    "Entry #93": {
+      "query": "How can I stop my bsc receding Hairline?",
+      "debug_message": "Sources not populated"
+    }
+  },
+  "unpopulated_avg_ge_freq_count": 0
+}

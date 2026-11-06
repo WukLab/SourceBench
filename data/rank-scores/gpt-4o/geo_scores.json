@@ -1,0 +1,2981 @@
+{
+  "results": [
+    {
+      "query_id": 1,
+      "query": "I want a smaller laptop, nothing too unwieldy.  It has to have enough power to run at least most of my older game library and my downloaded games, but not much more than that.  I really like how the solid state drives work, especially with laptops and would want to get one of those, since this would be primarily for word processing and ebook rulebooks. Please provide some product recommendations for me",
+      "ge_sources": [
+        {
+          "agg_source_id": 1,
+          "url": "pcgamer.com/hardware/gaming-laptops/best-14-inch-gaming-laptop-the-best-compact-gaming-laptops-ive-held-in-these-hands",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.2222222222222223,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 2,
+          "url": "pcmag.com/picks/the-best-laptops",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.2222222222222223,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 3,
+          "url": "techradar.com/news/best-thin-and-light-gaming-laptops",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.2222222222222223,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 4,
+          "url": "tomshardware.com/laptops/gaming-laptops/best-gaming-laptops",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.2222222222222223,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 5,
+          "url": "pcmag.com/picks/tested-the-lightest-laptops",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.2222222222222223,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        }
+      ],
+      "percentage_ge_sources_not_in_se_sources": 100.0
+    },
+    {
+      "query_id": 2,
+      "query": "The main feature would be a touch screen but would also have a keyboard.  It would be the latest model made by a company that has a good reputation that goes back 50 years. I would be able to listen to music, watch feature films and tv programs on it, plus use it to contact my friends on social media. Please provide some product recommendations for me",
+      "ge_sources": [
+        {
+          "agg_source_id": 1,
+          "url": "rtings.com/laptop/reviews/best/by-features/touch-screen",
+          "avg_ge_freq": 1.0,
+          "relative_se_rank": 2.2222222222222223,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 2,
+          "url": "pcmag.com/picks/the-best-touch-screen-laptops",
+          "avg_ge_freq": 0.6667,
+          "relative_se_rank": 2.2222222222222223,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 3,
+          "url": "laptopmag.com/articles/best-touch-screen-laptop",
+          "avg_ge_freq": 0.6667,
+          "relative_se_rank": 2.2222222222222223,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 4,
+          "url": "tomsguide.com/best-picks/best-touchscreen-laptops",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.2222222222222223,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 5,
+          "url": "tomsguide.com/computing/laptops/the-best-laptops-of-ces-2026",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.2222222222222223,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        }
+      ],
+      "percentage_ge_sources_not_in_se_sources": 100.0
+    },
+    {
+      "query_id": 3,
+      "query": "I would want a windows 10 laptop which has a big display with high definition colour. It should have a lot of memory and have a fast working processor. Please provide some product recommendations for me",
+      "ge_sources": [
+        {
+          "agg_source_id": 1,
+          "url": "pcmag.com/picks/best-large-screen-laptops",
+          "avg_ge_freq": 1.0,
+          "relative_se_rank": 0.022727272727272728,
+          "reciprocal_se_rank": 0.25,
+          "normalized_reciprocal_se_rank": 1.0
+        },
+        {
+          "agg_source_id": 2,
+          "url": "rtings.com/laptop/reviews/best/windows",
+          "avg_ge_freq": 0.6667,
+          "relative_se_rank": 2.272727272727273,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 3,
+          "url": "forbes.com",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.272727272727273,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 4,
+          "url": "bestreviews.guide/large-screen-laptops",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.272727272727273,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 5,
+          "url": "forbes.com/sites/forbes-personal-shopper/article/best-laptop",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.272727272727273,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        }
+      ],
+      "percentage_ge_sources_not_in_se_sources": 80.0
+    },
+    {
+      "query_id": 4,
+      "query": "It is a black padded jacket which is nice and warm which is also wind and waterproof. It has a lot of pockets both inside and out and a fur lined hood. Please provide some product recommendations for me",
+      "ge_sources": [
+        {
+          "agg_source_id": 2,
+          "url": "llbean.com",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.4390243902439024,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 3,
+          "url": "wantdo.com/collections/puffer-jacket-coats",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.4390243902439024,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 5,
+          "url": "columbia.com",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.4390243902439024,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        }
+      ],
+      "percentage_ge_sources_not_in_se_sources": 100.0
+    },
+    {
+      "query_id": 5,
+      "query": "I would buy a jacket that is waterproof and has a certain amount of thermal insulation.  The colour would be dark. Please provide some product recommendations for me",
+      "ge_sources": [
+        {
+          "agg_source_id": 2,
+          "url": "outdoorgearlab.com/best-winter-jacket",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.3255813953488373,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 6,
+          "url": "outdoorgearlab.com",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.3255813953488373,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 7,
+          "url": "switchbacktravel.com/best-winter-jackets",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.3255813953488373,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 8,
+          "url": "outdoorgearlab.com/topics/clothing-mens/best-insulated-jacket",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 0.13953488372093023,
+          "reciprocal_se_rank": 0.1111111111111111,
+          "normalized_reciprocal_se_rank": 0.42199775533108863
+        },
+        {
+          "agg_source_id": 9,
+          "url": "sportique.com/products/rains-thermal-waterproof-puffer-jacket-black",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.3255813953488373,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        }
+      ],
+      "percentage_ge_sources_not_in_se_sources": 80.0
+    },
+    {
+      "query_id": 6,
+      "query": "I would choose a laptop that is durable, yet not too heavy. I'd like it to have a good sized screen and a good cpu and graphics capabilities. Please provide some product recommendations for me",
+      "ge_sources": [
+        {
+          "agg_source_id": 1,
+          "url": "pcmag.com/picks/tested-the-lightest-laptops",
+          "avg_ge_freq": 0.6667,
+          "relative_se_rank": 2.9411764705882355,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 2,
+          "url": "rtings.com/laptop/reviews/best/by-feature/lightweight",
+          "avg_ge_freq": 0.6667,
+          "relative_se_rank": 2.9411764705882355,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 3,
+          "url": "ofzenandcomputing.com/best-lapwith-good-graphics-cards-gpus",
+          "avg_ge_freq": 0.6667,
+          "relative_se_rank": 2.9411764705882355,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 4,
+          "url": "pcmag.com/picks/the-best-high-end-laptops",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.9411764705882355,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 5,
+          "url": "findthisbest.com/best-laptops/rugged",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.9411764705882355,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        }
+      ],
+      "percentage_ge_sources_not_in_se_sources": 100.0
+    },
+    {
+      "query_id": 7,
+      "query": "I'm going to replace my broken Toshiba laptop with a laptop from Hewlett-Packard with at least 500 gb storage. The model will have a touchscreen as well as a CD/DVD tray, which are now difficult to get pre-installed in a laptop. Please provide some product recommendations for me",
+      "ge_sources": [
+        {
+          "agg_source_id": 1,
+          "url": "walmart.com",
+          "avg_ge_freq": 0.6667,
+          "relative_se_rank": 2.857142857142857,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        }
+      ],
+      "percentage_ge_sources_not_in_se_sources": 100.0
+    },
+    {
+      "query_id": 8,
+      "query": "I would choose a good quality laptop, which would be lightweight and stylish.  It would have a good operating system and enable me to do an array of activities. Please provide some product recommendations for me",
+      "ge_sources": [
+        {
+          "agg_source_id": 1,
+          "url": "pcmag.com/picks/tested-the-lightest-laptops",
+          "avg_ge_freq": 1.0,
+          "relative_se_rank": 0.023255813953488372,
+          "reciprocal_se_rank": 0.25,
+          "normalized_reciprocal_se_rank": 1.0
+        },
+        {
+          "agg_source_id": 2,
+          "url": "rtings.com/laptop/reviews/best/by-feature/lightweight",
+          "avg_ge_freq": 1.0,
+          "relative_se_rank": 2.3255813953488373,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 3,
+          "url": "mashable.com/roundup/best-laptops-2026",
+          "avg_ge_freq": 0.6667,
+          "relative_se_rank": 2.3255813953488373,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 4,
+          "url": "cnet.com/tech/computing/best-laptop",
+          "avg_ge_freq": 0.6667,
+          "relative_se_rank": 2.3255813953488373,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 5,
+          "url": "zdnet.com/article/best-laptops-ces-2026",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.3255813953488373,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        }
+      ],
+      "percentage_ge_sources_not_in_se_sources": 80.0
+    },
+    {
+      "query_id": 9,
+      "query": "I want a laptop with a graphics card, 8 core CPU, 16gb ram, runs quietly while gaming Please provide some product recommendations for me",
+      "ge_sources": [
+        {
+          "agg_source_id": 1,
+          "url": "pcmag.com/picks/the-best-gaming-laptops",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 0.022222222222222223,
+          "reciprocal_se_rank": 0.25,
+          "normalized_reciprocal_se_rank": 1.0
+        },
+        {
+          "agg_source_id": 2,
+          "url": "propelrc.com/best-laptops-with-graphics-cards",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 0.7333333333333333,
+          "reciprocal_se_rank": 0.027777777777777776,
+          "normalized_reciprocal_se_rank": 0.07519640852974185
+        },
+        {
+          "agg_source_id": 3,
+          "url": "ofzenandcomputing.com/best-lapwith-good-graphics-cards-gpus",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.2222222222222223,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 4,
+          "url": "newegg.com",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.2222222222222223,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 6,
+          "url": "engadget.com/computing/laptops/best-gaming-laptops-172033838.html",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.2222222222222223,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        }
+      ],
+      "percentage_ge_sources_not_in_se_sources": 60.0
+    },
+    {
+      "query_id": 10,
+      "query": "I would choose a comfortable, waterproof jacket with enough pockets to hold my belongings. It would be casual but also smart in a neutral colour such as blue or black Please provide some product recommendations for me",
+      "ge_sources": [
+        {
+          "agg_source_id": 1,
+          "url": "scottevest.com/collections/jackets",
+          "avg_ge_freq": 0.6667,
+          "relative_se_rank": 2.1739130434782608,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 2,
+          "url": "llbean.com/buy/mens-3-in-1-waterproof-jackets",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.1739130434782608,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 5,
+          "url": "switchbacktravel.com/best-rain-jackets",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 0.9347826086956522,
+          "reciprocal_se_rank": 0.021739130434782608,
+          "normalized_reciprocal_se_rank": 0.05006587615283267
+        },
+        {
+          "agg_source_id": 6,
+          "url": "advnture.com/buying-guides/best-waterproof-jackets",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.1739130434782608,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        }
+      ],
+      "percentage_ge_sources_not_in_se_sources": 75.0
+    },
+    {
+      "query_id": 11,
+      "query": "I would choose a reasonably-priced (under $50) short trenchcoat as a replacement. Please provide some product recommendations for me",
+      "ge_sources": [
+        {
+          "agg_source_id": 1,
+          "url": "travelandleisure.com/best-amazon-trench-coats-under-50-november-2025-11845196",
+          "avg_ge_freq": 1.0,
+          "relative_se_rank": 0.04878048780487805,
+          "reciprocal_se_rank": 0.2,
+          "normalized_reciprocal_se_rank": 0.791919191919192
+        }
+      ],
+      "percentage_ge_sources_not_in_se_sources": 0.0
+    },
+    {
+      "query_id": 12,
+      "query": "white and rose gold hp laptop with ssd card and core i7. Please provide some product recommendations for me",
+      "ge_sources": []
+    },
+    {
+      "query_id": 13,
+      "query": "The new laptop needs to have a disk drive, a relatively good memory and I need Microsoft office on it to complete my work. I would also like it to have good processing power so it can keep up to speed and work with any current apps. Please provide some product recommendations for me",
+      "ge_sources": [
+        {
+          "agg_source_id": 2,
+          "url": "pcmag.com/picks/the-best-business-laptops",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.380952380952381,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 3,
+          "url": "cnet.com/tech/computing/best-laptop",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.380952380952381,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 5,
+          "url": "featurelens.com/best-laptop-with-microsoft-office",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.380952380952381,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        }
+      ],
+      "percentage_ge_sources_not_in_se_sources": 100.0
+    },
+    {
+      "query_id": 14,
+      "query": "I would probably look for a refurbished laptop. I currently have a MacBook Pro and I would like to get the same laptop. Please provide some product recommendations for me",
+      "ge_sources": [
+        {
+          "agg_source_id": 1,
+          "url": "apple.com/shop/refurbished/mac/macbook-pro",
+          "avg_ge_freq": 0.6667,
+          "relative_se_rank": 2.2222222222222223,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 2,
+          "url": "macofalltrades.com/macbook-pro",
+          "avg_ge_freq": 0.6667,
+          "relative_se_rank": 2.2222222222222223,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 3,
+          "url": "ebay.com/sch/i.html",
+          "avg_ge_freq": 0.6667,
+          "relative_se_rank": 2.2222222222222223,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 4,
+          "url": "apple.com/shop/refurbished/mac",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 0.13333333333333333,
+          "reciprocal_se_rank": 0.1111111111111111,
+          "normalized_reciprocal_se_rank": 0.42199775533108863
+        },
+        {
+          "agg_source_id": 5,
+          "url": "backmarket.com/en-us/c/macbook/refurbished-macbook-guide",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.2222222222222223,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        }
+      ],
+      "percentage_ge_sources_not_in_se_sources": 80.0
+    },
+    {
+      "query_id": 15,
+      "query": "I would go out and purchase a laptop capable of gaming. Something with a big processor and a fast graphics card that will not overheat. It would need to be windows ran so games are more available. I would buy it in silver or black and it would need to have a back light on the keyboard so I can see the letters in the dark. Please provide some product recommendations for me",
+      "ge_sources": [
+        {
+          "agg_source_id": 1,
+          "url": "pcmag.com/picks/the-best-gaming-laptops",
+          "avg_ge_freq": 1.0,
+          "relative_se_rank": 2.6315789473684212,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 2,
+          "url": "techtimes.com/articles/313069/20251201/best-gaming-laptops-2026-ranked-most-powerful-machines-maximum-mobile-gaming-power.htm",
+          "avg_ge_freq": 0.6667,
+          "relative_se_rank": 2.6315789473684212,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 3,
+          "url": "tomshardware.com/laptops/gaming-laptops/best-gaming-laptops",
+          "avg_ge_freq": 0.6667,
+          "relative_se_rank": 2.6315789473684212,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 4,
+          "url": "rtings.com/laptop/reviews/best/by-usage/gaming",
+          "avg_ge_freq": 0.6667,
+          "relative_se_rank": 2.6315789473684212,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 5,
+          "url": "guidespot.com/best-gaming-laptops-top-picks",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.6315789473684212,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        }
+      ],
+      "percentage_ge_sources_not_in_se_sources": 100.0
+    },
+    {
+      "query_id": 16,
+      "query": "I would like to choose an apple laptop as a replacement. I would want it to be fast with a large memory. Also I would like good aesthetics and picture quality to be very good on the screen. The laptop should also have a good battery life and come with a warranty in case anything goes wrong. Please provide some product recommendations for me",
+      "ge_sources": [
+        {
+          "agg_source_id": 1,
+          "url": "rtings.com/laptop/reviews/apple",
+          "avg_ge_freq": 1.0,
+          "relative_se_rank": 0.42857142857142855,
+          "reciprocal_se_rank": 0.047619047619047616,
+          "normalized_reciprocal_se_rank": 0.15776815776815778
+        },
+        {
+          "agg_source_id": 2,
+          "url": "cnet.com/tech/computing/best-macbook",
+          "avg_ge_freq": 1.0,
+          "relative_se_rank": 0.30952380952380953,
+          "reciprocal_se_rank": 0.0625,
+          "normalized_reciprocal_se_rank": 0.21969696969696972
+        },
+        {
+          "agg_source_id": 3,
+          "url": "macworld.com/article/219909/best-mac.html",
+          "avg_ge_freq": 0.6667,
+          "relative_se_rank": 2.380952380952381,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 4,
+          "url": "mashable.com/roundup/best-macbooks-2026",
+          "avg_ge_freq": 0.6667,
+          "relative_se_rank": 2.380952380952381,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 5,
+          "url": "forbes.com/sites/forbes-personal-shopper/article/best-laptop",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.380952380952381,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        }
+      ],
+      "percentage_ge_sources_not_in_se_sources": 60.0
+    },
+    {
+      "query_id": 17,
+      "query": "I'm be looking for a laptop that is reasonably priced, but has a good amount of processing power so that I can be used for word processing as well as music production and gaming. I'd also prefer windows OS. Please provide some product recommendations for me",
+      "ge_sources": [
+        {
+          "agg_source_id": 1,
+          "url": "musicradar.com/news/best-laptops-for-music-production",
+          "avg_ge_freq": 1.0,
+          "relative_se_rank": 2.3255813953488373,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 2,
+          "url": "mashable.com/roundup/best-windows-laptop-2026",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.3255813953488373,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 3,
+          "url": "pcworld.com/article/436674/best-pc-laptops.html",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 0.11627906976744186,
+          "reciprocal_se_rank": 0.125,
+          "normalized_reciprocal_se_rank": 0.47979797979797983
+        },
+        {
+          "agg_source_id": 4,
+          "url": "marketresearchtelecast.com/best-affordable-laptops-for-music-production",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.3255813953488373,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 5,
+          "url": "soundplate.com/best-laptops-for-music-production-mac-vs-pc",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.3255813953488373,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        }
+      ],
+      "percentage_ge_sources_not_in_se_sources": 80.0
+    },
+    {
+      "query_id": 18,
+      "query": "I would chose an jacket which was thick and thermal with a hood.  I like to know it will keep me warm in winter.  I would like a black jacket with a fur hood.  The jacket must also have pockets. Please provide some product recommendations for me",
+      "ge_sources": [
+        {
+          "agg_source_id": 1,
+          "url": "outdoorgearlab.com/best-winter-jacket",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 0.3617021276595745,
+          "reciprocal_se_rank": 0.05,
+          "normalized_reciprocal_se_rank": 0.1676767676767677
+        },
+        {
+          "agg_source_id": 4,
+          "url": "arctic-bay.ca/pages/men-s-and-women-s-parkas-with-fur-hoods",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.127659574468085,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 5,
+          "url": "forbes.com",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.127659574468085,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 6,
+          "url": "switchbacktravel.com/best-winter-jackets",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.127659574468085,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        }
+      ],
+      "percentage_ge_sources_not_in_se_sources": 75.0
+    },
+    {
+      "query_id": 19,
+      "query": "I need a laptop with enough RAM to run Photoshop and video editing applications. It a,so needs a good graphics card. Please provide some product recommendations for me",
+      "ge_sources": [
+        {
+          "agg_source_id": 1,
+          "url": "findingdulcinea.com/best-laptops-for-photo-and-video-editing-january-2026",
+          "avg_ge_freq": 0.6667,
+          "relative_se_rank": 2.380952380952381,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 2,
+          "url": "pcmag.com/picks/the-best-laptops-for-video-editing",
+          "avg_ge_freq": 0.6667,
+          "relative_se_rank": 0.21428571428571427,
+          "reciprocal_se_rank": 0.08333333333333333,
+          "normalized_reciprocal_se_rank": 0.3063973063973064
+        },
+        {
+          "agg_source_id": 3,
+          "url": "techdetects.com/best-laptops-for-creators",
+          "avg_ge_freq": 0.6667,
+          "relative_se_rank": 2.380952380952381,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 4,
+          "url": "notebookcheck.net/ranking-best-laptops-for-editing-photos-and-videos.163696.0.html",
+          "avg_ge_freq": 0.6667,
+          "relative_se_rank": 2.380952380952381,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 5,
+          "url": "ofzenandcomputing.com/best-laptops-for-adobe-creative-suite",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.380952380952381,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        }
+      ],
+      "percentage_ge_sources_not_in_se_sources": 80.0
+    },
+    {
+      "query_id": 20,
+      "query": "I deally my jacket would be black and breathable. It would have 2xl so it would have room in it. Please provide some product recommendations for me",
+      "ge_sources": [
+        {
+          "agg_source_id": 2,
+          "url": "amazon.com",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.272727272727273,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 4,
+          "url": "target.com",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.272727272727273,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 7,
+          "url": "llbean.com",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.272727272727273,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 8,
+          "url": "homedepot.com",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.272727272727273,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 10,
+          "url": "columbia.com",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.272727272727273,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        }
+      ],
+      "percentage_ge_sources_not_in_se_sources": 100.0
+    },
+    {
+      "query_id": 21,
+      "query": "Can yoga really detoxify your body?",
+      "ge_sources": [
+        {
+          "agg_source_id": 1,
+          "url": "yogajournal.com/practice/does-yoga-detox-your-body",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 0.020833333333333332,
+          "reciprocal_se_rank": 0.25,
+          "normalized_reciprocal_se_rank": 1.0
+        },
+        {
+          "agg_source_id": 2,
+          "url": "cbsnews.com/news/reality-check-yoga-does-not-release-toxins-from-the-body",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 0.041666666666666664,
+          "reciprocal_se_rank": 0.2,
+          "normalized_reciprocal_se_rank": 0.791919191919192
+        },
+        {
+          "agg_source_id": 3,
+          "url": "resources.healthgrades.com/right-care/lifestyle-and-wellness/detox-yoga",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 0.0625,
+          "reciprocal_se_rank": 0.16666666666666666,
+          "normalized_reciprocal_se_rank": 0.6531986531986531
+        },
+        {
+          "agg_source_id": 4,
+          "url": "healthline.com/nutrition/13-benefits-of-yoga",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.0833333333333335,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        }
+      ],
+      "percentage_ge_sources_not_in_se_sources": 25.0
+    },
+    {
+      "query_id": 22,
+      "query": "Did the universe have a beginning?",
+      "ge_sources": [
+        {
+          "agg_source_id": 1,
+          "url": "britannica.com/science/how-was-the-universe-created",
+          "avg_ge_freq": 0.6667,
+          "relative_se_rank": 2.380952380952381,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 2,
+          "url": "sciencenewstoday.org/the-big-bang-theory-6-key-evidences-that-the-universe-had-a-beginning",
+          "avg_ge_freq": 0.6667,
+          "relative_se_rank": 2.380952380952381,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 3,
+          "url": "nasaspacenews.com/2024/09/before-the-big-bang-a-hidden-universe",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.380952380952381,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 4,
+          "url": "science.nasa.gov/astrophysics/programs/cosmic-origins",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.380952380952381,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 5,
+          "url": "link.springer.com/chapter/10.1007/978-3-031-58757-3_22",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.380952380952381,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        }
+      ],
+      "percentage_ge_sources_not_in_se_sources": 100.0
+    },
+    {
+      "query_id": 23,
+      "query": "Is it true that Donald Trump could be manipulated by foreign governments, simply by playing to his ego?",
+      "ge_sources": [
+        {
+          "agg_source_id": 1,
+          "url": "theconversation.com/ego-hubris-and-narcissism-where-donald-trump-ranks-among-the-other-45-american-presidents-241879",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 0.475,
+          "reciprocal_se_rank": 0.045454545454545456,
+          "normalized_reciprocal_se_rank": 0.14876033057851243
+        },
+        {
+          "agg_source_id": 2,
+          "url": "lilianstrobl.com/en/donald-trump-a-psychoanalytic-exploration-of-narcissism-authority-and-the-unconscious",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.5,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        }
+      ],
+      "percentage_ge_sources_not_in_se_sources": 50.0
+    },
+    {
+      "query_id": 25,
+      "query": "Can parents decide for their children to go through a surgery without their consent (when they are under 18, doesn't matter if it's to save them)?",
+      "ge_sources": [
+        {
+          "agg_source_id": 1,
+          "url": "govfacts.org/rights-freedoms/family-personal-rights/parental-rights/medical-rights-for-teens-and-kids-when-parents-decide-and-when-they-dont",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.4390243902439024,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 2,
+          "url": "undivided.io/resources/medical-rights-and-consent-at-ages-12-and-18-3002",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 0.17073170731707318,
+          "reciprocal_se_rank": 0.1,
+          "normalized_reciprocal_se_rank": 0.3757575757575758
+        },
+        {
+          "agg_source_id": 3,
+          "url": "legalclarity.org/can-a-minor-receive-medical-treatment-without-parental-consent",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.4390243902439024,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 4,
+          "url": "depts.washington.edu/bhdept/ethics-medicine/bioethics-topics/detail/72",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 1.1951219512195121,
+          "reciprocal_se_rank": 0.019230769230769232,
+          "normalized_reciprocal_se_rank": 0.03962703962703963
+        },
+        {
+          "agg_source_id": 5,
+          "url": "nhs.uk/tests-and-treatments/consent-to-treatment/children",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 0.4634146341463415,
+          "reciprocal_se_rank": 0.045454545454545456,
+          "normalized_reciprocal_se_rank": 0.14876033057851243
+        }
+      ],
+      "percentage_ge_sources_not_in_se_sources": 40.0
+    },
+    {
+      "query_id": 26,
+      "query": "Why doesn't the US use the popular vote in their general election and presidential election systems?",
+      "ge_sources": [
+        {
+          "agg_source_id": 1,
+          "url": "tribune.com.pk/story/2507418/us-electoral-college-why-the-popular-vote-doesnt-decide-the-presidency",
+          "avg_ge_freq": 0.6667,
+          "relative_se_rank": 2.3255813953488373,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 2,
+          "url": "usatoday.com/story/news/politics/elections/2024/11/05/why-is-there-an-electoral-college/76078909007",
+          "avg_ge_freq": 0.6667,
+          "relative_se_rank": 2.3255813953488373,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 3,
+          "url": "govfacts.org/elections-voting/elections-systems/electoral-college/the-electoral-college-vs-popular-vote-how-america-elects-its-president",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.3255813953488373,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 4,
+          "url": "nbc.com/nbc-insider/difference-between-electoral-votes-popular-vote",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.3255813953488373,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 5,
+          "url": "britannica.com/procon/electoral-college-debate",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.3255813953488373,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        }
+      ],
+      "percentage_ge_sources_not_in_se_sources": 100.0
+    },
+    {
+      "query_id": 27,
+      "query": "Should we stop allocating money to schools based on property taxes?",
+      "ge_sources": [
+        {
+          "agg_source_id": 1,
+          "url": "sapling.com/12053235/advantages-disadvantages-property-taxes-used-fund-education",
+          "avg_ge_freq": 1.0,
+          "relative_se_rank": 2.380952380952381,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 2,
+          "url": "hub.educationalwave.com/pros-and-cons-of-property-taxes-to-fund-education",
+          "avg_ge_freq": 1.0,
+          "relative_se_rank": 2.380952380952381,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 3,
+          "url": "prospluscons.com/pros-and-cons-of-property-taxes-to-fund-education",
+          "avg_ge_freq": 0.6667,
+          "relative_se_rank": 2.380952380952381,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 4,
+          "url": "legalclarity.org/why-are-schools-funded-by-property-taxes",
+          "avg_ge_freq": 0.6667,
+          "relative_se_rank": 2.380952380952381,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 5,
+          "url": "lincolninst.edu/publications/policy-focus-reports/rethinking-property-tax-school-funding-dilemma",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.380952380952381,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        }
+      ],
+      "percentage_ge_sources_not_in_se_sources": 100.0
+    },
+    {
+      "query_id": 28,
+      "query": "Is the Church of the Flying Spaghetti Monster a legitimate religion?",
+      "ge_sources": [
+        {
+          "agg_source_id": 1,
+          "url": "britannica.com/topic/flying-spaghetti-monster",
+          "avg_ge_freq": 0.6667,
+          "relative_se_rank": 2.2222222222222223,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 2,
+          "url": "calvinchimes.org/2016/04/24/pastafarianism-a-religion",
+          "avg_ge_freq": 0.6667,
+          "relative_se_rank": 0.08888888888888889,
+          "reciprocal_se_rank": 0.14285714285714285,
+          "normalized_reciprocal_se_rank": 0.5541125541125541
+        },
+        {
+          "agg_source_id": 3,
+          "url": "spaghettimonster.org/about",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 0.044444444444444446,
+          "reciprocal_se_rank": 0.2,
+          "normalized_reciprocal_se_rank": 0.791919191919192
+        }
+      ],
+      "percentage_ge_sources_not_in_se_sources": 33.333333333333336
+    },
+    {
+      "query_id": 29,
+      "query": "Should corporal punishment be used in K-12 schools?",
+      "ge_sources": [
+        {
+          "agg_source_id": 1,
+          "url": "britannica.com/procon/corporal-punishment-debate",
+          "avg_ge_freq": 0.6667,
+          "relative_se_rank": 0.022222222222222223,
+          "reciprocal_se_rank": 0.25,
+          "normalized_reciprocal_se_rank": 1.0
+        },
+        {
+          "agg_source_id": 2,
+          "url": "gse.harvard.edu/ideas/edcast/24/04/discipline-schools-why-hitting-still-option",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 0.06666666666666667,
+          "reciprocal_se_rank": 0.16666666666666666,
+          "normalized_reciprocal_se_rank": 0.6531986531986531
+        },
+        {
+          "agg_source_id": 4,
+          "url": "stmlearning.com/news/child-maltreatment/the-corporal-punishment-question",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.2222222222222223,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 5,
+          "url": "prospluscons.com/pros-and-cons-of-corporal-punishment",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.2222222222222223,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        }
+      ],
+      "percentage_ge_sources_not_in_se_sources": 50.0
+    },
+    {
+      "query_id": 30,
+      "query": "Can an AI pass the Turing test?",
+      "ge_sources": [
+        {
+          "agg_source_id": 1,
+          "url": "nature.com/articles/d41586-025-03386-w",
+          "avg_ge_freq": 0.6667,
+          "relative_se_rank": 0.21739130434782608,
+          "reciprocal_se_rank": 0.07692307692307693,
+          "normalized_reciprocal_se_rank": 0.27972027972027974
+        },
+        {
+          "agg_source_id": 2,
+          "url": "futurism.com/ai-model-turing-test",
+          "avg_ge_freq": 0.6667,
+          "relative_se_rank": 0.2608695652173913,
+          "reciprocal_se_rank": 0.06666666666666667,
+          "normalized_reciprocal_se_rank": 0.23703703703703705
+        },
+        {
+          "agg_source_id": 3,
+          "url": "howtogeek.com/chatgpt-passed-the-turing-test-heres-what-that-means",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.1739130434782608,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        }
+      ],
+      "percentage_ge_sources_not_in_se_sources": 33.333333333333336
+    },
+    {
+      "query_id": 31,
+      "query": "Can psoriasis be cured with UV light therapy?",
+      "ge_sources": [
+        {
+          "agg_source_id": 1,
+          "url": "healthline.com/health/psoriasis/phototherapy-treatment-options",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 0.4888888888888889,
+          "reciprocal_se_rank": 0.04,
+          "normalized_reciprocal_se_rank": 0.12606060606060607
+        },
+        {
+          "agg_source_id": 2,
+          "url": "webmd.com/skin-problems-and-treatments/psoriasis/phototherapy",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 0.9111111111111111,
+          "reciprocal_se_rank": 0.022727272727272728,
+          "normalized_reciprocal_se_rank": 0.054178145087236
+        },
+        {
+          "agg_source_id": 3,
+          "url": "mayoclinic.org/diseases-conditions/psoriasis/diagnosis-treatment/drc-20355845",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 0.3333333333333333,
+          "reciprocal_se_rank": 0.05555555555555555,
+          "normalized_reciprocal_se_rank": 0.19079685746352412
+        }
+      ],
+      "percentage_ge_sources_not_in_se_sources": 0.0
+    },
+    {
+      "query_id": 32,
+      "query": "Should the use of CRISPR technology for editing the human germline be strictly prohibited?",
+      "ge_sources": [
+        {
+          "agg_source_id": 1,
+          "url": "statnews.com/2025/03/28/human-embryo-germline-gene-editing-safety-troubles-scientists",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.2222222222222223,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 2,
+          "url": "technologyreview.com/2024/08/22/1096458/crispr-gene-editing-babies-evolution",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.2222222222222223,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 3,
+          "url": "link.springer.com/article/10.1186/s12910-020-00487-1",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 0.9111111111111111,
+          "reciprocal_se_rank": 0.022727272727272728,
+          "normalized_reciprocal_se_rank": 0.054178145087236
+        },
+        {
+          "agg_source_id": 4,
+          "url": "genome.gov/about-genomics/policy-issues/genome-editing/ethical-concerns",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 0.022222222222222223,
+          "reciprocal_se_rank": 0.25,
+          "normalized_reciprocal_se_rank": 1.0
+        },
+        {
+          "agg_source_id": 5,
+          "url": "intechopen.com/chapters/1229353",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.2222222222222223,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        }
+      ],
+      "percentage_ge_sources_not_in_se_sources": 60.0
+    },
+    {
+      "query_id": 34,
+      "query": "What are the benefits of a brexit?",
+      "ge_sources": [
+        {
+          "agg_source_id": 1,
+          "url": "davidsonmorris.com",
+          "avg_ge_freq": 0.6667,
+          "relative_se_rank": 2.0,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 2,
+          "url": "eiir.eu",
+          "avg_ge_freq": 0.6667,
+          "relative_se_rank": 2.0,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 3,
+          "url": "gov.uk/government/publications/the-benefits-of-brexit",
+          "avg_ge_freq": 0.6667,
+          "relative_se_rank": 0.24,
+          "reciprocal_se_rank": 0.06666666666666667,
+          "normalized_reciprocal_se_rank": 0.23703703703703705
+        },
+        {
+          "agg_source_id": 4,
+          "url": "eiir.eu/recent-topics/the-aftermath-of-brexit-has-the-uk-benefited-or-suffered-from-leaving-the-eu",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.0,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 5,
+          "url": "instituteforgovernment.org.uk",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.0,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        }
+      ],
+      "percentage_ge_sources_not_in_se_sources": 80.0
+    },
+    {
+      "query_id": 35,
+      "query": "Should recreational marijuana be legal?",
+      "ge_sources": [
+        {
+          "agg_source_id": 1,
+          "url": "britannica.com/procon/recreational-marijuana-legalization-debate",
+          "avg_ge_freq": 1.0,
+          "relative_se_rank": 0.021739130434782608,
+          "reciprocal_se_rank": 0.25,
+          "normalized_reciprocal_se_rank": 1.0
+        },
+        {
+          "agg_source_id": 2,
+          "url": "verywellhealth.com/what-are-the-pros-and-cons-of-medical-marijuana-1132484",
+          "avg_ge_freq": 1.0,
+          "relative_se_rank": 0.5652173913043478,
+          "reciprocal_se_rank": 0.034482758620689655,
+          "normalized_reciprocal_se_rank": 0.10309996516893069
+        },
+        {
+          "agg_source_id": 3,
+          "url": "biologyinsights.com/why-cannabis-should-not-be-legalized-the-arguments",
+          "avg_ge_freq": 0.6667,
+          "relative_se_rank": 2.1739130434782608,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 4,
+          "url": "politicalreview.byu.edu/april-2025/blunt-consequences-the-dangers-of-legalizing-recreational-marijuana",
+          "avg_ge_freq": 0.6667,
+          "relative_se_rank": 2.1739130434782608,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 5,
+          "url": "debatingeurope.eu/activity/arguments-for-and-against-legalising-cannabis",
+          "avg_ge_freq": 0.6667,
+          "relative_se_rank": 2.1739130434782608,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        }
+      ],
+      "percentage_ge_sources_not_in_se_sources": 60.0
+    },
+    {
+      "query_id": 36,
+      "query": "Are some youth sports too intense?",
+      "ge_sources": [
+        {
+          "agg_source_id": 1,
+          "url": "jerseywatch.com/blog/are-youth-sports-too-competitive",
+          "avg_ge_freq": 1.0,
+          "relative_se_rank": 0.4878048780487805,
+          "reciprocal_se_rank": 0.043478260869565216,
+          "normalized_reciprocal_se_rank": 0.14053579270970576
+        },
+        {
+          "agg_source_id": 2,
+          "url": "naturalnews.com/2026-01-20-year-round-youth-sports-harming-a-generation.html",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.4390243902439024,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 3,
+          "url": "themarshfieldtimes.com/3576/sports/the-impact-of-intensity-in-youth-sports",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.4390243902439024,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 4,
+          "url": "snuggymom.com/are-some-youth-sports-too-intense",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.4390243902439024,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 5,
+          "url": "drstankovich.com/sport-psychology-issues-understanding-youth-sport-intensity",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.4390243902439024,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        }
+      ],
+      "percentage_ge_sources_not_in_se_sources": 80.0
+    },
+    {
+      "query_id": 37,
+      "query": "Should manufacturers be required to label foods containing GMOs?",
+      "ge_sources": [
+        {
+          "agg_source_id": 1,
+          "url": "legalclarity.org/should-gmo-foods-be-labeled-the-law-explained",
+          "avg_ge_freq": 1.0,
+          "relative_se_rank": 2.0408163265306123,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 2,
+          "url": "vittana.org/12-far-reaching-gmo-labeling-pros-and-cons",
+          "avg_ge_freq": 1.0,
+          "relative_se_rank": 2.0408163265306123,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 3,
+          "url": "easyhealthyfoods.com/should-gmo-foods-be-labeled-pros-and-cons",
+          "avg_ge_freq": 0.6667,
+          "relative_se_rank": 2.0408163265306123,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 4,
+          "url": "starterskitchen.com/should-companies-be-required-to-label-gmo-foods",
+          "avg_ge_freq": 0.6667,
+          "relative_se_rank": 2.0408163265306123,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 5,
+          "url": "cban.ca/gmos/issues/labelling/labelling-arguments",
+          "avg_ge_freq": 0.6667,
+          "relative_se_rank": 2.0408163265306123,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        }
+      ],
+      "percentage_ge_sources_not_in_se_sources": 100.0
+    },
+    {
+      "query_id": 38,
+      "query": "Can plants survive without soil?",
+      "ge_sources": [
+        {
+          "agg_source_id": 1,
+          "url": "biologyinsights.com/can-plants-grow-without-soil-yes-heres-how",
+          "avg_ge_freq": 1.0,
+          "relative_se_rank": 2.1739130434782608,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 2,
+          "url": "gardenerbible.com/how-long-can-a-plant-live-without-soil",
+          "avg_ge_freq": 0.6667,
+          "relative_se_rank": 2.1739130434782608,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 3,
+          "url": "gardenerbible.com/can-plants-survive-without-soil",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.1739130434782608,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 4,
+          "url": "iere.org/how-do-plants-grow-without-soil",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.1739130434782608,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 5,
+          "url": "newsbreak.com/discover-wild-science-318442312/4459555253849-why-some-plants-can-live-without-soil-the-evolution-of-air-plants",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.1739130434782608,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        }
+      ],
+      "percentage_ge_sources_not_in_se_sources": 100.0
+    },
+    {
+      "query_id": 39,
+      "query": "Is online teaching as effective as classroom teaching?",
+      "ge_sources": [
+        {
+          "agg_source_id": 1,
+          "url": "clrn.org/do-students-learn-better-online-or-in-a-classroom",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.0833333333333335,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 2,
+          "url": "educations.com/articles-and-advice/5-reasons-online-learning-is-future-of-education-17146",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.0833333333333335,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 3,
+          "url": "link.springer.com/article/10.1007/s10639-023-12257-8",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.0833333333333335,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 4,
+          "url": "opencollege.ac/online-learning-vs-traditional",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.0833333333333335,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        }
+      ],
+      "percentage_ge_sources_not_in_se_sources": 100.0
+    },
+    {
+      "query_id": 40,
+      "query": "Is there any proof that God doesn't exist?",
+      "ge_sources": [
+        {
+          "agg_source_id": 1,
+          "url": "learnreligions.com/science-allows-belief-god-does-not-exist-248234",
+          "avg_ge_freq": 0.6667,
+          "relative_se_rank": 2.5,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 2,
+          "url": "bigthink.com/thinking/arguments-on-gods-existence",
+          "avg_ge_freq": 0.6667,
+          "relative_se_rank": 2.5,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 3,
+          "url": "bigthink.com",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.5,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 4,
+          "url": "iep.utm.edu/divine-hiddenness-argument-against-gods-existence",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.5,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 5,
+          "url": "cambridge.org/core/journals/think",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.5,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        }
+      ],
+      "percentage_ge_sources_not_in_se_sources": 100.0
+    },
+    {
+      "query_id": 41,
+      "query": "Which band has more constant members, Lilys or Ratatat?",
+      "ge_sources": [
+        {
+          "agg_source_id": 2,
+          "url": "last.fm/music/ratatat/+wiki",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 4.545454545454546,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 3,
+          "url": "drownedinsound.com/artists/the_lilys",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 4.545454545454546,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        }
+      ],
+      "percentage_ge_sources_not_in_se_sources": 100.0
+    },
+    {
+      "query_id": 43,
+      "query": "Who else besides The Golden Jet was born in Point Anne, Ontario?",
+      "ge_sources": [
+        {
+          "agg_source_id": 1,
+          "url": "alchetron.com/point-anne,-ontario",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.0833333333333335,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        }
+      ],
+      "percentage_ge_sources_not_in_se_sources": 100.0
+    },
+    {
+      "query_id": 46,
+      "query": "Both Olaf Eller and Lars Eller are involved in which sport?",
+      "ge_sources": [
+        {
+          "agg_source_id": 1,
+          "url": "facts.net/lifestyle/sports/25-facts-about-lars-eller",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.2222222222222223,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        }
+      ],
+      "percentage_ge_sources_not_in_se_sources": 100.0
+    },
+    {
+      "query_id": 47,
+      "query": "Which publication publishes more frequently, Utne Reader or The New York Enterprise Report?",
+      "ge_sources": [
+        {
+          "agg_source_id": 1,
+          "url": "nyreport.com",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.127659574468085,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        }
+      ],
+      "percentage_ge_sources_not_in_se_sources": 100.0
+    },
+    {
+      "query_id": 48,
+      "query": "Who was born in Ireland and has coached the captain of MLS club Colorado Rapids?",
+      "ge_sources": [
+        {
+          "agg_source_id": 1,
+          "url": "coloradorapids.com",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.272727272727273,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 2,
+          "url": "coloradorapids.com/club/padraigsmith",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.272727272727273,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        }
+      ],
+      "percentage_ge_sources_not_in_se_sources": 100.0
+    },
+    {
+      "query_id": 49,
+      "query": "What Pakistani actor and writer from Islamabad helped write for the 2012 Pakistani comedy drama sitcom, Coke Kahani?",
+      "ge_sources": [
+        {
+          "agg_source_id": 1,
+          "url": "famousbirthdays.com/people/yasir-hussain.html",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.1739130434782608,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        }
+      ],
+      "percentage_ge_sources_not_in_se_sources": 100.0
+    },
+    {
+      "query_id": 50,
+      "query": "Did someone win the Nobel Prize for using evolution to create new proteins in chemistry?",
+      "ge_sources": [
+        {
+          "agg_source_id": 1,
+          "url": "nobelprize.org/prizes/chemistry/2018/press-release",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 0.0425531914893617,
+          "reciprocal_se_rank": 0.2,
+          "normalized_reciprocal_se_rank": 0.791919191919192
+        },
+        {
+          "agg_source_id": 2,
+          "url": "nobelprize.org/prizes/chemistry/2018/summary",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.127659574468085,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        }
+      ],
+      "percentage_ge_sources_not_in_se_sources": 50.0
+    },
+    {
+      "query_id": 51,
+      "query": "The German geographer and geopolitician Otto Maull was part of a team led by Haushofer whose close associate was a prominent politician in Nazi Germany born in 1894 who served under Hitler in 1933 as what capacity?",
+      "ge_sources": [
+        {
+          "agg_source_id": 1,
+          "url": "historylearningsite.co.uk/nazi-germany/nazi-leaders/karl-haushofer",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.127659574468085,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        }
+      ],
+      "percentage_ge_sources_not_in_se_sources": 100.0
+    },
+    {
+      "query_id": 52,
+      "query": "Sam Mendes and Ruby Yang share what profession?",
+      "ge_sources": [
+        {
+          "agg_source_id": 1,
+          "url": "britannica.com/biography/sam-mendes",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.0408163265306123,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        }
+      ],
+      "percentage_ge_sources_not_in_se_sources": 100.0
+    },
+    {
+      "query_id": 53,
+      "query": "What type of place does Regency Road, Adelaide and Klemzig, South Australia have in common?",
+      "ge_sources": [
+        {
+          "agg_source_id": 1,
+          "url": "mapcarta.com/25588354",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.127659574468085,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        }
+      ],
+      "percentage_ge_sources_not_in_se_sources": 100.0
+    },
+    {
+      "query_id": 54,
+      "query": "When was the company that owns Bonifacio High Street founded?",
+      "ge_sources": [
+        {
+          "agg_source_id": 1,
+          "url": "dbpedia.org/page/bonifacio_high_street",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.0408163265306123,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        }
+      ],
+      "percentage_ge_sources_not_in_se_sources": 100.0
+    },
+    {
+      "query_id": 55,
+      "query": "Which one between Milium and Eucommia lives more widely spread across the world?",
+      "ge_sources": [
+        {
+          "agg_source_id": 1,
+          "url": "powo.science.kew.org/taxon/urn:lsid:ipni.org:names:325296-2",
+          "avg_ge_freq": 0.6667,
+          "relative_se_rank": 2.127659574468085,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 2,
+          "url": "britannica.com/plant/eucommiaceae",
+          "avg_ge_freq": 0.6667,
+          "relative_se_rank": 2.127659574468085,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 3,
+          "url": "powo.science.kew.org/taxon/408599-1",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.127659574468085,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        }
+      ],
+      "percentage_ge_sources_not_in_se_sources": 100.0
+    },
+    {
+      "query_id": 57,
+      "query": "What town host an annual media finance conference that has featured an Australian-born American media mogul?",
+      "ge_sources": [
+        {
+          "agg_source_id": 1,
+          "url": "mediafinance.org/annual-conference",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.127659574468085,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        }
+      ],
+      "percentage_ge_sources_not_in_se_sources": 100.0
+    },
+    {
+      "query_id": 58,
+      "query": "What is the hometown of Duck Down Music artist and complex rapper Pharaohe Monch?",
+      "ge_sources": [
+        {
+          "agg_source_id": 1,
+          "url": "hip-hop-music.fandom.com/wiki/pharoahe_monch",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 0.041666666666666664,
+          "reciprocal_se_rank": 0.2,
+          "normalized_reciprocal_se_rank": 0.791919191919192
+        }
+      ],
+      "percentage_ge_sources_not_in_se_sources": 0.0
+    },
+    {
+      "query_id": 61,
+      "query": "Did a North Carolina study prove that over a million people likely voted twice in the 2012 election?",
+      "ge_sources": [
+        {
+          "agg_source_id": 1,
+          "url": "politifact.com/factchecks/2014/apr/10/dick-morris/dick-morris-theres-proof-over-1-million-people-vot",
+          "avg_ge_freq": 1.0,
+          "relative_se_rank": 2.2222222222222223,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 2,
+          "url": "academia.edu/105921970/one_person_one_vote_estimating_the_prevalence_of_double_voting_in_u_s_presidential_elections",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.2222222222222223,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        }
+      ],
+      "percentage_ge_sources_not_in_se_sources": 100.0
+    },
+    {
+      "query_id": 62,
+      "query": "Are kids less likely to get and spread COVID-19 based on good data available?",
+      "ge_sources": [
+        {
+          "agg_source_id": 1,
+          "url": "med.stanford.edu/news/all-news/2023/10/children-covid.html",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 0.04878048780487805,
+          "reciprocal_se_rank": 0.2,
+          "normalized_reciprocal_se_rank": 0.791919191919192
+        },
+        {
+          "agg_source_id": 2,
+          "url": "mayoclinic.org/diseases-conditions/coronavirus/in-depth/coronavirus-in-babies-and-children/art-20484405",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 0.07317073170731707,
+          "reciprocal_se_rank": 0.16666666666666666,
+          "normalized_reciprocal_se_rank": 0.6531986531986531
+        },
+        {
+          "agg_source_id": 3,
+          "url": "nationalgeographic.com/science/article/we-now-know-how-much-children-spread-coronavirus",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 0.5121951219512195,
+          "reciprocal_se_rank": 0.041666666666666664,
+          "normalized_reciprocal_se_rank": 0.13299663299663297
+        },
+        {
+          "agg_source_id": 4,
+          "url": "ucl.ac.uk/news/2020/sep/largest-study-confirms-children-significantly-less-likely-catch-covid-19",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.4390243902439024,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 5,
+          "url": "cidrap.umn.edu/young-kids-more-likely-older-kids-spread-covid-19-household",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.4390243902439024,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        }
+      ],
+      "percentage_ge_sources_not_in_se_sources": 40.0
+    },
+    {
+      "query_id": 63,
+      "query": "Did Rep. Matt Gaetz and Sen. Ted Cruz take two weeks paid sick leave to self-quarantine? And did Gaetz vote in 2013 to make it illegal for any city in Florida to enact paid sick leave, while Cruz voted in 2015 in the U.S. Senate against paid sick leave?",
+      "ge_sources": [
+        {
+          "agg_source_id": 1,
+          "url": "politifact.com/factchecks/2020/mar/17/occupy-democrats/did-matt-gaetz-and-ted-cruz-oppose-paid-sick-leave",
+          "avg_ge_freq": 1.0,
+          "relative_se_rank": 4.761904761904762,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 2,
+          "url": "theintercept.com/2020/03/12/matt-gaetz-florida-paid-sick-leave-coronavirus",
+          "avg_ge_freq": 0.6667,
+          "relative_se_rank": 4.761904761904762,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        }
+      ],
+      "percentage_ge_sources_not_in_se_sources": 100.0
+    },
+    {
+      "query_id": 64,
+      "query": "Will Italy stop caring for elderly patients who are infected with novel coronavirus strain COVID-19?",
+      "ge_sources": [
+        {
+          "agg_source_id": 1,
+          "url": "wral.com/story/fact-check-is-italy-ignoring-elderly-coronavirus-patients/19022421",
+          "avg_ge_freq": 0.6667,
+          "relative_se_rank": 0.047619047619047616,
+          "reciprocal_se_rank": 0.2,
+          "normalized_reciprocal_se_rank": 0.791919191919192
+        },
+        {
+          "agg_source_id": 2,
+          "url": "journal.ilpnetwork.org/articles/10.31389/jltc.73",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.380952380952381,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 3,
+          "url": "link.springer.com/chapter/10.1007/978-981-99-1467-8_9",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.380952380952381,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 4,
+          "url": "vice.com/en/article/italy-may-soon-be-forced-to-stop-treating-coronavirus-patients-over-80",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.380952380952381,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        }
+      ],
+      "percentage_ge_sources_not_in_se_sources": 75.0
+    },
+    {
+      "query_id": 65,
+      "query": "Does every county, including Chittenden, have fewer people available for work?",
+      "ge_sources": [
+        {
+          "agg_source_id": 1,
+          "url": "fred.stlouisfed.org/series/vtchit0lfn",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.4390243902439024,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 2,
+          "url": "fred.stlouisfed.org/series/laucn500070000000006a",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.4390243902439024,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        }
+      ],
+      "percentage_ge_sources_not_in_se_sources": 100.0
+    },
+    {
+      "query_id": 66,
+      "query": "Is it true that firearms homicides have decreased by about 40 percent since Texas passed a concealed-gun permit law?",
+      "ge_sources": [
+        {
+          "agg_source_id": 1,
+          "url": "texastribune.org/2023/05/10/texas-gun-fatalities-laws",
+          "avg_ge_freq": 1.0,
+          "relative_se_rank": 0.024390243902439025,
+          "reciprocal_se_rank": 0.25,
+          "normalized_reciprocal_se_rank": 1.0
+        }
+      ],
+      "percentage_ge_sources_not_in_se_sources": 0.0
+    },
+    {
+      "query_id": 67,
+      "query": "Does a Chilean girl with cystic fibrosis tell the president to let her die?",
+      "ge_sources": [
+        {
+          "agg_source_id": 1,
+          "url": "bbc.com/news/world-latin-america-31678981",
+          "avg_ge_freq": 1.0,
+          "relative_se_rank": 0.02127659574468085,
+          "reciprocal_se_rank": 0.25,
+          "normalized_reciprocal_se_rank": 1.0
+        },
+        {
+          "agg_source_id": 2,
+          "url": "nbcnews.com/news/latino/chilean-girl-who-asked-president-let-her-die-passes-away-n359486",
+          "avg_ge_freq": 0.6667,
+          "relative_se_rank": 0.1702127659574468,
+          "reciprocal_se_rank": 0.09090909090909091,
+          "normalized_reciprocal_se_rank": 0.33792470156106524
+        },
+        {
+          "agg_source_id": 3,
+          "url": "time.com/3724216/cystic-fibrosis-chile",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 0.14893617021276595,
+          "reciprocal_se_rank": 0.1,
+          "normalized_reciprocal_se_rank": 0.3757575757575758
+        },
+        {
+          "agg_source_id": 4,
+          "url": "cbsnews.com/news/chile-president-michelle-bachelet-visits-valentina-maureira-teen-who-asked-to-die",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.127659574468085,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        }
+      ],
+      "percentage_ge_sources_not_in_se_sources": 25.0
+    },
+    {
+      "query_id": 68,
+      "query": "Have you slashed government by 10 percent in Florida resulting in $7 billion?",
+      "ge_sources": [
+        {
+          "agg_source_id": 1,
+          "url": "politifact.com/factchecks/2009/oct/26/charlie-crist/gov-charlie-crist-says-he-has-reduced-size-state-g",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.272727272727273,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 2,
+          "url": "floridapolitics.com",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.272727272727273,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        }
+      ],
+      "percentage_ge_sources_not_in_se_sources": 100.0
+    },
+    {
+      "query_id": 69,
+      "query": "Did the homeliest nut just get better?",
+      "ge_sources": [
+        {
+          "agg_source_id": 1,
+          "url": "cbsnews.com/news/walnuts-are-heart-healthy-and-cholesterol-lowering-in-older-adults",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 0.06666666666666667,
+          "reciprocal_se_rank": 0.25,
+          "normalized_reciprocal_se_rank": 1.0
+        }
+      ],
+      "percentage_ge_sources_not_in_se_sources": 0.0
+    },
+    {
+      "query_id": 70,
+      "query": "Was the U.S. federal income tax rate 0 percent until 1913?",
+      "ge_sources": [
+        {
+          "agg_source_id": 1,
+          "url": "taxfoundation.org/data/all/federal/historical-income-tax-rates-brackets",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.0833333333333335,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 2,
+          "url": "irs.gov/newsroom/historical-highlights-of-the-irs",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 0.08333333333333333,
+          "reciprocal_se_rank": 0.14285714285714285,
+          "normalized_reciprocal_se_rank": 0.5541125541125541
+        },
+        {
+          "agg_source_id": 3,
+          "url": "investopedia.com/articles/tax/10/history-taxes.asp",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.0833333333333335,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        }
+      ],
+      "percentage_ge_sources_not_in_se_sources": 66.66666666666667
+    },
+    {
+      "query_id": 71,
+      "query": "Did Jim Renacci run against the Washington establishment in the election but is now embracing it with big money and special interest fundraisers?",
+      "ge_sources": [
+        {
+          "agg_source_id": 1,
+          "url": "politifact.com/factchecks/2010/dec/13/democratic-congressional-campaign-committee/democratic-congressional-campaign-committe-takes-l",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 0.02702702702702703,
+          "reciprocal_se_rank": 0.25,
+          "normalized_reciprocal_se_rank": 1.0
+        }
+      ],
+      "percentage_ge_sources_not_in_se_sources": 0.0
+    },
+    {
+      "query_id": 72,
+      "query": "Will a pack-a-day smoker who quits because of the tax increase save about $1,650 a year?",
+      "ge_sources": [
+        {
+          "agg_source_id": 1,
+          "url": "worldpopulationreview.com/state-rankings/cigarette-prices-by-state",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.4390243902439024,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        }
+      ],
+      "percentage_ge_sources_not_in_se_sources": 100.0
+    },
+    {
+      "query_id": 75,
+      "query": "Does the minor G allele of FOXO3 downregulate pro-inflammatory cytokines?",
+      "ge_sources": [
+        {
+          "agg_source_id": 1,
+          "url": "nature.com/articles/nri3548",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.127659574468085,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        }
+      ],
+      "percentage_ge_sources_not_in_se_sources": 100.0
+    },
+    {
+      "query_id": 76,
+      "query": "Did the speaker create over 3 million jobs since they took office, more jobs than have ever been created in the first five months of any presidency in modern history?",
+      "ge_sources": [
+        {
+          "agg_source_id": 1,
+          "url": "politifact.com/factchecks/2021/jul/09/joe-biden/joe-biden-target-early-job-gains-figure-leaves-out",
+          "avg_ge_freq": 0.6667,
+          "relative_se_rank": 2.380952380952381,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 2,
+          "url": "wral.com/story/fact-check-did-biden-set-modern-jobs-record/19769164",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 0.023809523809523808,
+          "reciprocal_se_rank": 0.25,
+          "normalized_reciprocal_se_rank": 1.0
+        }
+      ],
+      "percentage_ge_sources_not_in_se_sources": 50.0
+    },
+    {
+      "query_id": 77,
+      "query": "Will the government be infiltrating personal text messages?",
+      "ge_sources": [
+        {
+          "agg_source_id": 1,
+          "url": "trak.in/stories/no-govt-will-not-monitor-phone-calls-social-media-messages-pib-fact-chec",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.2222222222222223,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 2,
+          "url": "knpr.org/npr/2024-12-17/fbi-warns-americans-to-keep-their-text-messages-secure-what-to-know",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.2222222222222223,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 3,
+          "url": "digitalrightsbytes.org/topics/can-the-government-read-my-text-messages",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 0.044444444444444446,
+          "reciprocal_se_rank": 0.2,
+          "normalized_reciprocal_se_rank": 0.791919191919192
+        },
+        {
+          "agg_source_id": 4,
+          "url": "nextgov.com/policy/2024/04/biden-signs-extension-controversial-spying-program-2026/395945",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.2222222222222223,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        }
+      ],
+      "percentage_ge_sources_not_in_se_sources": 75.0
+    },
+    {
+      "query_id": 78,
+      "query": "Did Rick Scott take $200,000 from a family that leased land for drilling and is he now trying to hide from it?",
+      "ge_sources": [
+        {
+          "agg_source_id": 1,
+          "url": "politifact.com/factchecks/2014/aug/28/next-generation-climate-action-committee/nextgen-ad-says-rick-scott-trying-hide-donation-re",
+          "avg_ge_freq": 0.6667,
+          "relative_se_rank": 2.127659574468085,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 2,
+          "url": "usatoday.com/story/news/nation-now/political-ad-tracker/2014/08/16/fact-check-florida-fracking-rick-scott-charlie-christ/14113615",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.127659574468085,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        }
+      ],
+      "percentage_ge_sources_not_in_se_sources": 100.0
+    },
+    {
+      "query_id": 79,
+      "query": "Did U.S. Representatives Rashid Tlaib and Ilhan Omar co-sponsor legislation to recognize Muslim holidays as federal holidays?",
+      "ge_sources": [
+        {
+          "agg_source_id": 1,
+          "url": "snopes.com/fact-check/tlaib-omar-muslim-holidays",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 0.044444444444444446,
+          "reciprocal_se_rank": 0.2,
+          "normalized_reciprocal_se_rank": 0.791919191919192
+        },
+        {
+          "agg_source_id": 2,
+          "url": "factcheck.org/2019/01/viral-story-fabricates-muslim-holidays-bill",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 0.022222222222222223,
+          "reciprocal_se_rank": 0.25,
+          "normalized_reciprocal_se_rank": 1.0
+        }
+      ],
+      "percentage_ge_sources_not_in_se_sources": 0.0
+    },
+    {
+      "query_id": 80,
+      "query": "Is the therapeutic use of the drug Dapsone to treat pyoderma gangrenosum based on anecdotal evidence?",
+      "ge_sources": [
+        {
+          "agg_source_id": 1,
+          "url": "link.springer.com/article/10.1007/s40257-024-00879-8",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.127659574468085,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        }
+      ],
+      "percentage_ge_sources_not_in_se_sources": 100.0
+    },
+    {
+      "query_id": 81,
+      "query": "How do I evaluate AUC in Apache Mahout?",
+      "ge_sources": [
+        {
+          "agg_source_id": 1,
+          "url": "mahout.apache.org/docs/0.13.0/api/docs/mahout-mr/org/apache/mahout/classifier/evaluation/auc.html",
+          "avg_ge_freq": 1.0,
+          "relative_se_rank": 0.024390243902439025,
+          "reciprocal_se_rank": 0.25,
+          "normalized_reciprocal_se_rank": 1.0
+        },
+        {
+          "agg_source_id": 2,
+          "url": "mahout.apache.org/docs/0.13.0/api/docs/mahout-mr/org/apache/mahout/math/stats/globalonlineauc.html",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.4390243902439024,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 3,
+          "url": "livebook.manning.com/book/mahout-in-action/chapter-15",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.4390243902439024,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 4,
+          "url": "mahout.apache.org/docs/latest",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.4390243902439024,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 5,
+          "url": "mahout.apache.org/docs/0.13.0/api/docs/mahout-mr/org/apache/mahout/math/stats/class-use/onlineauc.html",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.4390243902439024,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        }
+      ],
+      "percentage_ge_sources_not_in_se_sources": 80.0
+    },
+    {
+      "query_id": 82,
+      "query": "Which I concentrate my fickle mind?",
+      "ge_sources": [
+        {
+          "agg_source_id": 2,
+          "url": "psychologytoday.com/us/blog/mental-wealth/202302/5-effective-ways-to-improve-concentration-and-cognition",
+          "avg_ge_freq": 0.6667,
+          "relative_se_rank": 2.272727272727273,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 3,
+          "url": "verybigbrain.com/psychology-thinking/the-psychology-of-focus-6-techniques-to-improve-mental-clarity",
+          "avg_ge_freq": 0.6667,
+          "relative_se_rank": 2.272727272727273,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 4,
+          "url": "psychologytoday.com/us/blog/your-personal-renaissance/202509/how-to-stay-focused-in-an-age-of-distraction",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.272727272727273,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 6,
+          "url": "healthline.com/health/mental-health/how-to-stay-focused",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.272727272727273,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 7,
+          "url": "blocksite.co/blog/digital-mindfulness/focus-distracted-brain",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.272727272727273,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        }
+      ],
+      "percentage_ge_sources_not_in_se_sources": 100.0
+    },
+    {
+      "query_id": 83,
+      "query": "What teen C language?",
+      "ge_sources": [
+        {
+          "agg_source_id": 2,
+          "url": "codewizardshq.com/coding-classes-for-teens",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.2222222222222223,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 4,
+          "url": "code.org/en-us/students/middle-and-high-school",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 0.3333333333333333,
+          "reciprocal_se_rank": 0.05555555555555555,
+          "normalized_reciprocal_se_rank": 0.19079685746352412
+        },
+        {
+          "agg_source_id": 5,
+          "url": "geeksforgeeks.org/c/c-programming-language",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.2222222222222223,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 6,
+          "url": "educative.io/courses/learn-c",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.2222222222222223,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 7,
+          "url": "github.com/getvmio/free-c-resources",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.2222222222222223,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        }
+      ],
+      "percentage_ge_sources_not_in_se_sources": 80.0
+    },
+    {
+      "query_id": 84,
+      "query": "Is a 56% gross margin reasonable for apparel production and printing?",
+      "ge_sources": [
+        {
+          "agg_source_id": 1,
+          "url": "trueprofit.io/blog/apparel-profit-margin",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 0.09090909090909091,
+          "reciprocal_se_rank": 0.14285714285714285,
+          "normalized_reciprocal_se_rank": 0.5541125541125541
+        },
+        {
+          "agg_source_id": 2,
+          "url": "financialmodelslab.com/blogs/profitability/t-shirt-printing",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.272727272727273,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        }
+      ],
+      "percentage_ge_sources_not_in_se_sources": 50.0
+    },
+    {
+      "query_id": 85,
+      "query": "How do I find a dependable IQ test?",
+      "ge_sources": [
+        {
+          "agg_source_id": 1,
+          "url": "bestiqtest.org",
+          "avg_ge_freq": 1.0,
+          "relative_se_rank": 2.127659574468085,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 2,
+          "url": "psychometric-success.com/aptitude-tests/iq-tests/best-iq-test",
+          "avg_ge_freq": 0.6667,
+          "relative_se_rank": 2.127659574468085,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 3,
+          "url": "123test.com/iq-test",
+          "avg_ge_freq": 0.6667,
+          "relative_se_rank": 0.0425531914893617,
+          "reciprocal_se_rank": 0.2,
+          "normalized_reciprocal_se_rank": 0.791919191919192
+        },
+        {
+          "agg_source_id": 4,
+          "url": "riotiq.com",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 0.19148936170212766,
+          "reciprocal_se_rank": 0.08333333333333333,
+          "normalized_reciprocal_se_rank": 0.3063973063973064
+        },
+        {
+          "agg_source_id": 5,
+          "url": "123test.com",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 0.6170212765957447,
+          "reciprocal_se_rank": 0.03125,
+          "normalized_reciprocal_se_rank": 0.08964646464646465
+        }
+      ],
+      "percentage_ge_sources_not_in_se_sources": 40.0
+    },
+    {
+      "query_id": 86,
+      "query": "What is the difference between a layer 3 switch and router?",
+      "ge_sources": [
+        {
+          "agg_source_id": 1,
+          "url": "geeksforgeeks.org/computer-networks/difference-between-router-and-layer-3-switch",
+          "avg_ge_freq": 1.0,
+          "relative_se_rank": 2.0833333333333335,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 2,
+          "url": "ipwithease.com/difference-between-router-and-layer-3-switch",
+          "avg_ge_freq": 0.6667,
+          "relative_se_rank": 0.6041666666666666,
+          "reciprocal_se_rank": 0.03125,
+          "normalized_reciprocal_se_rank": 0.08964646464646465
+        },
+        {
+          "agg_source_id": 3,
+          "url": "versitron.com/blogs/post/learn-the-key-differences-between-layer-3-switch-vs-router",
+          "avg_ge_freq": 0.6667,
+          "relative_se_rank": 2.0833333333333335,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 4,
+          "url": "fibermall.com/blog/layer-3-router.htm",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.0833333333333335,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 5,
+          "url": "pmnetworking.in/difference-between-layer-3-switch-vs-router",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 0.3333333333333333,
+          "reciprocal_se_rank": 0.05263157894736842,
+          "normalized_reciprocal_se_rank": 0.17862838915470494
+        }
+      ],
+      "percentage_ge_sources_not_in_se_sources": 60.0
+    },
+    {
+      "query_id": 87,
+      "query": "What South Korean think about Italian?",
+      "ge_sources": [
+        {
+          "agg_source_id": 1,
+          "url": "internimagazine.com/agenda/italia-corea-una-relazione-virtuosa",
+          "avg_ge_freq": 1.0,
+          "relative_se_rank": 0.3170731707317073,
+          "reciprocal_se_rank": 0.0625,
+          "normalized_reciprocal_se_rank": 0.21969696969696972
+        },
+        {
+          "agg_source_id": 2,
+          "url": "koreajoongangdaily.joins.com/2018/01/28/etc/trading-places-hotblooded-passion-unites-koreans-and-italians/3043927.html",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.4390243902439024,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 3,
+          "url": "myitalianseoul.wordpress.com/2018/01/31/italian-culture-from-a-korean-perspective-%f0%9f%98%a8",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.4390243902439024,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 5,
+          "url": "ajupress.com/view/20250905155651446",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.4390243902439024,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 6,
+          "url": "koreajoongangdaily.joins.com/news/2024-12-05/national/diplomacy/korea-and-italy-celebrate-140-years-of-bilateral-ties/2193649",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.4390243902439024,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        }
+      ],
+      "percentage_ge_sources_not_in_se_sources": 80.0
+    },
+    {
+      "query_id": 88,
+      "query": "How do Quora post best a question on it?",
+      "ge_sources": [
+        {
+          "agg_source_id": 1,
+          "url": "flavor365.com/your-complete-guide-to-asking-effective-quora-questions",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.3255813953488373,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        }
+      ],
+      "percentage_ge_sources_not_in_se_sources": 100.0
+    },
+    {
+      "query_id": 89,
+      "query": "How do I transfer the contacts from my SIM (used in an Android) to an iPhone 7?",
+      "ge_sources": [
+        {
+          "agg_source_id": 1,
+          "url": "igeeksblog.com/how-to-transfer-contacts-from-android-to-iphone",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.4390243902439024,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 2,
+          "url": "support.apple.com/en-us/109325",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 0.21951219512195122,
+          "reciprocal_se_rank": 0.08333333333333333,
+          "normalized_reciprocal_se_rank": 0.3063973063973064
+        }
+      ],
+      "percentage_ge_sources_not_in_se_sources": 50.0
+    },
+    {
+      "query_id": 90,
+      "query": "What careers can I embark as way lean six sigma black belt?",
+      "ge_sources": [
+        {
+          "agg_source_id": 1,
+          "url": "purdue.edu/leansixsigmaonline/blog/green-belt-and-black-belt-salary-comparisons-and-career-path-insights",
+          "avg_ge_freq": 0.6667,
+          "relative_se_rank": 0.6,
+          "reciprocal_se_rank": 0.03333333333333333,
+          "normalized_reciprocal_se_rank": 0.09831649831649832
+        },
+        {
+          "agg_source_id": 2,
+          "url": "purdue.edu/leansixsigmaonline",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.2222222222222223,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 3,
+          "url": "interviewguy.com/jobs-for-six-sigma-black-belt",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.2222222222222223,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 4,
+          "url": "iatpcertified.com/articles/10-high-impact-jobs-you-can-land-with-a-six-sigma-certification",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.2222222222222223,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 5,
+          "url": "iselglobal.com/blog/what-careers-are-there-for-lean-six-sigma-black-belts",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 0.3111111111111111,
+          "reciprocal_se_rank": 0.058823529411764705,
+          "normalized_reciprocal_se_rank": 0.20439691027926324
+        }
+      ],
+      "percentage_ge_sources_not_in_se_sources": 60.0
+    },
+    {
+      "query_id": 91,
+      "query": "Who is the most beautiful actress Hollywood?",
+      "ge_sources": [
+        {
+          "agg_source_id": 1,
+          "url": "globehours.com/most-beautiful-actresses-in-the-world-2026",
+          "avg_ge_freq": 0.6667,
+          "relative_se_rank": 2.7777777777777777,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 2,
+          "url": "talkandtrend.com/the-worlds-top-10-beautiful-actress-list-2025-2026-a-celebration-of-global-talent-and-charm",
+          "avg_ge_freq": 0.6667,
+          "relative_se_rank": 2.7777777777777777,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 3,
+          "url": "globehours.com/most-beautiful-actresses-in-the-world",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.7777777777777777,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        }
+      ],
+      "percentage_ge_sources_not_in_se_sources": 100.0
+    },
+    {
+      "query_id": 92,
+      "query": "What would happen to nor a pescatarian if they started eating red meat?",
+      "ge_sources": [
+        {
+          "agg_source_id": 1,
+          "url": "eatingwell.com/what-happens-to-your-body-when-you-start-eating-meat-again-8769051",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 0.061224489795918366,
+          "reciprocal_se_rank": 0.16666666666666666,
+          "normalized_reciprocal_se_rank": 0.6531986531986531
+        },
+        {
+          "agg_source_id": 2,
+          "url": "medicalnewstoday.com/articles/323907",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.0408163265306123,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 3,
+          "url": "health.com/pescatarian-diet-8362953",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.0408163265306123,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 4,
+          "url": "webmd.com/diet/pescatarian-diet-overview",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 0.32653061224489793,
+          "reciprocal_se_rank": 0.05263157894736842,
+          "normalized_reciprocal_se_rank": 0.17862838915470494
+        },
+        {
+          "agg_source_id": 5,
+          "url": "everydayhealth.com/diet-nutrition/pescatarian-diet-food-list-meal-plan-benefits-risks-more",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 0.8979591836734694,
+          "reciprocal_se_rank": 0.02127659574468085,
+          "normalized_reciprocal_se_rank": 0.04814098431119708
+        }
+      ],
+      "percentage_ge_sources_not_in_se_sources": 40.0
+    },
+    {
+      "query_id": 93,
+      "query": "Where do you think the soul is located in the human body?",
+      "ge_sources": [
+        {
+          "agg_source_id": 1,
+          "url": "britannica.com/topic/philosophical-anthropology",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.272727272727273,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 2,
+          "url": "livequrious.com/where-is-the-soul-inside-our-body-science-and-the-eternal-mystery-of-our-existence",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.272727272727273,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 3,
+          "url": "link.springer.com/chapter/10.1007/978-3-662-65774-4_1",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.272727272727273,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 4,
+          "url": "psychologytoday.com/us/blog/biocentrism/201112/does-the-soul-exist-evidence-says-yes",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.272727272727273,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 5,
+          "url": "exploringyourmind.com/the-human-soul-according-to-science",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.272727272727273,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        }
+      ],
+      "percentage_ge_sources_not_in_se_sources": 100.0
+    },
+    {
+      "query_id": 94,
+      "query": "How can I stop my bsc receding Hairline?",
+      "ge_sources": [
+        {
+          "agg_source_id": 2,
+          "url": "healthline.com/health/how-to-stop-receding-hairline",
+          "avg_ge_freq": 0.6667,
+          "relative_se_rank": 0.025,
+          "reciprocal_se_rank": 0.25,
+          "normalized_reciprocal_se_rank": 1.0
+        },
+        {
+          "agg_source_id": 3,
+          "url": "jaepakmd.com/resources/how-to-fix-my-hairline",
+          "avg_ge_freq": 0.6667,
+          "relative_se_rank": 2.5,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 4,
+          "url": "healthline.com/health/receding-hairline",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.5,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 5,
+          "url": "webmd.com/skin-problems-and-treatments/hair-loss/receding-hairline",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 0.475,
+          "reciprocal_se_rank": 0.045454545454545456,
+          "normalized_reciprocal_se_rank": 0.14876033057851243
+        },
+        {
+          "agg_source_id": 6,
+          "url": "womansworld.com/beauty/hair/how-to-stop-a-receding-hairline-treatments-backed-by-hair-loss-pros",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.5,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        }
+      ],
+      "percentage_ge_sources_not_in_se_sources": 60.0
+    },
+    {
+      "query_id": 95,
+      "query": "How do best country to study masters?",
+      "ge_sources": [
+        {
+          "agg_source_id": 1,
+          "url": "careerabroad.ca/top-study-abroad-destinations-for-international-students-in-2026",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.4390243902439024,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 2,
+          "url": "mastergradschools.com/master-study-destinations/best-cities-study-masters-2026",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.4390243902439024,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 3,
+          "url": "educba.com/countries-for-masters-degrees-abroad",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.4390243902439024,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 4,
+          "url": "metaapply.io/blogs/best-country-to-study-abroad-in-2026",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.4390243902439024,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 5,
+          "url": "imfs.co.in/which-study-destination-is-best-in-2026-27-complete-comparison-guide",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.4390243902439024,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        }
+      ],
+      "percentage_ge_sources_not_in_se_sources": 100.0
+    },
+    {
+      "query_id": 96,
+      "query": "Is it safe to run 32 bit on 64 bit windows 10?",
+      "ge_sources": [
+        {
+          "agg_source_id": 1,
+          "url": "minitool.com/news/run-32-bit-programs-on-64-bit-windows.html",
+          "avg_ge_freq": 0.6667,
+          "relative_se_rank": 0.29545454545454547,
+          "reciprocal_se_rank": 0.0625,
+          "normalized_reciprocal_se_rank": 0.21969696969696972
+        },
+        {
+          "agg_source_id": 2,
+          "url": "learn.microsoft.com/en-us/windows/win32/winprog64/running-32-bit-applications",
+          "avg_ge_freq": 0.6667,
+          "relative_se_rank": 2.272727272727273,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 3,
+          "url": "learn.microsoft.com/en-us/troubleshoot/windows-server/performance/compatibility-limitations-32-bit-programs-64-bit-system",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 0.045454545454545456,
+          "reciprocal_se_rank": 0.2,
+          "normalized_reciprocal_se_rank": 0.791919191919192
+        },
+        {
+          "agg_source_id": 4,
+          "url": "helpdeskgeek.com/how-to-run-32-bit-programs-on-64-bit-windows",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 0.75,
+          "reciprocal_se_rank": 0.027777777777777776,
+          "normalized_reciprocal_se_rank": 0.07519640852974185
+        },
+        {
+          "agg_source_id": 5,
+          "url": "softwarekeep.com/blogs/news/run-32-bit-apps-on-64-bit-windows",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.272727272727273,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        }
+      ],
+      "percentage_ge_sources_not_in_se_sources": 40.0
+    },
+    {
+      "query_id": 97,
+      "query": "What to read about american history?",
+      "ge_sources": [
+        {
+          "agg_source_id": 1,
+          "url": "historyhustle.com/20-best-books-about-american-history",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.5,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 3,
+          "url": "fivebooks.com/best-books/american-history-brent-glass",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.5,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 4,
+          "url": "academichelp.net/humanities/history/best-books-on-american-history.html",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.5,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 6,
+          "url": "bustle.com/entertainment/best-american-us-history-book",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.5,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        }
+      ],
+      "percentage_ge_sources_not_in_se_sources": 100.0
+    },
+    {
+      "query_id": 98,
+      "query": "Can I recover emails deleted from Gmail?",
+      "ge_sources": [
+        {
+          "agg_source_id": 1,
+          "url": "geeksforgeeks.org/techtips/how-to-recover-deleted-emails-in-gmail",
+          "avg_ge_freq": 0.6667,
+          "relative_se_rank": 0.375,
+          "reciprocal_se_rank": 0.05555555555555555,
+          "normalized_reciprocal_se_rank": 0.19079685746352412
+        }
+      ],
+      "percentage_ge_sources_not_in_se_sources": 0.0
+    },
+    {
+      "query_id": 99,
+      "query": "Will time travel ever fuels possable?",
+      "ge_sources": [
+        {
+          "agg_source_id": 1,
+          "url": "sciencetimes.com/articles/60810/20251117/time-travel-theory-wormholes-what-relativity-physics-reveals-about-their-possibility.htm",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.4390243902439024,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        },
+        {
+          "agg_source_id": 2,
+          "url": "space.com/21675-time-travel.html",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 0.2926829268292683,
+          "reciprocal_se_rank": 0.06666666666666667,
+          "normalized_reciprocal_se_rank": 0.23703703703703705
+        },
+        {
+          "agg_source_id": 3,
+          "url": "sciencealert.com/a-physicist-says-paradox-free-time-travel-is-theoretically-possible",
+          "avg_ge_freq": 0.3333,
+          "relative_se_rank": 2.4390243902439024,
+          "reciprocal_se_rank": 0.009708737864077669,
+          "normalized_reciprocal_se_rank": 0.0
+        }
+      ],
+      "percentage_ge_sources_not_in_se_sources": 66.66666666666667
+    }
+  ],
+  "metadata": {
+    "min_reciprocal_se_rank": 0.009708737864077669,
+    "max_reciprocal_se_rank": 0.25
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "unpopulated_query_count": 0,
+  "unpopulated_query_id_count": 0,
+  "unpopulated_sources_count": 6,
+  "unpopulated_agg_source_id_count": 0,
+  "unpopulated_url_count": 0,
+  "per_query_debug_data": {
+    "Entry #53": {
+      "query": "When was the company that owns Bonifacio High Street founded?",
+      "debug_message": "Sources not populated"
+    },
+    "Entry #81": {
+      "query": "Which I concentrate my fickle mind?",
+      "debug_message": "Sources not populated"
+    },
+    "Entry #85": {
+      "query": "What is the difference between a layer 3 switch and router?",
+      "debug_message": "Sources not populated"
+    },
+    "Entry #87": {
+      "query": "How do Quora post best a question on it?",
+      "debug_message": "Sources not populated"
+    },
+    "Entry #90": {
+      "query": "Who is the most beautiful actress Hollywood?",
+      "debug_message": "Sources not populated"
+    },
+    "Entry #92": {
+      "query": "Where do you think the soul is located in the human body?",
+      "debug_message": "Sources not populated"
+    }
+  },
+  "unpopulated_avg_ge_freq_count": 0
+}

@@ -1,0 +1,11 @@
+{
+  "total_queries_evaluated": 20,
+  "ge_source_not_found_in_se_sources_data": {
+    "0.0": 10.0,
+    "40.0": 10.0,
+    "60.0": 5.0,
+    "75.0": 10.0,
+    "80.0": 20.0,
+    "100.0": 45.0
+  }
+}

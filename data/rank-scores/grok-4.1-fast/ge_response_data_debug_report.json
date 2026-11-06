@@ -1,0 +1,82 @@
+{
+  "unpopulated_query_count": 0,
+  "unpopulated_query_id_count": 0,
+  "unpopulated_sources_count": 18,
+  "unpopulated_agg_source_id_count": 0,
+  "unpopulated_url_count": 0,
+  "per_query_debug_data": {
+    "Entry #21": {
+      "query": "Did the universe have a beginning?",
+      "debug_message": "Sources not populated"
+    },
+    "Entry #22": {
+      "query": "Is it true that Donald Trump could be manipulated by foreign governments, simply by playing to his ego?",
+      "debug_message": "Sources not populated"
+    },
+    "Entry #24": {
+      "query": "Can parents decide for their children to go through a surgery without their consent (when they are under 18, doesn't matter if it's to save them)?",
+      "debug_message": "Sources not populated"
+    },
+    "Entry #26": {
+      "query": "Should we stop allocating money to schools based on property taxes?",
+      "debug_message": "Sources not populated"
+    },
+    "Entry #27": {
+      "query": "Is the Church of the Flying Spaghetti Monster a legitimate religion?",
+      "debug_message": "Sources not populated"
+    },
+    "Entry #28": {
+      "query": "Should corporal punishment be used in K-12 schools?",
+      "debug_message": "Sources not populated"
+    },
+    "Entry #29": {
+      "query": "Can an AI pass the Turing test?",
+      "debug_message": "Sources not populated"
+    },
+    "Entry #31": {
+      "query": "Should the use of CRISPR technology for editing the human germline be strictly prohibited?",
+      "debug_message": "Sources not populated"
+    },
+    "Entry #32": {
+      "query": "Should the draft be reinstated if not enough American citizens voluntarily enlist?",
+      "debug_message": "Sources not populated"
+    },
+    "Entry #34": {
+      "query": "Should recreational marijuana be legal?",
+      "debug_message": "Sources not populated"
+    },
+    "Entry #36": {
+      "query": "Should manufacturers be required to label foods containing GMOs?",
+      "debug_message": "Sources not populated"
+    },
+    "Entry #39": {
+      "query": "Is there any proof that God doesn't exist?",
+      "debug_message": "Sources not populated"
+    },
+    "Entry #72": {
+      "query": "Did Islamic studies professor Tariq Ramadan say Muslims are here to colonize the U.S. and Canada, spread Sharia law, and won't hesitate to use violent Jihad if necessary?",
+      "debug_message": "Sources not populated"
+    },
+    "Entry #76": {
+      "query": "Will the government be infiltrating personal text messages?",
+      "debug_message": "Sources not populated"
+    },
+    "Entry #81": {
+      "query": "Which I concentrate my fickle mind?",
+      "debug_message": "Sources not populated"
+    },
+    "Entry #85": {
+      "query": "What is the difference between a layer 3 switch and router?",
+      "debug_message": "Sources not populated"
+    },
+    "Entry #90": {
+      "query": "Who is the most beautiful actress Hollywood?",
+      "debug_message": "Sources not populated"
+    },
+    "Entry #92": {
+      "query": "Where do you think the soul is located in the human body?",
+      "debug_message": "Sources not populated"
+    }
+  },
+  "unpopulated_avg_ge_freq_count": 0
+}
