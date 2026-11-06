@@ -1,99 +1,68 @@
-# Source collection scripts
+# Source Collection
 
-Scripts to generate source URLs (via an LLM) and scrape their content into the same JSON format used elsewhere in this repo (`data/collected-sources/...`).
+Collects the sources a system cites for each query. The output is the input of
+[`scoring.py`](../content-scoring/scripts/README.md).
 
-## Setup
+## How It Works
 
-From the repo root:
+1. `get_urls.py` sends each query to the system three times and records the
+   URLs cited in each answer, in citation order.
+2. `collect_sources_from_urls.py` merges the cited URLs of all runs, drops
+   pages that cannot be fetched or have no text, and selects up to five
+   sources per query by citation frequency, then average citation rank, then
+   text length. The page text of the selected sources is stored for scoring.
 
-```bash
-pip install -r requirements.txt
-# or: python -m venv .venv && source .venv/bin/activate && pip install -r requirements.txt
-```
+`collect_sources.py` runs both steps.
 
-Set `OPENAI_API_KEY` in your environment or in a `.env` file in the repo root (scripts use `python-dotenv`).
-
-**Model:** The `--model` flag accepts any model name supported by the API you call. That includes OpenAI models (e.g. `gpt-4o-mini`, `gpt-4o`) and, when using a custom base URL, any **OpenAI-compatible** endpoint (e.g. other providers or local servers). Use `--openai-base-url` to point to a different API; the same `--model` name is sent in the request.
-
-## Scripts
-
-| Script | Purpose |
-|--------|--------|
-| **`get_urls.py`** | Call OpenAI (or OpenAI-compatible API) to suggest URLs for each query. Output is a single JSON file (reference format) with `runs` and empty `aggregated_sources`. |
-| **`collect_sources_from_urls.py`** | Read a URL JSON (reference format), scrape each URL, and fill `aggregated_sources`. |
-| **`collect_sources.py`** | Full pipeline: run `get_urls` then scrape (and optionally patch under-covered queries). One command from queries → scraped JSON. |
-
-## Quick start (all-in-one)
-
-Run the full pipeline. You only need a **query file** (JSONL with `id` and `query` per line). Output goes to `source-collection/.output/` by default (gitignored).
+## Usage
 
 ```bash
-# From repo root
+export OPENAI_API_KEY=YOUR_OPENAI_API_KEY
 python src/source-collection/collect_sources.py \
-  --queries path/to/queries.jsonl
+  --queries data/queries/sourcebench_queries.jsonl \
+  --model gpt-5
 ```
 
-Example query file `queries.jsonl`:
+Outputs go to `src/source-collection/.output/` (`urls.json`, `scraped.json`,
+`rejected.jsonl`) unless set with `-u`, `-s` and `--rejected-out`.
 
-```jsonl
-{"id": "q1", "query": "What is the capital of France?"}
-{"id": "q2", "query": "How does photosynthesis work?"}
+- `--query-ids 1 2 3` runs a subset of queries.
+- `--resume` continues an interrupted run; finished queries are kept.
+- `--runs` and `--top-k` set the runs per query (default 3) and the sources
+  selected per query (default 5).
+
+Run any script with `--help` for all options.
+
+## Adapting to Another Provider
+
+This implementation uses the OpenAI Responses API with the `web_search` tool.
+Only `query_system()` in `get_urls.py` is provider-specific. Replace it (and
+`make_client()` if the provider needs another client) with a function that
+takes one query and returns:
+
+```python
+SystemResponse(
+    response_text="the final answer",
+    citations=[{"url": "https://...", "title": "..."}],  # in citation order
+    raw_response={...},   # the provider's response, stored as-is
+    usage={...},          # optional
+)
 ```
 
-Outputs (by default):
+The rest of the pipeline stays the same. For a search API that returns a
+ranked list of results instead of an answer, return that list as `citations`.
 
-- `src/source-collection/.output/urls.json` — generated URLs (reference format)
-- `src/source-collection/.output/scraped.json` — same structure with `aggregated_sources` filled
-- `src/source-collection/.output/rejected.jsonl` — URLs that failed or were too short
+## Output
 
-Override paths:
+`scraped.json` is a list of queries. Each query has `runs` (one per call:
+answer, raw response, cited URLs) and `aggregated_sources` (one per unique
+cited URL, selected sources first). Main fields of an aggregated source:
 
-```bash
-python src/source-collection/collect_sources.py \
-  -q queries.jsonl \
-  -u /tmp/urls.json \
-  -s /tmp/scraped.json \
-  --rejected-out /tmp/rejected.jsonl
-```
-
-## Running the steps separately
-
-**1. Generate URLs only (OpenAI)**
-
-```bash
-python src/source-collection/get_urls.py \
-  --input queries.jsonl \
-  --output urls.json \
-  --model gpt-4o-mini \
-  --max-urls 5
-```
-
-**2. Scrape from a URL file**
-
-```bash
-python src/source-collection/collect_sources_from_urls.py \
-  --input urls.json \
-  --output scraped.json \
-  --rejected-output rejected.jsonl
-```
-
-## Options (high level)
-
-- **`collect_sources.py`**: `--model` (any OpenAI or OpenAI-compatible model name), `--temperature`, `--max-urls`, `--min-success-per-query`, `--patch-rounds`, `--ai-model-name`, `--id-field`, `--query-field`, plus `--openai-base-url` and `--openai-api-key` for custom/OpenAI-compatible endpoints.
-- **`get_urls.py`**: `--model`, `--temperature`, `--max-urls`, `--id-field`, `--query-field`, `--ai-model-name`, `--openai-base-url`, `--openai-api-key`.
-- **`collect_sources_from_urls.py`**: `--timeout`, `--min-chars`, `--ai-model-name`.
-
-Use `--help` on any script for full options.
-
-Example with an OpenAI-compatible endpoint (e.g. another provider or local server):
-
-```bash
-python src/source-collection/collect_sources.py -q queries.jsonl \
-  --model their-model-name \
-  --openai-base-url https://api.other-provider.com/v1 \
-  --openai-api-key YOUR_KEY
-```
-
-## Output format
-
-All JSON output matches the schema of `data/collected-sources/gpt-5/GE_Response_Data_5_web_search_scored_deduped_with_avg_ge_freq.json`: top-level array of records with `query_id`, `query_text`, `ai_model_name`, `runs`, and `aggregated_sources`.
+| Field | Meaning |
+|---|---|
+| `selected_topk` | `true` for the sources that are scored |
+| `text_content` | stored page text (selected sources only) |
+| `frequency`, `ge_rank_list`, `avg_ge_rank` | runs citing the URL, its rank in each run, average rank |
+| `citation_existence_check` | page fetched with non-empty text; `null` if not checked |
+| `retrieved_at`, `text_sha256` | fetch time (UTC) and hash of the stored text |
+| `search_result_date`, `search_result_last_updated` | HTTP `Date` and `Last-Modified` headers |

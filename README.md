@@ -1,13 +1,13 @@
 <div align="center">
 
-# SourceBench: A Benchmark for Cited Source Quality in Generative Engines
+# SourceBench: Can AI Answers Reference Quality Web Sources?
 
 [![Code License](https://img.shields.io/badge/Code%20License-MIT-blue?style=flat-square)](LICENSE)
 [![Data License](https://img.shields.io/badge/Data-see%20data%2FLICENSE-green?style=flat-square)](data/LICENSE)
 [![GitHub](https://img.shields.io/badge/GitHub-SourceBench-181717?style=flat-square&logo=github)](https://github.com/WukLab/SourceBench)
 [![arXiv](https://img.shields.io/badge/arXiv-2602.16942-b31b1b?style=flat-square&logo=arxiv)](https://arxiv.org/abs/2602.16942)
 [![Blog](https://img.shields.io/badge/Blog-SourceBench-f59e0b?style=flat-square)](https://mlsys.wuklab.io/posts/sourcebench/)
-[![Leaderboard](https://img.shields.io/badge/Leaderboard-hosted%20separately-8b5cf6?style=flat-square)](#official-evaluation)
+[![Leaderboard](https://img.shields.io/badge/Leaderboard-Hugging%20Face-8b5cf6?style=flat-square)](https://huggingface.co/spaces/WukLab/SourceBench-Leaderboard)
 
 SourceBench evaluates whether a generative engine cites **high-quality web sources**, not only whether it produces a fluent final answer.
 
@@ -17,134 +17,157 @@ SourceBench evaluates whether a generative engine cites **high-quality web sourc
 
 ## Overview
 
-SourceBench focuses on the quality of cited sources along dimensions such as:
+SourceBench scores every source a system cites on eight dimensions: semantic
+relevance, factual accuracy, freshness, objectivity / tone, layout / ad
+density, accountability, transparency, and authority.
 
-- semantic relevance
-- factual accuracy
-- freshness
-- objectivity / tone
-- layout / ad density
-- accountability
-- transparency
-- authority
-
-This repository is the **benchmark codebase**. It contains:
-
-- the 100 benchmark queries, collected sources, and source scores used in the paper
-- source collection scripts
-- source judging scripts
-- metric computation scripts
-- official submission validation and runner scripts
-- split policy and official submission contract
-
-The public leaderboard site should be hosted separately from this repository.
+Evaluating a system takes three steps: collect the sources it cites, score
+them with an LLM judge, and compute metrics. The queries, collected sources,
+and scores used in the paper are included in `data/`.
 
 ## Repository Layout
 
 ```text
-data/queries/
-  sourcebench_queries.csv
-data/collected-sources/
-data/content-scores/
-leaderboard/
-  QUERY_SPLIT_POLICY.md
-  OFFICIAL_SUBMISSION_CONTRACT.md
-  README.md
-  examples/
-src/source-collection/
-src/content-scoring/scripts/
-src/evaluation/
+LICENSE                          code license (MIT)
 requirements.txt
+data/
+  LICENSE                        data terms
+  queries/                       the 100 benchmark queries (.csv, .jsonl)
+  collected-sources/             collected sources with stored page text (.json.gz)
+  content-scores/                judge scores and justifications
+  evaluation-results/            stored analysis outputs (SE/GE overlap, per-query-type scores)
+  rank-scores/                   stored rank scores and collection reports
+  README.md                      description of the data files
+leaderboard/                     leaderboard submission format and examples
+src/
+  source-collection/             step 1: collect cited sources
+  content-scoring/scripts/       step 2: score sources
+  evaluation/                    step 3: compute metrics; submission scripts
 ```
 
-## Quick Start
-
-Install dependencies:
+## Setup
 
 ```bash
 pip install -r requirements.txt
 ```
 
-Run the public evaluation pipeline:
+## 1. Collect Sources
 
 ```bash
-python src/source-collection/get_urls.py \
-  --input data/queries/sourcebench_queries.jsonl \
-  --output output/public_urls.json \
-  --model YOUR_MODEL_NAME \
-  --openai-base-url YOUR_OPENAI_COMPATIBLE_ENDPOINT \
-  --openai-api-key YOUR_GE_API_KEY \
-  --ai-model-name YOUR_MODEL_NAME
+export OPENAI_API_KEY=YOUR_OPENAI_API_KEY
+python src/source-collection/collect_sources.py \
+  --queries data/queries/sourcebench_queries.jsonl \
+  --model gpt-5 \
+  --urls-out output/gpt-5/urls.json \
+  --scraped-out output/gpt-5/sources.json \
+  --rejected-out output/gpt-5/rejected.jsonl
 ```
 
-```bash
-python src/source-collection/collect_sources_from_urls.py \
-  --input output/public_urls.json \
-  --output output/public_sources.json \
-  --rejected-output output/public_rejected.jsonl \
-  --ai-model-name YOUR_MODEL_NAME
-```
+Each query is sent to the system three times. The URLs cited in its answers
+are merged, pages that cannot be fetched or have no text are dropped, and up to five sources
+per query are selected and their page text is stored in
+`output/gpt-5/sources.json`.
+
+This is the implementation for OpenAI models with web search. For other
+providers, see [`src/source-collection/README.md`](src/source-collection/README.md).
+
+## 2. Score Sources
 
 ```bash
-export QWEN_API_KEY=YOUR_QWEN_API_KEY
+export QWEN_API_KEY=YOUR_DASHSCOPE_API_KEY
 python src/content-scoring/scripts/scoring.py \
-  --input-file output/public_sources.json \
-  --out-dir output/scored \
-  --run-name YOUR_MODEL_NAME
+  --input-file output/gpt-5/sources.json \
+  --out-dir output/gpt-5/scored \
+  --run-name gpt-5
 ```
+
+This scores the selected sources with `qwen-plus-2025-07-28` and writes
+`output/gpt-5/scored/gpt-5.enriched.json`. See
+[`src/content-scoring/scripts/README.md`](src/content-scoring/scripts/README.md)
+for options.
+
+## 3. Compute Metrics
 
 ```bash
 python src/evaluation/compute_metrics.py \
-  --run YOUR_MODEL_NAME=output/scored/YOUR_MODEL_NAME.enriched.json \
+  --run gpt-5=output/gpt-5/scored/gpt-5.enriched.json \
   --query-metadata data/queries/sourcebench_queries.csv \
-  --out-dir output/metrics
+  --exclude-incomplete \
+  --out-dir output/gpt-5/metrics
 ```
 
-## Evaluation Scripts
+Repeat `--run NAME=PATH` to compute several systems together. The output
+directory contains:
 
-The evaluation-side scripts are documented in:
+| File | Content | Paper |
+|---|---|---|
+| `leaderboard_overall.csv` | per-system scores, run with `--exclude-incomplete` | Table 3 |
+| `leaderboard_by_query_type.csv` | per-system scores by query type, run without `--exclude-incomplete` | Table 4 |
+| `source_metrics.csv`, `query_metrics.csv` | per-source and per-query scores | |
+| `leaderboard_data.json` | all of the above as JSON | |
 
-- [`src/evaluation/README.md`](src/evaluation/README.md)
+## Using the Released Data
 
-In short:
+To get the paper's results from the data in `data/` without collecting
+sources again:
 
-- `validate_official_submission.py`: validate official submission schema
-- `official_submission_backend.py`: intake and queue a submission
-- `official_run.py`: run hidden official evaluation
-- `compute_metrics.py`: aggregate final metrics
+```bash
+python src/evaluation/reproduce_paper.py
+```
 
-## Official Evaluation
+This computes metrics from `data/content-scores/` and prints Table 3 (weighted
+score per system), Table 4 (weighted score per query type) and Table 8 (the
+four DeepSeek configurations). The metric files are written to
+`output/paper/`. It needs no API key and no third-party packages.
 
-Open evaluation can be run locally.
+To score the stored sources again, pass a file from `data/collected-sources/`
+to step 2:
 
-Official leaderboard evaluation is intended to be run server-side by the SourceBench team using:
+```bash
+python src/content-scoring/scripts/scoring.py \
+  --input-file data/collected-sources/gpt-5.json.gz \
+  --out-dir output/rescored \
+  --run-name gpt-5
+```
 
-- a hidden holdout split
-- the fixed judge model and prompts
-- the fixed metrics code
-- a standardized submission contract
+## Leaderboard Score
 
-Relevant files:
+The scripts in `src/evaluation/` score a system from a submission file in the
+[leaderboard](https://huggingface.co/spaces/WukLab/SourceBench-Leaderboard)
+format. There are two ways to prepare one (examples in
+[`leaderboard/examples/`](leaderboard/examples/)):
 
-- [`leaderboard/QUERY_SPLIT_POLICY.md`](leaderboard/QUERY_SPLIT_POLICY.md)
-- [`leaderboard/OFFICIAL_SUBMISSION_CONTRACT.md`](leaderboard/OFFICIAL_SUBMISSION_CONTRACT.md)
-- [`leaderboard/README.md`](leaderboard/README.md)
-- [`leaderboard/examples/`](leaderboard/examples/)
+- **`endpoint`**: the model name, API base URL and API key. Sources are
+  collected with `get_urls.py` as in step 1. For providers other than OpenAI,
+  adapt `query_system()` first (see
+  [`src/source-collection/README.md`](src/source-collection/README.md)).
+- **`answer_url_bundle`**: run your system on the queries in
+  `data/queries/sourcebench_queries.jsonl` and record, for each query, the
+  `query_id`, the answer (`answer_text`) and the cited URLs (`cited_urls`).
+  Repeat a `query_id` to give several runs of the same query.
 
-## Public Release Notes
+Then score the submission locally:
 
-The hidden holdout queries should not be committed here.
+```bash
+python src/evaluation/official_submission_backend.py \
+  --input my_submission.json
 
-Internal official submission artifacts are also excluded. The ignored directory:
+python src/evaluation/official_run.py \
+  --submission-dir leaderboard/.official_submissions/SUBMISSION_ID \
+  --holdout-manifest data/queries/sourcebench_queries.csv
+```
 
-- `leaderboard/.official_submissions/`
-
-is only for server-side submission intake and official evaluation runs.
+The first command checks the file and creates the submission directory; it
+prints the directory path. For `endpoint` submissions, add `--store-secrets` so
+the API key is kept for the run. The second command collects or scrapes the
+sources, scores them, and computes the metrics. Results are written to
+`SUBMISSION_DIR/official_run/`; `stage4/metrics/leaderboard_data.json` has the
+same format as the leaderboard data. Add `--dry-run-judge` to test the run
+without calling the judge API.
 
 ## License
 
-The code in this repository (`src/`, `leaderboard/`) is released under the
-[MIT License](LICENSE).
+The code in this repository is released under the [MIT License](LICENSE).
 
 The data in `data/` is **not** uniformly licensed and is **not** covered by the MIT
 license. It mixes material we created, material derived from third-party research
@@ -155,8 +178,9 @@ documented in [`data/README.md`](data/README.md). In summary:
 | Component | Terms |
 |---|---|
 | `data/content-scores/` — evaluator scores and justifications | CC BY 4.0 |
-| `data/queries/` — the 100 benchmark queries | CC BY-SA 4.0 (20 queries derive from HotpotQA, which is ShareAlike) |
+| `data/queries/` — the 100 benchmark queries | Per source dataset: CC BY-SA 4.0 for the 20 HotpotQA-derived queries; the other 80 follow their upstream terms, for non-commercial research use |
 | `data/collected-sources/` — frozen page snapshots | Layered. Stored page text is third-party content, copyright retained by the original publishers, redistributed for non-commercial research use only |
+| `data/evaluation-results/`, `data/rank-scores/` — stored analysis outputs | CC BY 4.0 |
 
 Rights holders may request removal of any stored page text; see the contact in
 [`data/LICENSE`](data/LICENSE).

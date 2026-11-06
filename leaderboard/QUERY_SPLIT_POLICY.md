@@ -53,7 +53,7 @@ Not publicly disclosed:
 
 Public split:
 
-- `data/queries/sourcebench_public_queries_v1.csv`
+- not included in this repository
 
 Holdout split:
 
@@ -65,6 +65,6 @@ The holdout query content must not live inside the public repository.
 
 Recommended public-release behavior:
 
-- keep `sourcebench_public_queries_v1.csv` in the public repo
+- keep the public split file in the public repo
 - keep only the split policy and high-level counts public
 - store the holdout query file only in the official evaluation environment

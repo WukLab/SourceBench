@@ -152,6 +152,9 @@ python src/evaluation/official_run.py \
   --holdout-manifest path/to/internal_holdout.csv
 ```
 
+To score a submission locally, pass `data/queries/sourcebench_queries.csv` as
+`--holdout-manifest` (see "Leaderboard Score" in the main README).
+
 ## Recommended mental model
 
 Think about these files as four layers:
@@ -160,14 +163,3 @@ Think about these files as four layers:
 - `official_submission_backend.py`: intake and queueing
 - `official_run.py`: execution
 - `compute_metrics.py`: metric aggregation
-
-## Naming note
-
-If this repository is refactored further, the clearer long-form names would be:
-
-- `validate_submission.py`
-- `intake_official_submission.py`
-- `run_official_evaluation.py`
-- `compute_metrics.py`
-
-The current file names are kept for compatibility with the existing docs and examples.

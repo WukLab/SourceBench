@@ -10,4 +10,4 @@ Included here:
 - official submission contract
 - submission examples
 
-The public leaderboard site should be hosted separately from the benchmark repository.
+The leaderboard is hosted at https://huggingface.co/spaces/WukLab/SourceBench-Leaderboard.

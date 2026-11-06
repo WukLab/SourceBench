@@ -9,7 +9,7 @@
   "agrees_to_reproducibility_policy": true,
   "runs": [
     {
-      "query_id": "public-demo-001",
+      "query_id": 1,
       "answer_text": "This is an example answer with cited sources.",
       "cited_urls": [
         "https://example.com/source-a",

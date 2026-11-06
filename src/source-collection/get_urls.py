@@ -1,365 +1,395 @@
+"""Step 1 of SourceBench source collection: query a search-enabled system.
+
+Each query is sent to the system ``--runs`` times (default 3). For every run we
+store the final answer, the raw API response, and the URLs the answer cites, in
+citation order. URLs the system visited while searching but did not cite in its
+final answer are not kept.
+
+Step 2 (``collect_sources_from_urls.py``) takes the union across runs, runs the
+existence check, and selects the top-K sources.
+
+Provider adaptation
+-------------------
+``query_system()`` is the only provider-specific function. This reference
+implementation calls the OpenAI Responses API with the hosted web-search tool
+and reads the ``url_citation`` annotations of the final message. To collect
+from another provider, replace ``query_system()`` with a function that returns
+a ``SystemResponse`` (answer text, cited URLs in order, raw response).
+
+Output: one JSON array, one record per query:
+    { query_id, query_text, ai_model_name,
+      runs: [ { query_order, response_text, raw_response, cited_sources: [ {url, title, ge_rank_in_run} ],
+                usage, error } ],
+      aggregated_sources: [] }
+"""
+
 import argparse
 import json
+import os
+import re
+import sys
+import tempfile
+import threading
 import time
-from dataclasses import dataclass
+from concurrent.futures import ThreadPoolExecutor, as_completed
+from dataclasses import dataclass, field
 from typing import Any, Dict, Iterable, List, Optional
 
-from dotenv import load_dotenv
-from openai import OpenAI
+from url_utils import canonicalize_url
 
-load_dotenv()
-
-# Output schema matches data/collected-sources/gpt-5/GE_Response_Data_5_web_search_scored_deduped_with_avg_ge_freq.json
-# Top-level: [ { query_id, query_text, ai_model_name, runs: [ { query_id, query_text, ai_model_name, query_order, response_text, raw_response, cited_sources, search_results, search_results_rank, usage } ], aggregated_sources: [] } ]
+try:
+    from dotenv import load_dotenv
+except ImportError:  # python-dotenv is optional
+    load_dotenv = None
 
 
 @dataclass
-class URLGenerationConfig:
-    model: str = "gpt-4o-mini"
-    temperature: float = 0.2
-    max_urls: int = 5
-    max_retries: int = 2
-    sleep_seconds: float = 0.5
-    system_prompt: Optional[str] = None
+class CollectionConfig:
+    model: str
+    runs: int = 3
+    tool_type: str = "web_search"
+    tool_choice: str = "required"
+    temperature: Optional[float] = None
+    max_retries: int = 3
+    max_urls: int = 0  # 0 keeps every cited URL
     base_url: Optional[str] = None
     api_key: Optional[str] = None
 
 
-DEFAULT_SYSTEM_PROMPT = (
-    "You are a research assistant that suggests high-quality, trustworthy web sources "
-    "for answering user questions.\n\n"
-    "For each user query you receive, you MUST return up to {max_urls} URLs that are:\n"
-    "- from reputable sources (official documentation, research groups, major news outlets, etc.)\n"
-    "- as direct and specific as possible for answering the question\n\n"
-    "Important formatting requirements:\n"
-    "- Respond with a single JSON object only.\n"
-    '- The JSON must have the form: {{"urls": [{{"url": "https://...", "source_type": "short description", "notes": "optional notes"}}]}}.\n'
-    "- Do not add any extra keys.\n"
-    "- Do not include markdown, commentary, or explanations outside the JSON.\n"
-)
+@dataclass
+class SystemResponse:
+    response_text: str
+    citations: List[Dict[str, str]]  # [{"url": ..., "title": ...}] in citation order
+    raw_response: Dict[str, Any]
+    usage: Dict[str, Any] = field(default_factory=dict)
 
 
-def build_system_prompt(cfg: URLGenerationConfig) -> str:
-    if cfg.system_prompt:
-        return cfg.system_prompt
-    return DEFAULT_SYSTEM_PROMPT.format(max_urls=cfg.max_urls)
+# ---------------------------------------------------------------------------
+# Provider-specific part (OpenAI Responses API + web search)
+# ---------------------------------------------------------------------------
+
+def make_client(cfg: CollectionConfig) -> Any:
+    from openai import OpenAI  # imported here so --help works without openai installed
+
+    kwargs: Dict[str, Any] = {}
+    if cfg.base_url:
+        kwargs["base_url"] = cfg.base_url
+    if cfg.api_key:
+        kwargs["api_key"] = cfg.api_key
+    return OpenAI(**kwargs)
 
 
-def _iter_jsonl(path: str) -> Iterable[Dict[str, Any]]:
-    with open(path, "r", encoding="utf-8") as f:
-        for line in f:
-            line = line.strip()
-            if not line:
+def _to_dict(response: Any) -> Dict[str, Any]:
+    for method in ("to_dict", "model_dump", "dict"):
+        fn = getattr(response, method, None)
+        if callable(fn):
+            return fn()
+    return dict(response)
+
+
+_URL_IN_TEXT = re.compile(r"https?://[^\s<>\"')\]]+")
+
+
+def extract_answer_and_citations(raw: Dict[str, Any]) -> tuple:
+    """Return (answer_text, citations) from a Responses API payload.
+
+    Citations are the `url_citation` annotations of the final message, ordered
+    by their position in the answer. If the answer has no annotations, URLs
+    written in the answer text are used instead.
+    """
+    texts: List[str] = []
+    citations: List[Dict[str, str]] = []
+    for item in raw.get("output") or []:
+        if not isinstance(item, dict) or item.get("type") != "message":
+            continue
+        for part in item.get("content") or []:
+            if not isinstance(part, dict):
                 continue
-            yield json.loads(line)
+            if part.get("text"):
+                texts.append(part["text"])
+            annotations = [
+                ann for ann in part.get("annotations") or []
+                if isinstance(ann, dict) and ann.get("type") == "url_citation" and ann.get("url")
+            ]
+            annotations.sort(key=lambda ann: ann.get("start_index") or 0)
+            for ann in annotations:
+                citations.append({"url": ann["url"], "title": ann.get("title") or ""})
+    answer = "\n".join(texts)
+    if not citations and answer:
+        for url in _URL_IN_TEXT.findall(answer):
+            citations.append({"url": url.rstrip(".,;:"), "title": ""})
+    return answer, citations
 
 
-def _extract_json_object(text: str) -> Dict[str, Any]:
-    """
-    Extract a JSON object from an LLM response that may contain extra text.
-    Raises ValueError if a JSON object cannot be parsed.
-    """
-    start = text.find("{")
-    end = text.rfind("}")
-    if start == -1 or end == -1 or end <= start:
-        raise ValueError(f"Could not find JSON object in LLM response:\n{text}")
-    snippet = text[start : end + 1]
-    return json.loads(snippet)
+def query_system(client: Any, query: str, cfg: CollectionConfig) -> SystemResponse:
+    """Send one query to the system and return its answer and cited URLs.
 
-
-def call_openai_for_urls(
-    client: OpenAI,
-    query: str,
-    cfg: URLGenerationConfig,
-) -> List[Dict[str, Any]]:
+    Replace this function to collect from a provider other than OpenAI.
+    The query is sent as-is, without any added instructions.
     """
-    Call the OpenAI chat completion API to get URLs for a single query.
-    Returns a list of URL dicts with at least key 'url'.
-    """
-    system_prompt = build_system_prompt(cfg)
-    user_prompt = (
-        "User query:\n"
-        f"{query}\n\n"
-        "Return only the JSON object as specified in the instructions."
+    request: Dict[str, Any] = {
+        "model": cfg.model,
+        "input": query,
+        "tools": [{"type": cfg.tool_type}],
+    }
+    if cfg.tool_choice != "auto":
+        request["tool_choice"] = cfg.tool_choice
+    if cfg.temperature is not None:
+        request["temperature"] = cfg.temperature
+    raw = _to_dict(client.responses.create(**request))
+    answer, citations = extract_answer_and_citations(raw)
+    return SystemResponse(
+        response_text=answer,
+        citations=citations,
+        raw_response=raw,
+        usage=raw.get("usage") or {},
     )
 
-    last_error: Optional[Exception] = None
+
+# ---------------------------------------------------------------------------
+# Provider-independent part
+# ---------------------------------------------------------------------------
+
+def rank_citations(citations: List[Dict[str, str]], max_urls: int = 0) -> List[Dict[str, Any]]:
+    """Deduplicate by canonical URL and assign 1-based ranks in citation order."""
+    ranked: List[Dict[str, Any]] = []
+    seen = set()
+    for citation in citations:
+        canonical = canonicalize_url(citation["url"])
+        if canonical in seen:
+            continue
+        seen.add(canonical)
+        ranked.append({
+            "url": citation["url"],
+            "title": citation.get("title") or "",
+            "ge_rank_in_run": len(ranked) + 1,
+        })
+        if max_urls and len(ranked) >= max_urls:
+            break
+    return ranked
+
+
+def run_once(client: Any, query_id: Any, query_text: str, query_order: int,
+             ai_model_name: str, cfg: CollectionConfig) -> Dict[str, Any]:
+    error: Optional[str] = None
+    response: Optional[SystemResponse] = None
     for attempt in range(cfg.max_retries + 1):
         try:
-            response = client.chat.completions.create(
-                model=cfg.model,
-                temperature=cfg.temperature,
-                messages=[
-                    {"role": "system", "content": system_prompt},
-                    {"role": "user", "content": user_prompt},
-                ],
-            )
-            content = response.choices[0].message.content or ""
-            data = _extract_json_object(content)
-            urls = data.get("urls") or []
-            # Normalize to list of dicts with at least "url"
-            normalized: List[Dict[str, Any]] = []
-            for item in urls:
-                if isinstance(item, str):
-                    normalized.append({"url": item})
-                elif isinstance(item, dict) and "url" in item:
-                    normalized.append(item)
-            return normalized[: cfg.max_urls]
+            response = query_system(client, query_text, cfg)
+            error = None
+            break
         except Exception as exc:  # pylint: disable=broad-except
-            last_error = exc
+            error = f"{type(exc).__name__}: {exc}"
             if attempt < cfg.max_retries:
-                time.sleep(cfg.sleep_seconds)
-            else:
-                raise
-    # Should not reach here because of raise above
-    raise RuntimeError(f"Failed to get URLs for query after retries: {last_error}")
-
-
-def _build_raw_response_skeleton(
-    model: str,
-    query_text: str,
-    url_list: List[Dict[str, Any]],
-    created_at: Optional[float] = None,
-) -> Dict[str, Any]:
-    """Build raw_response dict matching reference schema (all keys present)."""
-    if created_at is None:
-        created_at = time.time()
-    sources = [{"type": "url", "url": u.get("url", u) if isinstance(u, dict) else u} for u in url_list]
-    output_item = {
-        "id": None,
-        "status": "completed",
-        "type": "web_search_call",
-        "action": {
-            "type": "search",
-            "queries": [query_text],
-            "query": query_text,
-            "sources": sources,
-        },
-    }
-    return {
-        "id": None,
-        "created_at": created_at,
-        "error": None,
-        "incomplete_details": None,
-        "instructions": None,
-        "metadata": {},
-        "model": model,
-        "object": "response",
-        "output": [output_item],
-        "parallel_tool_calls": False,
-        "temperature": 0.2,
-        "tool_choice": None,
-        "tools": [],
-        "top_p": 1.0,
-        "max_output_tokens": None,
-        "reasoning": None,
-        "service_tier": "default",
-        "status": "completed",
-        "text": None,
-        "truncation": "disabled",
-        "usage": {
-            "input_tokens": 0,
-            "input_tokens_details": {"cached_tokens": 0},
-            "output_tokens": 0,
-            "output_tokens_details": {},
-            "total_tokens": 0,
-        },
-        "user": None,
-        "background": False,
-        "billing": {},
-        "completed_at": int(created_at) + 1,
-        "frequency_penalty": 0.0,
-        "max_tool_calls": None,
-        "presence_penalty": 0.0,
-        "previous_response_id": None,
-        "prompt_cache_key": None,
-        "prompt_cache_retention": None,
-        "safety_identifier": None,
-        "store": False,
-        "top_logprobs": 0,
-    }
-
-
-def _build_cited_sources(url_list: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
-    """Build cited_sources list from URL list (reference uses same shape as raw_response output sources)."""
-    return [{"type": "url", "url": u.get("url", u) if isinstance(u, dict) else u} for u in url_list]
-
-
-def _build_run(
-    query_id: Any,
-    query_text: str,
-    ai_model_name: str,
-    model: str,
-    url_list: List[Dict[str, Any]],
-) -> Dict[str, Any]:
-    """Build one run object matching reference schema (all keys present)."""
-    cited = _build_cited_sources(url_list)
+                time.sleep(2 ** attempt)
+    if response is None:
+        print(f"  query {query_id} run {query_order}: failed ({error})", file=sys.stderr)
+        return {
+            "query_id": query_id,
+            "query_text": query_text,
+            "ai_model_name": ai_model_name,
+            "query_order": query_order,
+            "response_text": "",
+            "raw_response": {},
+            "cited_sources": [],
+            "usage": {},
+            "error": error,
+        }
+    cited = rank_citations(response.citations, cfg.max_urls)
+    print(f"  query {query_id} run {query_order}: {len(cited)} cited URLs")
     return {
         "query_id": query_id,
         "query_text": query_text,
         "ai_model_name": ai_model_name,
-        "query_order": 1,
-        "response_text": "",
-        "raw_response": _build_raw_response_skeleton(model, query_text, url_list),
+        "query_order": query_order,
+        "response_text": response.response_text,
+        "raw_response": response.raw_response,
         "cited_sources": cited,
-        "search_results": [],
-        "search_results_rank": {},
-        "usage": {
-            "input_tokens": 0,
-            "input_tokens_details": {"cached_tokens": 0},
-            "output_tokens": 0,
-            "output_tokens_details": {},
-            "total_tokens": 0,
-        },
+        "usage": response.usage,
+        "error": None,
     }
+
+
+def collect_query(client: Any, query_id: Any, query_text: str, ai_model_name: str,
+                  cfg: CollectionConfig) -> Dict[str, Any]:
+    runs = [
+        run_once(client, query_id, query_text, order, ai_model_name, cfg)
+        for order in range(1, cfg.runs + 1)
+    ]
+    return {
+        "query_id": query_id,
+        "query_text": query_text,
+        "ai_model_name": ai_model_name,
+        "runs": runs,
+        "aggregated_sources": [],
+    }
+
+
+def iter_queries(path: str, id_field: str, query_field: str) -> Iterable[Dict[str, Any]]:
+    with open(path, "r", encoding="utf-8") as handle:
+        for line in handle:
+            line = line.strip()
+            if not line:
+                continue
+            row = json.loads(line)
+            if id_field in row and query_field in row:
+                yield {"query_id": row[id_field], "query_text": row[query_field]}
+
+
+def _write_json_atomic(path: str, payload: Any) -> None:
+    directory = os.path.dirname(os.path.abspath(path))
+    os.makedirs(directory, exist_ok=True)
+    fd, tmp_path = tempfile.mkstemp(dir=directory, suffix=".tmp")
+    with os.fdopen(fd, "w", encoding="utf-8") as handle:
+        json.dump(payload, handle, ensure_ascii=False, indent=2)
+    os.replace(tmp_path, path)
+
+
+def _is_complete(record: Dict[str, Any], runs: int) -> bool:
+    record_runs = record.get("runs") or []
+    return len(record_runs) == runs and all(not run.get("error") for run in record_runs)
 
 
 def generate_urls_for_queries(
     input_path: str,
     output_path: str,
-    id_field: str,
-    query_field: str,
-    cfg: URLGenerationConfig,
-    ai_model_name: str = "OpenAI",
-) -> None:
+    cfg: CollectionConfig,
+    id_field: str = "id",
+    query_field: str = "query",
+    ai_model_name: Optional[str] = None,
+    query_ids: Optional[List[Any]] = None,
+    max_workers: int = 4,
+    resume: bool = False,
+) -> List[Dict[str, Any]]:
+    """Run step 1 for every query in a JSONL file and write the JSON output.
+
+    The output file is rewritten after each finished query, so an interrupted
+    run can continue with ``resume=True``.
     """
-    Read queries from a JSONL file and write URL suggestions in reference format.
+    model_label = ai_model_name or cfg.model
+    queries = list(iter_queries(input_path, id_field, query_field))
+    if query_ids:
+        wanted = {str(qid) for qid in query_ids}
+        queries = [q for q in queries if str(q["query_id"]) in wanted]
 
-    Input JSONL format (per line):
-        { "<id_field>": "...", "<query_field>": "..." , ... }
+    # With --resume, keep every record already in the output file and redo only
+    # the requested queries that are missing or have failed runs.
+    results: Dict[str, Dict[str, Any]] = {}
+    order: List[str] = []
+    if resume and os.path.exists(output_path):
+        with open(output_path, "r", encoding="utf-8") as handle:
+            for record in json.load(handle):
+                results[str(record["query_id"])] = record
+                order.append(str(record["query_id"]))
+        complete = sum(1 for record in results.values() if _is_complete(record, cfg.runs))
+        print(f"Resuming: {complete} of {len(results)} queries in {output_path} are complete")
+    order += [str(q["query_id"]) for q in queries if str(q["query_id"]) not in results]
 
-    Output: single JSON file (array) matching
-    data/collected-sources/gpt-5/GE_Response_Data_5_web_search_scored_deduped_with_avg_ge_freq.json
-    Each element: { query_id, query_text, ai_model_name, runs: [ one run ], aggregated_sources: [] }
-    """
-    client_kwargs: Dict[str, Any] = {}
-    if cfg.base_url:
-        client_kwargs["base_url"] = cfg.base_url
-    if cfg.api_key:
-        client_kwargs["api_key"] = cfg.api_key
-    client = OpenAI(**client_kwargs)
+    todo = [
+        q for q in queries
+        if str(q["query_id"]) not in results or not _is_complete(results[str(q["query_id"])], cfg.runs)
+    ]
+    print(f"Collecting {len(todo)} queries x {cfg.runs} runs with model={cfg.model}")
 
-    results: List[Dict[str, Any]] = []
-    for row in _iter_jsonl(input_path):
-        if id_field not in row or query_field not in row:
-            continue
-        query_id = row[id_field]
-        query_text = row[query_field]
-        url_list = call_openai_for_urls(client, query_text, cfg)
-        run = _build_run(query_id, query_text, ai_model_name, cfg.model, url_list)
-        record = {
-            "query_id": query_id,
-            "query_text": query_text,
-            "ai_model_name": ai_model_name,
-            "runs": [run],
-            "aggregated_sources": [],
+    client = make_client(cfg)
+    lock = threading.Lock()
+
+    def snapshot() -> List[Dict[str, Any]]:
+        return [results[qid] for qid in order if qid in results]
+
+    with ThreadPoolExecutor(max_workers=max(1, max_workers)) as pool:
+        futures = {
+            pool.submit(collect_query, client, q["query_id"], q["query_text"], model_label, cfg): q
+            for q in todo
         }
-        results.append(record)
-        if cfg.sleep_seconds > 0:
-            time.sleep(cfg.sleep_seconds)
+        for future in as_completed(futures):
+            record = future.result()
+            with lock:
+                results[str(record["query_id"])] = record
+                _write_json_atomic(output_path, snapshot())
 
-    with open(output_path, "w", encoding="utf-8") as out_f:
-        json.dump(results, out_f, ensure_ascii=False, indent=2)
+    final = snapshot()
+    _write_json_atomic(output_path, final)
+    failed = sum(1 for record in final for run in record["runs"] if run.get("error"))
+    print(f"Wrote {len(final)} queries to {output_path} ({failed} failed runs)")
+    return final
 
 
-def _parse_args(argv: Optional[List[str]] = None) -> argparse.Namespace:
+def build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(
-        description="Generate candidate source URLs for queries using an OpenAI LLM.",
+        description=(
+            "Step 1: query a search-enabled system several times per query and record "
+            "the URLs cited in its final answers (reference implementation: OpenAI "
+            "Responses API with web search)."
+        ),
+    )
+    parser.add_argument("--input", "-i", required=True, help="Query file (JSONL).")
+    parser.add_argument("--output", "-o", required=True, help="Output JSON file.")
+    parser.add_argument("--model", required=True, help="Model name, e.g. gpt-5 or gpt-4o.")
+    parser.add_argument("--runs", type=int, default=3, help="Runs per query (default: 3).")
+    parser.add_argument(
+        "--tool-type",
+        default="web_search",
+        help="Hosted search tool type sent to the API (default: web_search; "
+             "some accounts or models need web_search_preview).",
     )
     parser.add_argument(
-        "--input",
-        "-i",
-        required=True,
-        help="Path to input JSONL file containing queries.",
-    )
-    parser.add_argument(
-        "--output",
-        "-o",
-        required=True,
-        help="Path to output JSON file (reference format: array of query records with runs, empty aggregated_sources).",
-    )
-    parser.add_argument(
-        "--model",
-        default="gpt-4o-mini",
-        help="OpenAI chat model name (default: gpt-4o-mini).",
+        "--tool-choice",
+        choices=["required", "auto"],
+        default="required",
+        help="'required' forces the model to search before answering (default).",
     )
     parser.add_argument(
         "--temperature",
         type=float,
-        default=0.2,
-        help="Sampling temperature for the model (default: 0.2).",
+        default=None,
+        help="Sampling temperature. Omitted by default (reasoning models use a fixed temperature).",
     )
+    parser.add_argument("--max-retries", type=int, default=3, help="Retries per run on API errors.")
+    parser.add_argument("--max-workers", type=int, default=4, help="Queries processed in parallel.")
     parser.add_argument(
         "--max-urls",
         type=int,
-        default=5,
-        help="Maximum number of URLs to request per query (default: 5).",
+        default=0,
+        help="Keep at most this many cited URLs per run (default: 0 = keep all).",
     )
-    parser.add_argument(
-        "--max-retries",
-        type=int,
-        default=2,
-        help="Maximum number of retries per query on API failure (default: 2).",
-    )
-    parser.add_argument(
-        "--sleep-seconds",
-        type=float,
-        default=0.5,
-        help="Seconds to sleep between API calls (default: 0.5).",
-    )
-    parser.add_argument(
-        "--id-field",
-        default="id",
-        help="Field name in input JSONL for the unique query id (default: id).",
-    )
-    parser.add_argument(
-        "--query-field",
-        default="query",
-        help="Field name in input JSONL for the query text (default: query).",
-    )
-    parser.add_argument(
-        "--openai-base-url",
-        help=(
-            "Optional custom OpenAI base URL "
-            "(e.g. http://localhost:8000/v1 for a fake endpoint)."
-        ),
-    )
-    parser.add_argument(
-        "--openai-api-key",
-        help=(
-            "Optional OpenAI API key override. "
-            "If not set, the OpenAI client will use environment configuration."
-        ),
-    )
-    parser.add_argument(
-        "--ai-model-name",
-        default="OpenAI",
-        help="Value for ai_model_name in output (default: OpenAI).",
-    )
-    return parser.parse_args(argv)
+    parser.add_argument("--query-ids", nargs="+", help="Only collect these query ids.")
+    parser.add_argument("--resume", action="store_true", help="Skip queries already complete in --output.")
+    parser.add_argument("--id-field", default="id", help="Query id field in the JSONL (default: id).")
+    parser.add_argument("--query-field", default="query", help="Query text field (default: query).")
+    parser.add_argument("--openai-base-url", help="Custom base URL for an OpenAI-compatible Responses API.")
+    parser.add_argument("--openai-api-key", help="API key (default: OPENAI_API_KEY).")
+    parser.add_argument("--ai-model-name", help="Label stored as ai_model_name (default: --model).")
+    return parser
 
 
 def main(argv: Optional[List[str]] = None) -> None:
-    args = _parse_args(argv)
-    cfg = URLGenerationConfig(
+    if load_dotenv is not None:
+        load_dotenv()
+    args = build_parser().parse_args(argv)
+    cfg = CollectionConfig(
         model=args.model,
+        runs=args.runs,
+        tool_type=args.tool_type,
+        tool_choice=args.tool_choice,
         temperature=args.temperature,
-        max_urls=args.max_urls,
         max_retries=args.max_retries,
-        sleep_seconds=args.sleep_seconds,
+        max_urls=args.max_urls,
         base_url=args.openai_base_url,
         api_key=args.openai_api_key,
     )
     generate_urls_for_queries(
         input_path=args.input,
         output_path=args.output,
+        cfg=cfg,
         id_field=args.id_field,
         query_field=args.query_field,
-        cfg=cfg,
         ai_model_name=args.ai_model_name,
+        query_ids=args.query_ids,
+        max_workers=args.max_workers,
+        resume=args.resume,
     )
 
 
 if __name__ == "__main__":
     main()
-

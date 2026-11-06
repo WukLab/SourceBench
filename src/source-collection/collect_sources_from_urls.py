@@ -1,169 +1,232 @@
+"""Step 2 of SourceBench source collection: aggregate, check, scrape, select.
+
+Input is the output of ``get_urls.py``. For each query:
+
+1. Canonicalize the cited URLs of every run and take their union.
+2. Existence check: a URL passes when it can be retrieved (HTTP 200) and
+   yields non-empty extractable page text.
+3. Select up to K = 5 passing sources by three ordered criteria:
+   (a) citation frequency across runs (3 > 2 > 1),
+   (b) average rank in the answers (lower is better),
+   (c) extracted text length (longer is better).
+
+Candidates are fetched in (frequency, average rank) order, one tie group at a
+time, so only the pages needed for the selection are downloaded.
+
+The extracted text of each selected source is stored in ``text_content``;
+``scoring.py`` scores exactly this stored text. Each fetched source also gets
+``retrieved_at`` (UTC time of retrieval) and ``text_sha256`` (hash of the stored
+text). ``search_result_date`` and ``search_result_last_updated`` come from the
+HTTP ``Date`` and ``Last-Modified`` headers; the freshness rubric reads them.
+
+Text extraction uses requests + BeautifulSoup and does not run JavaScript.
+Pages that only render their content in the browser will fail the existence
+check; use a headless browser if you need them.
+"""
+
 import argparse
+import hashlib
 import json
-from collections import defaultdict
+import os
+import re
+from concurrent.futures import ThreadPoolExecutor
 from dataclasses import dataclass
 from datetime import datetime, timezone
-from typing import Any, Dict, Iterable, List, Optional, Set, Tuple
-from urllib.parse import urlparse
+from itertools import groupby
+from typing import Any, Dict, List, Optional
 
 import requests
 from bs4 import BeautifulSoup
 
-
-# Output schema matches data/collected-sources/gpt-5/GE_Response_Data_5_web_search_scored_deduped_with_avg_ge_freq.json
-# Top-level: list of { query_id, query_text, ai_model_name, runs, aggregated_sources }
-# Each aggregated_sources item: agg_source_id, url_canonical, url_examples, frequency, ge_rank_list,
-#   ge_score, selected_topk, text_content, text_content_length, domain_category, search_result_date,
-#   search_result_last_updated, title, text_content_w_links_length, text_content_w_short_links_length,
-#   text_content_short_links, avg_ge_freq
+from url_utils import canonicalize_url, format_http_date, get_domain_category
 
 
 @dataclass
 class ScrapeConfig:
+    top_k: int = 5
     timeout: int = 15
-    min_chars: int = 500
+    min_chars: int = 1  # non-empty text
+    max_workers: int = 8
     user_agent: str = (
-        "Mozilla/5.0 (X11; Linux x86_64) "
+        "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
         "AppleWebKit/537.36 (KHTML, like Gecko) "
-        "Chrome/120.0 Safari/537.36"
+        "Chrome/120.0.0.0 Safari/537.36"
     )
 
 
-def _get_domain_category(url: str) -> str:
-    try:
-        parsed = urlparse(url)
-        domain = parsed.netloc.lower()
-        if domain.startswith("www."):
-            domain = domain[4:]
-        return "." + domain.split(".")[-1] if "." in domain else ".unknown"
-    except Exception:
-        return ".unknown"
+BLOCKED_CONTENT_PATTERNS = [
+    "routing to checkout",
+    "this page no longer exists",
+    "has been moved",
+    "page not found",
+    "access denied",
+    "robot check",
+    "captcha",
+]
+
+HTML_TYPES = ("text/html", "application/xhtml+xml")
 
 
-def _iter_jsonl(path: str) -> Iterable[Dict[str, Any]]:
-    with open(path, "r", encoding="utf-8") as f:
-        for line in f:
-            line = line.strip()
-            if not line:
-                continue
-            yield json.loads(line)
-
-
-def _html_to_text_and_title(html: str) -> Tuple[str, Optional[str]]:
+def extract_text(html: str) -> tuple:
+    """Return (text, title) for an HTML page."""
     soup = BeautifulSoup(html, "html.parser")
-    title: Optional[str] = None
-    if soup.title and soup.title.string:
-        title = soup.title.string.strip() or None
-    for tag in soup(["script", "style", "noscript", "header", "footer", "nav"]):
+    title = soup.title.get_text(strip=True) if soup.title else ""
+    for tag in soup(["script", "style", "noscript", "nav", "footer", "header"]):
         tag.decompose()
-    text_chunks: List[str] = []
-    for line in soup.get_text("\n").splitlines():
-        line = line.strip()
-        if line:
-            text_chunks.append(line)
-    text = "\n".join(text_chunks)
-    if title is None and text_chunks:
-        title = text_chunks[0][:200] if text_chunks[0] else None
+    text = re.sub(r"\s+", " ", soup.get_text(separator=" ", strip=True)).strip()
     return text, title
 
 
-def scrape_url(url: str, cfg: ScrapeConfig) -> Tuple[str, Optional[int], str, Optional[str]]:
+def fetch_page(url: str, cfg: ScrapeConfig) -> Dict[str, Any]:
+    """Fetch one URL and run the existence check.
+
+    Returns a dict with `ok`, `status` ("ok" or the failure reason), and, when
+    retrieval succeeded, the extracted text and HTTP metadata.
     """
-    Scrape a single URL.
-
-    Returns (status, http_status, content_or_error, title_or_none)
-      - status: "ok", "blocked", "too_short", or "error"
-      - title only set when status == "ok" and HTML had a title or first line used
-    """
-    headers = {"User-Agent": cfg.user_agent}
-    try:
-        resp = requests.get(url, headers=headers, timeout=cfg.timeout)
-    except requests.RequestException as exc:
-        return "error", None, f"request_error: {exc}", None
-
-    http_status = resp.status_code
-    if http_status != 200:
-        return "blocked", http_status, f"http_status_{http_status}", None
-
-    content_type = resp.headers.get("Content-Type", "")
-    text: str
-    title: Optional[str] = None
-    if "text/html" in content_type or "application/xhtml+xml" in content_type:
-        text, title = _html_to_text_and_title(resp.text)
-    else:
-        try:
-            text = resp.text
-        except Exception:  # pylint: disable=broad-except
-            return "error", http_status, "non_text_content", None
-        if text and "\n" in text:
-            title = text.split("\n")[0].strip()[:200] or None
-        elif text:
-            title = text[:200] or None
-
-    if len(text) < cfg.min_chars:
-        return "too_short", http_status, text, None
-
-    return "ok", http_status, text, title
-
-
-def _build_aggregated_source_item(
-    query_id: Any,
-    url: str,
-    url_examples: List[str],
-    text_content: str,
-    title: Optional[str],
-    agg_source_id: int,
-) -> Dict[str, Any]:
-    """Build one aggregated_sources entry matching reference JSON schema (all fields)."""
-    n = len(text_content)
-    domain_category = _get_domain_category(url)
-    today = datetime.now(timezone.utc).strftime("%Y-%m-%d")
-    return {
-        "agg_source_id": agg_source_id,
-        "url_canonical": url,
-        "url_examples": list(dict.fromkeys(url_examples)),
-        "frequency": 1,
-        "ge_rank_list": [],
-        "ge_score": 0.0,
-        "selected_topk": True,
-        "text_content": text_content,
-        "text_content_length": n,
-        "domain_category": domain_category,
-        "search_result_date": today,
-        "search_result_last_updated": None,
-        "title": title or "",
-        "text_content_w_links_length": n,
-        "text_content_w_short_links_length": n,
-        "text_content_short_links": text_content,
-        "avg_ge_freq": 1.0,
+    result: Dict[str, Any] = {
+        "ok": False,
+        "status": "",
+        "http_status": None,
+        "text": "",
+        "title": "",
+        "retrieved_at": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
+        "http_date": None,
+        "http_last_modified": None,
     }
+    try:
+        resp = requests.get(
+            url,
+            headers={"User-Agent": cfg.user_agent},
+            timeout=cfg.timeout,
+            allow_redirects=True,
+        )
+    except requests.RequestException as exc:
+        result["status"] = f"request_error: {type(exc).__name__}"
+        return result
+
+    result["http_status"] = resp.status_code
+    result["http_date"] = format_http_date(resp.headers.get("Date"))
+    result["http_last_modified"] = format_http_date(resp.headers.get("Last-Modified"))
+    if resp.status_code != 200:
+        result["status"] = f"http_status_{resp.status_code}"
+        return result
+
+    content_type = (resp.headers.get("Content-Type") or "").lower()
+    if resp.encoding is None or resp.encoding.lower() == "iso-8859-1":
+        resp.encoding = resp.apparent_encoding
+    if any(kind in content_type for kind in HTML_TYPES) or not content_type:
+        text, title = extract_text(resp.text)
+    elif content_type.startswith("text/"):
+        text, title = re.sub(r"\s+", " ", resp.text).strip(), ""
+    else:
+        result["status"] = f"unsupported_content_type: {content_type.split(';')[0]}"
+        return result
+
+    result["title"] = title
+    if any(pattern in text.lower() for pattern in BLOCKED_CONTENT_PATTERNS):
+        result["status"] = "blocked_content"
+        return result
+    if len(text) < max(1, cfg.min_chars):
+        result["status"] = "empty_text" if not text else "too_short"
+        return result
+
+    result.update(ok=True, status="ok", text=text)
+    return result
 
 
-def _urls_from_record(record: Dict[str, Any]) -> List[str]:
-    """Extract list of URLs from a record in reference format (runs[0].cited_sources or raw_response.output)."""
-    urls: List[str] = []
-    runs = record.get("runs") or []
-    if not runs:
-        return urls
-    run = runs[0]
-    # Prefer cited_sources (each item has "url" key)
-    for src in run.get("cited_sources") or []:
-        if isinstance(src, dict) and src.get("url"):
-            urls.append(src["url"])
-        elif isinstance(src, str):
-            urls.append(src)
-    if urls:
-        return urls
-    # Fallback: raw_response.output[].action.sources
-    rr = run.get("raw_response") or {}
-    for item in rr.get("output") or []:
-        action = item.get("action") or {}
-        for s in action.get("sources") or []:
-            if isinstance(s, dict) and s.get("url"):
-                urls.append(s["url"])
-            elif isinstance(s, str):
-                urls.append(s)
-    return urls
+def aggregate_runs(runs: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
+    """Union the cited URLs of all runs by canonical URL.
+
+    A URL counts once per run toward `frequency`; `ge_rank_list` holds its rank
+    in each run that cited it.
+    """
+    union: Dict[str, Dict[str, Any]] = {}
+    for run in runs:
+        seen = set()
+        for index, source in enumerate(run.get("cited_sources") or [], start=1):
+            url = source.get("url") if isinstance(source, dict) else source
+            if not url:
+                continue
+            canonical = canonicalize_url(url)
+            if canonical in seen:
+                continue
+            seen.add(canonical)
+            rank = source.get("ge_rank_in_run", index) if isinstance(source, dict) else index
+            entry = union.setdefault(canonical, {
+                "url_canonical": canonical,
+                "url_examples": [],
+                "title": "",
+                "frequency": 0,
+                "ge_rank_list": [],
+            })
+            entry["frequency"] += 1
+            entry["ge_rank_list"].append(rank)
+            if url not in entry["url_examples"]:
+                entry["url_examples"].append(url)
+            if not entry["title"] and isinstance(source, dict):
+                entry["title"] = source.get("title") or ""
+
+    candidates = list(union.values())
+    for entry in candidates:
+        ranks = entry["ge_rank_list"]
+        entry["avg_ge_rank"] = sum(ranks) / len(ranks)
+        entry["ge_score"] = entry["frequency"] / entry["avg_ge_rank"]
+        entry["domain_category"] = get_domain_category(entry["url_examples"][0])
+    candidates.sort(key=lambda e: (-e["frequency"], e["avg_ge_rank"]))
+    return candidates
+
+
+def select_sources(candidates: List[Dict[str, Any]], cfg: ScrapeConfig,
+                   pool: ThreadPoolExecutor) -> List[Dict[str, Any]]:
+    """Run the existence check and pick up to top_k sources.
+
+    Returns every candidate, selected sources first, with selection and
+    retrieval fields filled in.
+    """
+    selected: List[Dict[str, Any]] = []
+    for _, group_iter in groupby(candidates, key=lambda e: (e["frequency"], e["avg_ge_rank"])):
+        if len(selected) >= cfg.top_k:
+            break
+        group = list(group_iter)
+        fetched = list(pool.map(lambda e: fetch_page(e["url_examples"][0], cfg), group))
+        passing = []
+        for entry, page in zip(group, fetched):
+            entry["_page"] = page
+            if page["ok"]:
+                passing.append(entry)
+        passing.sort(key=lambda e: -len(e["_page"]["text"]))  # criterion (c)
+        selected.extend(passing[: cfg.top_k - len(selected)])
+
+    selected_ids = {id(entry) for entry in selected}
+    ordered = selected + [entry for entry in candidates if id(entry) not in selected_ids]
+
+    output: List[Dict[str, Any]] = []
+    for agg_id, entry in enumerate(ordered, start=1):
+        page = entry.pop("_page", None)
+        is_selected = id(entry) in selected_ids
+        text = page["text"] if (page and is_selected) else ""
+        output.append({
+            "agg_source_id": agg_id,
+            "url_canonical": entry["url_canonical"],
+            "url_examples": entry["url_examples"],
+            "title": (page or {}).get("title") or entry["title"],
+            "frequency": entry["frequency"],
+            "ge_rank_list": entry["ge_rank_list"],
+            "avg_ge_rank": entry["avg_ge_rank"],
+            "ge_score": entry["ge_score"],
+            "domain_category": entry["domain_category"],
+            "citation_existence_check": page["ok"] if page else None,
+            "existence_check_status": page["status"] if page else "not_checked",
+            "http_status": page["http_status"] if page else None,
+            "selected_topk": is_selected,
+            "text_content": text,
+            "text_content_length": len(page["text"]) if page else 0,
+            "text_sha256": hashlib.sha256(text.encode("utf-8")).hexdigest() if text else None,
+            "retrieved_at": page["retrieved_at"] if page else None,
+            "search_result_date": page["http_date"] if page else None,
+            "search_result_last_updated": page["http_last_modified"] if page else None,
+        })
+    return output
 
 
 def collect_sources_from_url_file(
@@ -172,132 +235,82 @@ def collect_sources_from_url_file(
     rejected_output_path: Optional[str],
     cfg: ScrapeConfig,
     ai_model_name: Optional[str] = None,
-) -> None:
-    """
-    Read reference-format JSON (output of get_urls.py) and scrape URLs; fill aggregated_sources.
-
-    Input: single JSON file (array) matching
-    data/collected-sources/gpt-5/GE_Response_Data_5_web_search_scored_deduped_with_avg_ge_freq.json
-    Each element has query_id, query_text, ai_model_name, runs, aggregated_sources (empty).
-    URLs are taken from runs[0].cited_sources or runs[0].raw_response.output[].action.sources.
-
-    Output: same JSON structure with aggregated_sources filled (and runs preserved unchanged).
-    Rejected scrapes (blocked/too_short/error) written to rejected_output_path as JSONL.
-    """
-    with open(input_path, "r", encoding="utf-8") as f:
-        data = json.load(f)
+) -> List[Dict[str, Any]]:
+    """Fill `aggregated_sources` for every query in a get_urls.py output file."""
+    with open(input_path, "r", encoding="utf-8") as handle:
+        data = json.load(handle)
     if not isinstance(data, list):
         data = [data]
 
-    rejected_records: List[Dict[str, Any]] = []
-    output_list: List[Dict[str, Any]] = []
+    rejected: List[Dict[str, Any]] = []
+    output: List[Dict[str, Any]] = []
+    with ThreadPoolExecutor(max_workers=max(1, cfg.max_workers)) as pool:
+        for record in data:
+            query_id = record.get("query_id")
+            candidates = aggregate_runs(record.get("runs") or [])
+            sources = select_sources(candidates, cfg, pool)
+            n_selected = sum(1 for s in sources if s["selected_topk"])
+            print(f"query {query_id}: {len(candidates)} unique cited URLs, {n_selected} selected")
+            for source in sources:
+                if source["citation_existence_check"] is False:
+                    rejected.append({
+                        "query_id": query_id,
+                        "url": source["url_examples"][0],
+                        "status": source["existence_check_status"],
+                        "http_status": source["http_status"],
+                    })
+            out_record = dict(record)
+            out_record["aggregated_sources"] = sources
+            if ai_model_name:
+                out_record["ai_model_name"] = ai_model_name
+            output.append(out_record)
 
-    for record in data:
-        query_id = record.get("query_id")
-        query_text = record.get("query_text", "")
-        model_name = ai_model_name or record.get("ai_model_name") or "OpenAI"
-        urls = _urls_from_record(record)
-        seen: Set[str] = set()
-        ok_scrapes: List[Dict[str, Any]] = []
-
-        for url in urls:
-            if not url or url in seen:
-                continue
-            seen.add(url)
-            status, http_status, content_or_error, title = scrape_url(url, cfg)
-            if status == "ok":
-                ok_scrapes.append({
-                    "url": url,
-                    "content": content_or_error,
-                    "title": title,
-                })
-            else:
-                rejected_records.append({
-                    "query_id": query_id,
-                    "query_text": query_text,
-                    "url": url,
-                    "status": status,
-                    "http_status": http_status,
-                    "error": content_or_error,
-                })
-
-        aggregated_sources: List[Dict[str, Any]] = []
-        for idx, s in enumerate(ok_scrapes, start=1):
-            item = _build_aggregated_source_item(
-                query_id=query_id,
-                url=s["url"],
-                url_examples=[s["url"]],
-                text_content=s["content"],
-                title=s.get("title"),
-                agg_source_id=idx,
-            )
-            aggregated_sources.append(item)
-
-        # Preserve full record structure (runs, etc.) and only set aggregated_sources
-        out_record = dict(record)
-        out_record["aggregated_sources"] = aggregated_sources
-        if "ai_model_name" not in out_record:
-            out_record["ai_model_name"] = model_name
-        output_list.append(out_record)
-
-    with open(output_path, "w", encoding="utf-8") as out_f:
-        json.dump(output_list, out_f, ensure_ascii=False, indent=2)
+    for path in (output_path, rejected_output_path):
+        if path:
+            os.makedirs(os.path.dirname(os.path.abspath(path)), exist_ok=True)
+    with open(output_path, "w", encoding="utf-8") as handle:
+        json.dump(output, handle, ensure_ascii=False, indent=2)
+    print(f"Wrote {len(output)} queries to {output_path}")
 
     if rejected_output_path:
-        with open(rejected_output_path, "w", encoding="utf-8") as rej_f:
-            for rec in rejected_records:
-                rej_f.write(json.dumps(rec, ensure_ascii=False) + "\n")
+        with open(rejected_output_path, "w", encoding="utf-8") as handle:
+            for row in rejected:
+                handle.write(json.dumps(row, ensure_ascii=False) + "\n")
+        print(f"Wrote {len(rejected)} failed existence checks to {rejected_output_path}")
+    return output
 
 
-def _parse_args(argv: Optional[List[str]] = None) -> argparse.Namespace:
+def build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(
-        description="Scrape content for URLs produced by get_urls.py and fill aggregated_sources.",
-    )
-    parser.add_argument(
-        "--input",
-        "-i",
-        required=True,
-        help="Path to input JSON file in reference format.",
-    )
-    parser.add_argument(
-        "--output",
-        "-o",
-        required=True,
-        help="Path to output JSON file (reference format with aggregated_sources filled).",
-    )
-    parser.add_argument(
-        "--rejected-output",
-        help=(
-            "Optional path to JSONL file where blocked, short, or errored "
-            "scrapes will be written."
+        description=(
+            "Step 2: union cited URLs across runs, run the existence check, "
+            "scrape, and select the top-K sources per query."
         ),
     )
-    parser.add_argument(
-        "--timeout",
-        type=int,
-        default=15,
-        help="HTTP timeout per request in seconds (default: 15).",
-    )
+    parser.add_argument("--input", "-i", required=True, help="Output JSON of get_urls.py.")
+    parser.add_argument("--output", "-o", required=True, help="Output JSON with aggregated_sources.")
+    parser.add_argument("--rejected-output", help="Optional JSONL of URLs that failed the existence check.")
+    parser.add_argument("--top-k", type=int, default=5, help="Sources selected per query (default: 5).")
+    parser.add_argument("--timeout", type=int, default=15, help="HTTP timeout in seconds (default: 15).")
     parser.add_argument(
         "--min-chars",
         type=int,
-        default=500,
-        help=(
-            "Minimum character length for a scrape to be considered valid "
-            "(default: 500)."
-        ),
+        default=1,
+        help="Minimum extracted text length to pass the existence check (default: 1, i.e. non-empty).",
     )
-    parser.add_argument(
-        "--ai-model-name",
-        default="OpenAI",
-        help="Value for ai_model_name in output (default: OpenAI).",
-    )
-    return parser.parse_args(argv)
+    parser.add_argument("--max-workers", type=int, default=8, help="Parallel page fetches (default: 8).")
+    parser.add_argument("--ai-model-name", help="Override ai_model_name in the output.")
+    return parser
 
 
 def main(argv: Optional[List[str]] = None) -> None:
-    args = _parse_args(argv)
-    cfg = ScrapeConfig(timeout=args.timeout, min_chars=args.min_chars)
+    args = build_parser().parse_args(argv)
+    cfg = ScrapeConfig(
+        top_k=args.top_k,
+        timeout=args.timeout,
+        min_chars=args.min_chars,
+        max_workers=args.max_workers,
+    )
     collect_sources_from_url_file(
         input_path=args.input,
         output_path=args.output,

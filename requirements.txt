@@ -7,7 +7,8 @@
 requests>=2.31.0
 beautifulsoup4>=4.12.0
 
-# OpenAI-compatible API client & environment loading
-#   src/source-collection/get_urls.py, src/content-scoring/scripts/scoring.py
-openai>=1.12.0
+# OpenAI API client & environment loading
+#   src/source-collection/get_urls.py uses the Responses API (openai>=1.66)
+#   src/content-scoring/scripts/scoring.py uses an OpenAI-compatible chat endpoint
+openai>=1.66.0
 python-dotenv>=1.0.0

@@ -57,8 +57,8 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--max-urls",
         type=int,
-        default=5,
-        help="Maximum number of URLs to request per query in endpoint mode.",
+        default=0,
+        help="Maximum number of cited URLs kept per run in endpoint mode (default: 0 = all).",
     )
     parser.add_argument(
         "--scrape-timeout",
@@ -69,8 +69,8 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--scrape-min-chars",
         type=int,
-        default=500,
-        help="Minimum character threshold passed to collect_sources_from_urls.py.",
+        default=1,
+        help="Minimum extracted text length passed to collect_sources_from_urls.py (default: 1).",
     )
     parser.add_argument(
         "--force",
@@ -143,40 +143,62 @@ def make_query_jsonl_from_csv(csv_path: Path, output_path: Path) -> int:
     return count
 
 
-def build_reference_records_from_answer_bundle(payload: Dict[str, Any]) -> List[Dict[str, Any]]:
+def load_query_texts(csv_path: Optional[Path]) -> Dict[str, str]:
+    """Map query id -> query text from a query CSV (query_ID,query or query_id,query_text)."""
+    if not csv_path:
+        return {}
+    with open(csv_path, newline="", encoding="utf-8") as handle:
+        reader = csv.DictReader(handle)
+        fields = reader.fieldnames or []
+        id_field = "query_ID" if "query_ID" in fields else "query_id"
+        query_field = "query" if "query" in fields else "query_text"
+        return {str(row[id_field]): row[query_field] for row in reader if row.get(id_field) and row.get(query_field)}
+
+
+def build_reference_records_from_answer_bundle(
+    payload: Dict[str, Any], query_texts: Optional[Dict[str, str]] = None
+) -> List[Dict[str, Any]]:
+    """Convert bundle runs to the source-collection format.
+
+    Runs with the same query_id become repeated runs of one query. Query text
+    comes from the run, or else from `query_texts`.
+    """
     model_name = str(payload.get("model_name") or "Unknown")
-    records: List[Dict[str, Any]] = []
+    query_texts = query_texts or {}
+    records: Dict[str, Dict[str, Any]] = {}
     for run in payload.get("runs") or []:
         query_id = run.get("query_id")
         answer_text = run.get("answer_text") or ""
-        query_text = run.get("query_text") or ""
+        query_text = run.get("query_text") or query_texts.get(str(query_id), "")
+        if not query_text:
+            print(f"Warning: no query text for query_id={query_id}", file=sys.stderr)
         cited_urls = run.get("cited_urls") or []
         cited_sources = [{"type": "url", "url": url} for url in cited_urls if isinstance(url, str)]
         raw_response = run.get("raw_response")
         if raw_response is None:
             raw_response = {"type": "participant_bundle"}
-        record = {
+        record = records.setdefault(str(query_id), {
             "query_id": query_id,
             "query_text": query_text,
             "ai_model_name": model_name,
-            "runs": [
-                {
-                    "query_id": query_id,
-                    "query_text": query_text,
-                    "ai_model_name": model_name,
-                    "query_order": 1,
-                    "response_text": answer_text,
-                    "raw_response": raw_response,
-                    "cited_sources": cited_sources,
-                    "search_results": [],
-                    "search_results_rank": {},
-                    "usage": {},
-                }
-            ],
+            "runs": [],
             "aggregated_sources": [],
-        }
-        records.append(record)
-    return records
+        })
+        record["runs"].append(
+            {
+                "query_id": query_id,
+                "query_text": query_text,
+                "ai_model_name": model_name,
+                "query_order": len(record["runs"]) + 1,
+                "response_text": answer_text,
+                "raw_response": raw_response,
+                "cited_sources": cited_sources,
+                "search_results": [],
+                "search_results_rank": {},
+                "usage": {},
+            }
+        )
+    return list(records.values())
 
 
 def run_command(command: List[str], env: Optional[Dict[str, str]] = None) -> None:
@@ -227,9 +249,9 @@ def run_stage1_endpoint(
     return output_path
 
 
-def run_stage1_answer_bundle(payload: Dict[str, Any], stage_dir: Path) -> Path:
+def run_stage1_answer_bundle(payload: Dict[str, Any], stage_dir: Path, queries_csv: Optional[Path]) -> Path:
     output_path = stage_dir / "stage1_urls.json"
-    records = build_reference_records_from_answer_bundle(payload)
+    records = build_reference_records_from_answer_bundle(payload, load_query_texts(queries_csv))
     if not records:
         raise ValueError("answer_url_bundle submission contains no runs")
     write_json(output_path, records)
@@ -285,6 +307,7 @@ def run_stage4_metrics(scored_output: Path, stage_dir: Path, model_name: str, qu
         str(COMPUTE_METRICS_SCRIPT),
         "--run",
         f"{model_name}={scored_output}",
+        "--exclude-incomplete",
         "--out-dir",
         str(output_dir),
     ]
@@ -337,7 +360,7 @@ def main() -> None:
                 raise ValueError("--holdout-manifest is required for endpoint submissions")
             stage1_output = run_stage1_endpoint(payload, args.holdout_manifest, stage1_dir, args.max_urls)
         elif submission_mode == "answer_url_bundle":
-            stage1_output = run_stage1_answer_bundle(payload, stage1_dir)
+            stage1_output = run_stage1_answer_bundle(payload, stage1_dir, query_metadata)
         else:
             raise ValueError(f"Unsupported submission_mode: {submission_mode}")
 

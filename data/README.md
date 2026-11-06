@@ -5,9 +5,10 @@ The frozen evaluation snapshot for the SourceBench paper. Rescoring this snapsho
 without re-crawling the web.
 
 **Licensing is not uniform across this directory.** See [`LICENSE`](LICENSE) before
-redistributing anything here. Short version: evaluator outputs are CC BY 4.0, the
-queries are CC BY-SA 4.0, and stored page text is third-party content released for
-non-commercial research use only.
+redistributing anything here. Short version: evaluator and analysis outputs are
+CC BY 4.0, the queries follow the terms of their source datasets (CC BY-SA 4.0 for
+HotpotQA), and stored page text is third-party content released for non-commercial
+research use only.
 
 ---
 
@@ -113,7 +114,8 @@ general transparency score), `accountability` is Author Accountability, and `aut
 is Domain Authority. Weights are those used for the weighted score; the maximum
 possible weighted sum is 95, scaled to 100.
 
-These records contain no benchmark query text and no third-party page text.
+Justifications and analyses may quote short excerpts of the query and of the evaluated
+page.
 
 ## `collected-sources/*.json.gz`
 
@@ -137,8 +139,7 @@ Two cautions:
 - **`search_result_date` and `search_result_last_updated` are dates reported by the page
   or the search provider. They are not crawl timestamps.** This release does not record
   retrieval timestamps or content hashes.
-- `scoring.py` reads uncompressed JSON. Decompress before scoring:
-  `gunzip -k data/collected-sources/<slug>.json.gz`
+- `scoring.py` reads the `.json.gz` files directly.
 
 ## `evaluation-results/` and `rank-scores/`
 
@@ -191,23 +192,17 @@ specific artifacts behind the SE/GE and per-query-type analyses are inspectable.
 
 ## Reproducing the main results
 
-`compute_metrics.py` needs no third-party packages.
+`src/evaluation/reproduce_paper.py` computes Tables 3, 4 and 8 from `content-scores/`
+and needs no third-party packages:
 
 ```bash
-python src/evaluation/compute_metrics.py \
-  $(for f in data/content-scores/*.json; do \
-      echo -n "--run $(basename "$f" .json)=$f "; done) \
-  --query-metadata data/queries/sourcebench_queries.csv \
-  --exclude-incomplete \
-  --out-dir output/metrics
+python src/evaluation/reproduce_paper.py
 ```
 
-`--exclude-incomplete` averages the weighted score only over sources scored on all
-eight dimensions. Omit it to include partially scored sources. The two settings give
-different numbers, so check which one a given table in the paper uses before comparing.
-
-Outputs: `leaderboard_overall.csv`, `leaderboard_by_query_type.csv`, `main_table.csv`,
-`query_metrics.csv`, `source_metrics.csv`, `leaderboard_data.json`.
+It runs `compute_metrics.py` with `--exclude-incomplete` for Tables 3 and 8 and with
+the default settings for Table 4, and writes the metric files
+(`leaderboard_overall.csv`, `leaderboard_by_query_type.csv`, `main_table.csv`,
+`query_metrics.csv`, `source_metrics.csv`, `leaderboard_data.json`) to `output/paper/`.
 
 ## Contact
 

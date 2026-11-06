@@ -9,15 +9,15 @@ For each selected source, the script asks Qwen to score 8 dimensions and writes:
 - `{name}.enriched.json`: the original nested JSON plus scores added back onto each source
 - `{name}.csv`: one row per scored source with lowercase column names
 
-Usage:
-    python3 scripts/scoring.py \
+Usage (from the repository root; .json and .json.gz inputs are accepted):
+    python src/content-scoring/scripts/scoring.py \
         --input-file /path/to/input.json \
         --out-dir /path/to/output \
         --run-name example_run \
         --query-ids 2 11 21
 
 Dry run:
-    python3 scripts/scoring.py \
+    python src/content-scoring/scripts/scoring.py \
         --input-file /path/to/input.json \
         --out-dir /path/to/output \
         --dry-run
@@ -35,6 +35,7 @@ Outputs:
 import argparse
 import asyncio
 import csv
+import gzip
 import json
 import os
 import re
@@ -358,7 +359,7 @@ def parse_args() -> Config:
         "--input-file",
         required=True,
         type=Path,
-        help="Path to the original input JSON file.",
+        help="Path to the input JSON file (.json or .json.gz).",
     )
     parser.add_argument(
         "--out-dir",
@@ -473,7 +474,8 @@ def normalize_input(data: Any) -> Any:
 
 
 def load_input_data(input_file: Path) -> List[Dict[str, Any]]:
-    with open(input_file, "r", encoding="utf-8") as handle:
+    opener = gzip.open if input_file.suffix == ".gz" else open
+    with opener(input_file, "rt", encoding="utf-8") as handle:
         raw_data = json.load(handle)
     normalized = normalize_input(raw_data)
     if not isinstance(normalized, list):
@@ -482,7 +484,13 @@ def load_input_data(input_file: Path) -> List[Dict[str, Any]]:
 
 
 def derive_run_name(config: Config) -> str:
-    return config.run_name or config.input_file.stem
+    if config.run_name:
+        return config.run_name
+    name = config.input_file.name
+    for suffix in (".gz", ".json"):
+        if name.endswith(suffix):
+            name = name[: -len(suffix)]
+    return name
 
 
 def get_source_url(source: Dict[str, Any]) -> str:
