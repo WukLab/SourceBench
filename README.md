@@ -96,15 +96,16 @@ python src/evaluation/compute_metrics.py \
   --out-dir output/gpt-5/metrics
 ```
 
-Repeat `--run NAME=PATH` to compute several systems together. The output
-directory contains:
+Repeat `--run NAME=PATH` to compute several systems together.
+`--exclude-incomplete` averages over sources scored on all eight dimensions.
+The output directory contains:
 
-| File | Content | Paper |
-|---|---|---|
-| `leaderboard_overall.csv` | per-system scores, run with `--exclude-incomplete` | Table 3 |
-| `leaderboard_by_query_type.csv` | per-system scores by query type, run without `--exclude-incomplete` | Table 4 |
-| `source_metrics.csv`, `query_metrics.csv` | per-source and per-query scores | |
-| `leaderboard_data.json` | all of the above as JSON | |
+| File | Content |
+|---|---|
+| `leaderboard_overall.csv` | per-system scores: the eight dimensions and the weighted score |
+| `leaderboard_by_query_type.csv` | per-system scores by query type |
+| `source_metrics.csv`, `query_metrics.csv` | per-source and per-query scores |
+| `leaderboard_data.json` | all of the above as JSON |
 
 ## Using the Released Data
 
@@ -115,10 +116,10 @@ sources again:
 python src/evaluation/reproduce_paper.py
 ```
 
-This computes metrics from `data/content-scores/` and prints Table 3 (weighted
-score per system), Table 4 (weighted score per query type) and Table 8 (the
-four DeepSeek configurations). The metric files are written to
-`output/paper/`. It needs no API key and no third-party packages.
+This computes metrics from `data/content-scores/` and prints the weighted score
+of each system, its weighted score per query type, and the scores of the four
+DeepSeek configurations. The metric files are written to `output/paper/`. It
+needs no API key and no third-party packages.
 
 To score the stored sources again, pass a file from `data/collected-sources/`
 to step 2:

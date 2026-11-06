@@ -68,7 +68,7 @@ count in these files; do not expect the two numbers to match.
 The `source` column in the queries CSV and the `query_type` field in `content-scores`
 both hold the **name of the originating dataset**, not the paper's intent label.
 `compute_metrics.py` groups by this value, so `leaderboard_by_query_type.csv` is keyed
-on dataset names. Mapping to Table 1 of the paper:
+on dataset names. Mapping to the paper's query types:
 
 | Value in the data | Paper's type | Paper's source name | Primary intent |
 |---|---|---|---|
@@ -175,7 +175,7 @@ prepared before the public repository existed, so three things differ from the r
    Search is the baseline the SE/GE comparison is measured against rather than a system
    measured by it.
 
-These outputs are not required to reproduce Tables 3 and 4 — `compute_metrics.py`
+These outputs are not required to reproduce the main results — `compute_metrics.py`
 regenerates the equivalent aggregates from `content-scores/`. They are included so the
 specific artifacts behind the SE/GE and per-query-type analyses are inspectable.
 
@@ -192,17 +192,17 @@ specific artifacts behind the SE/GE and per-query-type analyses are inspectable.
 
 ## Reproducing the main results
 
-`src/evaluation/reproduce_paper.py` computes Tables 3, 4 and 8 from `content-scores/`
-and needs no third-party packages:
+`src/evaluation/reproduce_paper.py` computes, from `content-scores/`, the weighted
+score of each system, its weighted score per query type, and the scores of the four
+DeepSeek configurations. It needs no third-party packages:
 
 ```bash
 python src/evaluation/reproduce_paper.py
 ```
 
-It runs `compute_metrics.py` with `--exclude-incomplete` for Tables 3 and 8 and with
-the default settings for Table 4, and writes the metric files
-(`leaderboard_overall.csv`, `leaderboard_by_query_type.csv`, `main_table.csv`,
-`query_metrics.csv`, `source_metrics.csv`, `leaderboard_data.json`) to `output/paper/`.
+The metric files (`leaderboard_overall.csv`, `leaderboard_by_query_type.csv`,
+`main_table.csv`, `query_metrics.csv`, `source_metrics.csv`, `leaderboard_data.json`)
+are written to `output/paper/`.
 
 ## Contact
 
