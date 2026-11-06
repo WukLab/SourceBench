@@ -149,7 +149,8 @@ The code in this repository (`src/`, `leaderboard/`) is released under the
 The data in `data/` is **not** uniformly licensed and is **not** covered by the MIT
 license. It mixes material we created, material derived from third-party research
 datasets, and third-party web page content whose copyright we do not hold. Terms are
-stated per component in [`data/LICENSE`](data/LICENSE). In summary:
+stated per component in [`data/LICENSE`](data/LICENSE), and the data itself is
+documented in [`data/README.md`](data/README.md). In summary:
 
 | Component | Terms |
 |---|---|
