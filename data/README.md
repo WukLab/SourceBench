@@ -7,8 +7,8 @@ without re-crawling the web.
 **Licensing is not uniform across this directory.** See [`LICENSE`](LICENSE) before
 redistributing anything here. Short version: evaluator and analysis outputs are
 CC BY 4.0, the queries follow the terms of their source datasets (CC BY-SA 4.0 for
-HotpotQA), and stored page text is third-party content released for non-commercial
-research use only.
+HotpotQA, CC BY-NC-SA 3.0 for VACOS NLQ), and stored page text is third-party
+content released for non-commercial research use only.
 
 ---
 

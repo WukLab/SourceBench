@@ -8,6 +8,7 @@
 [![arXiv](https://img.shields.io/badge/arXiv-2602.16942-b31b1b?style=flat-square&logo=arxiv)](https://arxiv.org/abs/2602.16942)
 [![Blog](https://img.shields.io/badge/Blog-SourceBench-f59e0b?style=flat-square)](https://mlsys.wuklab.io/posts/sourcebench/)
 [![Leaderboard](https://img.shields.io/badge/Leaderboard-Hugging%20Face-8b5cf6?style=flat-square)](https://huggingface.co/spaces/WukLab/SourceBench-Leaderboard)
+[![Dataverse](https://img.shields.io/badge/Dataverse-10.7910%2FDVN%2FUOLXDQ-c55a11?style=flat-square)](https://doi.org/10.7910/DVN/UOLXDQ)
 
 SourceBench evaluates whether a generative engine cites **high-quality web sources**, not only whether it produces a fluent final answer.
 
@@ -109,6 +110,8 @@ The output directory contains:
 
 ## Using the Released Data
 
+The data in `data/` is also archived on Harvard Dataverse: https://doi.org/10.7910/DVN/UOLXDQ
+
 To compute scores from the data in `data/` without collecting
 sources again:
 
@@ -179,7 +182,7 @@ documented in [`data/README.md`](data/README.md). In summary:
 | Component | Terms |
 |---|---|
 | `data/content-scores/` — evaluator scores and justifications | CC BY 4.0 |
-| `data/queries/` — the 100 benchmark queries | Per source dataset: CC BY-SA 4.0 for the 20 HotpotQA-derived queries; the other 80 follow their upstream terms, for non-commercial research use |
+| `data/queries/` — the 100 benchmark queries | Per source dataset: CC BY-SA 4.0 for the 20 HotpotQA-derived queries, CC BY-NC-SA 3.0 for the 20 VACOS NLQ-derived queries; the other 60 follow their upstream terms, for non-commercial research use |
 | `data/collected-sources/` — frozen page snapshots | Layered. Stored page text is third-party content, copyright retained by the original publishers, redistributed for non-commercial research use only |
 | `data/evaluation-results/`, `data/rank-scores/` — stored analysis outputs | CC BY 4.0 |
 

@@ -41,7 +41,10 @@ Terms follow each query's source dataset, given in the `source` field:
   - The 20 queries derived from HotpotQA, which is distributed under
     CC BY-SA 4.0, are released under CC BY-SA 4.0.
         https://creativecommons.org/licenses/by-sa/4.0/
-  - The other 80 queries are redistributed under the upstream terms listed
+  - The 20 queries derived from VACOS NLQ, which is distributed under
+    CC BY-NC-SA 3.0, are released under CC BY-NC-SA 3.0.
+        https://creativecommons.org/licenses/by-nc-sa/3.0/
+  - The other 60 queries are redistributed under the upstream terms listed
     below, for non-commercial research use with attribution to the original
     authors. We claim no license grant over them.
 
@@ -53,16 +56,16 @@ Provenance and upstream terms of the five source datasets:
   DebateQA                   20     No license specified by the authors
   Pinocchio                  20     No license specified by the authors
   Quora Question Pairs       20     Subject to Quora's Terms of Service
-  VACOS NLQ                  20     Not confirmed; published at CHIIR '21
-                                    (doi:10.1145/3406522.3446043)
+  VACOS NLQ                  20     CC BY-NC-SA 3.0 (CHIIR '21,
+                                    doi:10.1145/3406522.3446043)
 
 DebateQA and Pinocchio state no license; queries derived from them will be
 withdrawn on request from their authors. Pinocchio is itself derived from
 FEVER, FEVEROUS, and PolitiFact, whose terms also apply upstream.
 
-The license status of Quora Question Pairs and VACOS NLQ has not been
-independently confirmed by us; users who intend to redistribute should verify
-the upstream terms themselves.
+The license status of Quora Question Pairs has not been independently
+confirmed by us; users who intend to redistribute should verify the upstream
+terms themselves.
 
 ---------------------------------------------------------------------------
 3. data/collected-sources/     LICENSE: layered; see below
