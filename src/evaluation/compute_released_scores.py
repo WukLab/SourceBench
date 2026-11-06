@@ -1,8 +1,8 @@
-"""Compute the paper's source-quality scores from the released scores.
+"""Compute source-quality scores from the released scores in data/content-scores/.
 
 Usage (from the repository root; standard library only, no API key needed):
 
-    python src/evaluation/reproduce_paper.py
+    python src/evaluation/compute_released_scores.py
 
 Reads `data/content-scores/`, runs `compute_metrics.py`, and prints:
 

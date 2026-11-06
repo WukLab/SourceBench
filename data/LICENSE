@@ -30,8 +30,7 @@ The justifications and analyses may quote short excerpts of the benchmark
 queries and of the evaluated pages. Those excerpts remain subject to the terms
 in sections 2 and 3(a), respectively.
 
-This is the component required to reproduce the paper's main source-quality
-results.
+This is the component the main source-quality metrics are computed from.
 
 ---------------------------------------------------------------------------
 2. data/queries/               LICENSE: per source dataset; see below

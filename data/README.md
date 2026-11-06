@@ -1,7 +1,7 @@
 # SourceBench data
 
 The frozen evaluation snapshot for the SourceBench paper. Rescoring this snapshot with
-`src/evaluation/compute_metrics.py` reproduces the paper's main source-quality results
+`src/evaluation/compute_metrics.py` computes the main source-quality metrics
 without re-crawling the web.
 
 **Licensing is not uniform across this directory.** See [`LICENSE`](LICENSE) before
@@ -175,7 +175,7 @@ prepared before the public repository existed, so three things differ from the r
    Search is the baseline the SE/GE comparison is measured against rather than a system
    measured by it.
 
-These outputs are not required to reproduce the main results — `compute_metrics.py`
+These outputs are not required to compute the main metrics — `compute_metrics.py`
 regenerates the equivalent aggregates from `content-scores/`. They are included so the
 specific artifacts behind the SE/GE and per-query-type analyses are inspectable.
 
@@ -187,17 +187,17 @@ specific artifacts behind the SE/GE and per-query-type analyses are inspectable.
   files here. See the paper's reproducibility appendix.
 - **Stored page text for `claude-sonnet-4.5`.** `content-scores/claude-sonnet-4.5.json`
   is present (259 records, with `url` and `text_length`), but there is no
-  `collected-sources/claude-sonnet-4.5.json.gz`. Claude-Sonnet-4.5's scores are
-  reproducible from the stored scores, but its page text is not available for rescoring.
+  `collected-sources/claude-sonnet-4.5.json.gz`. Claude-Sonnet-4.5's scores can
+  be computed from the stored scores, but its page text is not available for rescoring.
 
-## Reproducing the main results
+## Computing the scores
 
-`src/evaluation/reproduce_paper.py` computes, from `content-scores/`, the weighted
+`src/evaluation/compute_released_scores.py` computes, from `content-scores/`, the weighted
 score of each system, its weighted score per query type, and the scores of the four
 DeepSeek configurations. It needs no third-party packages:
 
 ```bash
-python src/evaluation/reproduce_paper.py
+python src/evaluation/compute_released_scores.py
 ```
 
 The metric files (`leaderboard_overall.csv`, `leaderboard_by_query_type.csv`,

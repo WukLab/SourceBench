@@ -109,11 +109,11 @@ The output directory contains:
 
 ## Using the Released Data
 
-To get the paper's results from the data in `data/` without collecting
+To compute scores from the data in `data/` without collecting
 sources again:
 
 ```bash
-python src/evaluation/reproduce_paper.py
+python src/evaluation/compute_released_scores.py
 ```
 
 This computes metrics from `data/content-scores/` and prints the weighted score
