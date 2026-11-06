@@ -1,4 +1,4 @@
-"""Compute Tables 3, 4 and 8 of the paper from the released scores.
+"""Compute the paper's source-quality scores from the released scores.
 
 Usage (from the repository root; standard library only, no API key needed):
 
@@ -6,11 +6,11 @@ Usage (from the repository root; standard library only, no API key needed):
 
 Reads `data/content-scores/`, runs `compute_metrics.py`, and prints:
 
-- Table 3: weighted score per system (`compute_metrics.py --exclude-incomplete`).
-- Table 4: weighted score per query type (`compute_metrics.py` default
-  settings). The "Overall" column is the Table 3 score.
-- Table 8: per-dimension and weighted scores of the four DeepSeek
-  configurations (`compute_metrics.py --exclude-incomplete`).
+- the weighted score of each of the 12 systems (`compute_metrics.py --exclude-incomplete`);
+- each system's weighted score per query type (`compute_metrics.py` default
+  settings), next to its overall weighted score;
+- the per-dimension and weighted scores of the four DeepSeek configurations
+  (`compute_metrics.py --exclude-incomplete`).
 
 The full metric tables are written to `--out-dir` as CSV and JSON.
 """
@@ -24,7 +24,7 @@ from pathlib import Path
 REPO_ROOT = Path(__file__).resolve().parents[2]
 COMPUTE_METRICS = REPO_ROOT / "src" / "evaluation" / "compute_metrics.py"
 
-# Paper name -> file stem in data/content-scores/, in Table 3 order.
+# System name in the paper -> file stem in data/content-scores/.
 MAIN_SYSTEMS = [
     ("GPT-5", "gpt-5"),
     ("Grok-4.1-Fast", "grok-4.1-fast"),
@@ -40,7 +40,7 @@ MAIN_SYSTEMS = [
     ("Google-Search", "google-search"),
 ]
 
-# Table 8 configurations.
+# DeepSeek configurations.
 DEEPSEEK_SYSTEMS = [
     ("DS-Chat-Tavily", "deepseek-chat-tavily"),
     ("DS-Chat-Gensee", "deepseek-chat-gensee"),
@@ -48,7 +48,7 @@ DEEPSEEK_SYSTEMS = [
     ("DS-Reasoning-Gensee", "deepseek-reasoning-gensee"),
 ]
 
-# Table 8 column -> metric key in compute_metrics.py output.
+# Dimension abbreviation -> metric key in compute_metrics.py output.
 DIMENSIONS = [
     ("CR", "semantic_relevance"),
     ("FA", "factual_accuracy"),
@@ -60,7 +60,7 @@ DIMENSIONS = [
     ("LC", "layout_ad_density"),
 ]
 
-# Table 4 column -> value of the `source` column in sourcebench_queries.csv.
+# Query type -> value of the `source` column in sourcebench_queries.csv.
 QUERY_TYPES = [
     ("Argument", "DebateQA"),
     ("Reasoning", "HotpotQA"),
@@ -97,26 +97,26 @@ def main() -> None:
     parser.add_argument("--out-dir", type=Path, default=Path("output") / "paper")
     args = parser.parse_args()
 
-    table3_dir = args.out_dir / "table3"
-    table4_dir = args.out_dir / "table4"
-    table8_dir = args.out_dir / "table8"
-    run_compute_metrics(MAIN_SYSTEMS, args.scores_dir, args.queries, table3_dir, exclude_incomplete=True)
-    run_compute_metrics(MAIN_SYSTEMS, args.scores_dir, args.queries, table4_dir, exclude_incomplete=False)
-    run_compute_metrics(DEEPSEEK_SYSTEMS, args.scores_dir, args.queries, table8_dir, exclude_incomplete=True)
+    systems_dir = args.out_dir / "systems"
+    query_types_dir = args.out_dir / "query_types"
+    deepseek_dir = args.out_dir / "deepseek"
+    run_compute_metrics(MAIN_SYSTEMS, args.scores_dir, args.queries, systems_dir, exclude_incomplete=True)
+    run_compute_metrics(MAIN_SYSTEMS, args.scores_dir, args.queries, query_types_dir, exclude_incomplete=False)
+    run_compute_metrics(DEEPSEEK_SYSTEMS, args.scores_dir, args.queries, deepseek_dir, exclude_incomplete=True)
 
-    overall = {row["model_name"]: row for row in read_rows(table3_dir / "leaderboard_overall.csv")}
+    overall = {row["model_name"]: row for row in read_rows(systems_dir / "leaderboard_overall.csv")}
     by_type = {
         (row["model_name"], row["query_type"]): row
-        for row in read_rows(table4_dir / "leaderboard_by_query_type.csv")
+        for row in read_rows(query_types_dir / "leaderboard_by_query_type.csv")
     }
 
-    print("Table 3: weighted score per system")
+    print("Weighted score per system")
     print(f"  {'System':<22}{'Weighted':>10}")
     for name, stem in MAIN_SYSTEMS:
         print(f"  {name:<22}{fmt(overall[stem]['weighted_total_content_score']):>10}")
 
     print()
-    print("Table 4: weighted score by query type")
+    print("Weighted score by query type")
     header = "".join(f"{label:>11}" for label, _ in QUERY_TYPES) + f"{'Overall':>11}"
     print(f"  {'System':<22}{header}")
     for name, stem in MAIN_SYSTEMS:
@@ -126,9 +126,9 @@ def main() -> None:
         )
         print(f"  {name:<22}{cells}{fmt(overall[stem]['weighted_total_content_score']):>11}")
 
-    deepseek = {row["model_name"]: row for row in read_rows(table8_dir / "leaderboard_overall.csv")}
+    deepseek = {row["model_name"]: row for row in read_rows(deepseek_dir / "leaderboard_overall.csv")}
     print()
-    print("Table 8: DeepSeek configurations")
+    print("DeepSeek configurations: per-dimension and weighted scores")
     header = "".join(f"{label:>8}" for label, _ in DIMENSIONS) + f"{'Weighted':>10}"
     print(f"  {'System':<22}{header}")
     for name, stem in DEEPSEEK_SYSTEMS:
@@ -137,7 +137,7 @@ def main() -> None:
         print(f"  {name:<22}{cells}{fmt(row['weighted_total_content_score']):>10}")
 
     print()
-    print(f"Full metric tables: {table3_dir}/, {table4_dir}/ and {table8_dir}/")
+    print(f"Full metric tables: {systems_dir}/, {query_types_dir}/ and {deepseek_dir}/")
 
 
 if __name__ == "__main__":

@@ -69,8 +69,8 @@ def parse_args() -> argparse.Namespace:
         "--exclude-incomplete",
         action="store_true",
         help=(
-            "Average weighted scores only over sources scored on all eight dimensions "
-            "(paper Table 3). By default, a missing dimension counts as 0 (paper Table 4)."
+            "Average weighted scores only over sources scored on all eight dimensions. "
+            "By default, a missing dimension counts as 0."
         ),
     )
     parser.add_argument(
